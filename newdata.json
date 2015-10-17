@@ -1,0 +1,5431 @@
+{
+    "": [],
+    "Maruti": [
+        {
+            "value": "Maruti Alto 800",
+            "text": "Alto 800",
+            "inner": []
+        },
+        {
+            "value": "Maruti Alto K10",
+            "text": "Alto K10",
+            "inner": []
+        },
+        {
+            "value": "Maruti Celerio",
+            "text": "Celerio",
+            "inner": []
+        },
+        {
+            "value": "Maruti Ciaz",
+            "text": "Ciaz",
+            "inner": []
+        },
+        {
+            "value": "Maruti Eeco",
+            "text": "Eeco",
+            "inner": []
+        },
+        {
+            "value": "Maruti Ertiga",
+            "text": "Ertiga",
+            "inner": []
+        },
+        {
+            "value": "Maruti Grand Vitara",
+            "text": "Grand Vitara",
+            "inner": []
+        },
+        {
+            "value": "Maruti Gypsy",
+            "text": "Gypsy",
+            "inner": []
+        },
+        {
+            "value": "Maruti Omni",
+            "text": "Omni",
+            "inner": []
+        },
+        {
+            "value": "Maruti Ritz",
+            "text": "Ritz",
+            "inner": []
+        },
+        {
+            "value": "Maruti Swift Dzire",
+            "text": "Swift Dzire",
+            "inner": []
+        },
+        {
+            "value": "Maruti Swift",
+            "text": "Swift",
+            "inner": []
+        },
+        {
+            "value": "Maruti SX4 S Cross",
+            "text": "S-Cross",
+            "inner": []
+        },
+        {
+            "value": "Maruti Wagon R",
+            "text": "Wagon R",
+            "inner": []
+        },
+        {
+            "value": "Maruti Wagon R Stingray",
+            "text": "Wagon R Stingray",
+            "inner": [
+                {
+                    "value": "Maruti Alto K10 LX",
+                    "text": "LX (Petrol) 3.3 Lac*"
+                },
+                {
+                    "value": "Maruti Alto K10 LXI",
+                    "text": "LXI (Petrol) 3.5 Lac*"
+                },
+                {
+                    "value": "Maruti Alto K10 VXI",
+                    "text": "VXI (Petrol) 3.7 Lac*"
+                },
+                {
+                    "value": "Maruti Alto K10 VXI Airbag",
+                    "text": "VXI Option (Petrol) 3.9 Lac*"
+                },
+                {
+                    "value": "Maruti Alto K10 VXI AMT",
+                    "text": "VXI AGS (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Maruti Alto K10 LXI CNG",
+                    "text": "LXI CNG (CNG) 4.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VDI SHVS",
+                    "text": "VDI SHVS (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VDi Option SHVS",
+                    "text": "VDi Option SHVS (Diesel) 8.6 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VDi Plus SHVS",
+                    "text": "VDi Plus SHVS (Diesel) 9.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz ZDi SHVS",
+                    "text": "ZDi SHVS (Diesel) 9.8 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz ZDi Plus SHVS",
+                    "text": "ZDi Plus SHVS (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VXi",
+                    "text": "VXi (Petrol) 7.5 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VXi Option",
+                    "text": "VXi Option (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz VXi Plus",
+                    "text": "VXi Plus (Petrol) 8.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz ZXi",
+                    "text": "ZXi (Petrol) 8.8 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz AT VXi Plus",
+                    "text": "AT VXi Plus (Petrol) 9.3 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz ZXi Plus",
+                    "text": "ZXi Plus (Petrol) 9.3 Lac*"
+                },
+                {
+                    "value": "Maruti Ciaz AT ZXi",
+                    "text": "AT ZXi (Petrol) 9.9 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco 5 Seater Standard",
+                    "text": "5 Seater Standard (Petrol) 3.3 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco 7 Seater Standard",
+                    "text": "7 Seater Standard (Petrol) 3.5 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco 5 Seater AC",
+                    "text": "5 Seater AC (Petrol) 3.6 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco Ambulance Petrol AC Plus HTR",
+                    "text": "Ambulance Petrol AC Plus HTR (Petrol) 4.0 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco Flexi Green",
+                    "text": "Flexi Green (CNG) 3.6 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco CNG HTR 5-STR",
+                    "text": "CNG HTR 5 STR (CNG) 4.0 Lac*"
+                },
+                {
+                    "value": "Maruti Eeco CNG 5 Seater AC",
+                    "text": "CNG 5 Seater AC (CNG) 4.4 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 Base",
+                    "text": "STD (Petrol) 2.6 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 LX",
+                    "text": "LX (Petrol) 3.0 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 LXI",
+                    "text": "LXI (Petrol) 3.2 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 VXI",
+                    "text": "VXI (Petrol) 3.4 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 LXI Airbag",
+                    "text": "LXI Airbag (Petrol) 3.4 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 VXI Airbag",
+                    "text": "VXI Airbag (Petrol) 3.6 Lac*"
+                },
+                {
+                    "value": "Maruti Alto 800 CNG LXI",
+                    "text": "CNG LXI (CNG) 3.8 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio LDi",
+                    "text": "LDi (Diesel) 4.9 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio LDi",
+                    "text": "LDi (Diesel) 4.9 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VDi",
+                    "text": "VDi (Diesel) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VDi",
+                    "text": "VDi (Diesel) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZDi",
+                    "text": "ZDi (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZDi",
+                    "text": "ZDi (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZDi Option",
+                    "text": "ZDi Option (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZDi Option",
+                    "text": "ZDi Option (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio LXI",
+                    "text": "LXI (Petrol) 4.1 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VXI",
+                    "text": "VXI (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VXI",
+                    "text": "VXI (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio LXI AT",
+                    "text": "LXI AT (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZXI",
+                    "text": "ZXI (Petrol) 4.7 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VXI AT",
+                    "text": "VXI AT (Petrol) 4.9 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio VXI AT",
+                    "text": "VXI AT (Petrol) 4.9 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZXI Optional",
+                    "text": "ZXI Optional (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZXI Optional",
+                    "text": "ZXI Optional (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZXI AT",
+                    "text": "ZXI AT (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio ZXI AT",
+                    "text": "ZXI AT (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Celerio Green VXI",
+                    "text": "Green VXI (CNG) 5.1 Lac*"
+                },
+                {
+                    "value": "Maruti Gypsy King Hard Top Ambulance BSIV",
+                    "text": "King Hard Top Ambulance (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Maruti Gypsy King Soft Top MPI BSIV",
+                    "text": "King Soft Top MPI (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Maruti Gypsy King Hard Top MPI BSIV",
+                    "text": "King Hard Top MPI (Petrol) 6.4 Lac*"
+                },
+                {
+                    "value": "Maruti Omni MPI CARGO BSIV",
+                    "text": "MPI CARGO (Petrol) 2.5 Lac*"
+                },
+                {
+                    "value": "Maruti Omni MPI STD BSIV",
+                    "text": "MPI STD (Petrol) 2.7 Lac*"
+                },
+                {
+                    "value": "Maruti Omni E MPI STD BSIV",
+                    "text": "E MPI STD (Petrol) 2.7 Lac*"
+                },
+                {
+                    "value": "Maruti Omni MPI Ambulance BSIV",
+                    "text": "MPI Ambulance (Petrol) 3.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga LDI",
+                    "text": "LDI (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga VDI",
+                    "text": "VDI (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga Paseo VDI",
+                    "text": "Paseo VDI (Diesel) 8.9 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga ZDI",
+                    "text": "ZDI (Diesel) 9.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga LXI",
+                    "text": "LXI (Petrol) 6.4 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga VXI",
+                    "text": "VXI (Petrol) 7.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga VXI ABS",
+                    "text": "VXI ABS (Petrol) 7.2 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga Paseo VXI",
+                    "text": "Paseo VXI (Petrol) 7.4 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga ZXI",
+                    "text": "ZXI (Petrol) 7.9 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga LXI CNG",
+                    "text": "LXI CNG (CNG) 6.9 Lac*"
+                },
+                {
+                    "value": "Maruti Ertiga VXI CNG",
+                    "text": "VXI CNG (CNG) 7.7 Lac*"
+                },
+                {
+                    "value": "Maruti Grand Vitara 2.4 MT",
+                    "text": "2.4 MT (Petrol) 23.8 Lac*"
+                },
+                {
+                    "value": "Maruti Grand Vitara 2.4 AT",
+                    "text": "2.4 AT (Petrol) 25.8 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz LDi",
+                    "text": "LDi (Diesel) 5.7 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz VDi",
+                    "text": "VDi (Diesel) 6.1 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz VDI (ABS) BS IV",
+                    "text": "VDI (ABS) (Diesel) 6.2 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz ZDi",
+                    "text": "ZDi (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz LXi",
+                    "text": "LXi (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz VXi",
+                    "text": "VXi (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz VXi (ABS) BS IV",
+                    "text": "VXi (ABS) (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz ZXi",
+                    "text": "ZXi (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Maruti Ritz AT",
+                    "text": "AT (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire LDI",
+                    "text": "LDI (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire VDI",
+                    "text": "VDI (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire ZDI",
+                    "text": "ZDI (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire LXI",
+                    "text": "LXI (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire LXI Option",
+                    "text": "LXI Option (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire VXI",
+                    "text": "VXI (Petrol) 6.1 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire VXi AT",
+                    "text": "VXi AT (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Maruti Swift Dzire ZXI",
+                    "text": "ZXI (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Maruti Swift LDI BSIV",
+                    "text": "LDI (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Maruti Swift VDI BS IV",
+                    "text": "VDI (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Maruti Swift ZDi",
+                    "text": "ZDi (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Maruti Swift LXI",
+                    "text": "LXI (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Maruti Swift LXI Option",
+                    "text": "LXI Option (Petrol) 4.9 Lac*"
+                },
+                {
+                    "value": "Maruti Swift VXI",
+                    "text": "VXI (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Maruti Swift ZXI",
+                    "text": "ZXI (Petrol) 6.4 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 200 Sigma",
+                    "text": "DDiS 200 Sigma (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 200 Delta",
+                    "text": "DDiS 200 Delta (Diesel) 9.7 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 200 Zeta",
+                    "text": "DDiS 200 Zeta (Diesel) 10.0 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 200 Alpha",
+                    "text": "DDiS 200 Alpha (Diesel) 11.4 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 320 Delta",
+                    "text": "DDiS 320 Delta (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 320 Zeta",
+                    "text": "DDiS 320 Zeta (Diesel) 13.7 Lac*"
+                },
+                {
+                    "value": "Maruti SX4 S Cross DDiS 320 Alpha",
+                    "text": "DDiS 320 Alpha (Diesel) 14.5 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R LX BS IV",
+                    "text": "LX (Petrol) 3.8 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R LXI BS IV",
+                    "text": "LXI (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R VXI BS IV",
+                    "text": "VXI (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R LXI Avnace Edition",
+                    "text": "LXI Avance Edition (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R VXI BS IV with ABS",
+                    "text": "VXI with ABS (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R LXI CNG",
+                    "text": "LXI CNG (CNG) 4.7 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R LXI CNG Avance Edition",
+                    "text": "LXI CNG Avance Edition (CNG) 5.2 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R Stingray LXI",
+                    "text": "LXI (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R Stingray VXI",
+                    "text": "VXI (Petrol) 4.7 Lac*"
+                },
+                {
+                    "value": "Maruti Wagon R Stingray VXI Optional",
+                    "text": "VXI Optional (Petrol) 5.0 Lac*"
+                }
+            ]
+        }
+    ],
+    "Hyundai": [
+        {
+            "value": "Hyundai Creta",
+            "text": "Creta",
+            "inner": []
+        },
+        {
+            "value": "Hyundai Elantra",
+            "text": "Elantra",
+            "inner": []
+        },
+        {
+            "value": "Hyundai EON",
+            "text": "EON",
+            "inner": []
+        },
+        {
+            "value": "Hyundai Grand i10",
+            "text": "Grand i10",
+            "inner": []
+        },
+        {
+            "value": "Hyundai i10",
+            "text": "i10",
+            "inner": []
+        },
+        {
+            "value": "Hyundai i20",
+            "text": "Elite i20",
+            "inner": []
+        },
+        {
+            "value": "Hyundai i20 Active",
+            "text": "i20 Active",
+            "inner": []
+        },
+        {
+            "value": "Hyundai Santa Fe",
+            "text": "Santa Fe",
+            "inner": []
+        },
+        {
+            "value": "Hyundai Verna",
+            "text": "4S Fluidic Verna",
+            "inner": []
+        },
+        {
+            "value": "Hyundai Xcent",
+            "text": "Xcent",
+            "inner": [
+                {
+                    "value": "Hyundai Elantra CRDi Base",
+                    "text": "CRDi Base (Diesel) 15.2 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra CRDi S",
+                    "text": "CRDi S (Diesel) 16.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra CRDi SX",
+                    "text": "CRDi SX (Diesel) 17.4 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra CRDi SX AT",
+                    "text": "CRDi SX AT (Diesel) 18.6 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra S",
+                    "text": "S (Petrol) 14.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra SX",
+                    "text": "SX (Petrol) 16.1 Lac*"
+                },
+                {
+                    "value": "Hyundai Elantra SX AT",
+                    "text": "SX AT (Petrol) 17.2 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 CRDi Era",
+                    "text": "CRDi Era (Diesel) 5.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 CRDi Magna",
+                    "text": "CRDi Magna (Diesel) 5.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 CRDi Sportz",
+                    "text": "CRDi Sportz (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 CRDi Asta",
+                    "text": "CRDi Asta (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 CRDi Asta Option",
+                    "text": "CRDi Asta Option (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 Era",
+                    "text": "Era (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 Magna",
+                    "text": "Magna (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 Sportz",
+                    "text": "Sportz (Petrol) 5.4 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 Asta",
+                    "text": "Asta (Petrol) 5.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 Asta Option",
+                    "text": "Asta Option (Petrol) 6.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 AT Asta",
+                    "text": "AT Asta (Petrol) 6.4 Lac*"
+                },
+                {
+                    "value": "Hyundai Grand i10 1.0 Kappa LPG Magna",
+                    "text": "1.0 Kappa LPG Magna (LPG) 5.5 Lac*"
+                },
+                {
+                    "value": "Hyundai i10 Era",
+                    "text": "Era (Petrol) 4.3 Lac*"
+                },
+                {
+                    "value": "Hyundai i10 Magna 1.1L",
+                    "text": "Magna 1.1L (Petrol) 4.5 Lac*"
+                },
+                {
+                    "value": "Hyundai i10 Magna 1.1 iTech SE",
+                    "text": "Magna 1.1 iTech SE (Petrol) 4.7 Lac*"
+                },
+                {
+                    "value": "Hyundai i10 Sportz 1.1L",
+                    "text": "Sportz 1.1L (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Hyundai i10 Sportz 1.1L LPG",
+                    "text": "Sportz 1.1L LPG (LPG) 5.2 Lac*"
+                },
+                {
+                    "value": "Hyundai Santa Fe 2WD MT",
+                    "text": "2WD MT (Diesel) 27.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Santa Fe 2WD AT",
+                    "text": "2WD AT (Diesel) 28.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Santa Fe 4WD AT",
+                    "text": "4WD AT (Diesel) 31.1 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.4 CRDi",
+                    "text": "1.4 CRDi (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 CRDi S",
+                    "text": "1.6 CRDi S (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 CRDi S Option",
+                    "text": "1.6 CRDi S Option (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 CRDi SX",
+                    "text": "1.6 CRDi SX (Diesel) 11.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 CRDi AT SX",
+                    "text": "1.6 CRDi AT SX (Diesel) 12.6 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.4 VTVT",
+                    "text": "1.4 VTVT (Petrol) 8.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 VTVT S",
+                    "text": "1.6 VTVT S (Petrol) 9.1 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 VTVT S Option",
+                    "text": "1.6 VTVT S Option (Petrol) 9.6 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 VTVT AT S Option",
+                    "text": "1.6 VTVT AT S Option (Petrol) 10.4 Lac*"
+                },
+                {
+                    "value": "Hyundai Verna 1.6 SX VTVT",
+                    "text": "1.6 SX VTVT (Petrol) 10.4 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.1 CRDi Base",
+                    "text": "1.1 CRDi Base (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.1 CRDi S",
+                    "text": "1.1 CRDi S (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.1 CRDi SX",
+                    "text": "1.1 CRDi SX (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.1 CRDi SX Option",
+                    "text": "1.1 CRDi SX Option (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.2 Kappa Base",
+                    "text": "1.2 Kappa Base (Petrol) 5.1 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.2 Kappa S",
+                    "text": "1.2 Kappa S (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.2 Kappa SX",
+                    "text": "1.2 Kappa SX (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.2 Kappa SX Option",
+                    "text": "1.2 Kappa SX Option (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Xcent 1.2 Kappa AT SX Option",
+                    "text": "1.2 Kappa AT SX Option (Petrol) 7.8 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Era 1.4 CRDi",
+                    "text": "Era 1.4 CRDi (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Magna 1.4 CRDi",
+                    "text": "Magna 1.4 CRDi (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Sportz 1.4 CRDi",
+                    "text": "Sportz 1.4 CRDi (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 1.4 CRDi Anniversary Edition",
+                    "text": "1.4 CRDi Anniversary Edition (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Sportz Option 1.4 CRDi",
+                    "text": "Sportz Option 1.4 CRDi (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Asta 1.4 CRDi",
+                    "text": "Asta 1.4 CRDi (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Asta Option 1.4 CRDi",
+                    "text": "Asta Option 1.4 CRDi (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Era 1.2",
+                    "text": "Era 1.2 (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Magna 1.2",
+                    "text": "Magna 1.2 (Petrol) 6.0 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Sportz 1.2",
+                    "text": "Sportz 1.2 (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 1.2 Anniversary Edition",
+                    "text": "1.2 Anniversary Edition (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Sportz Option 1.2",
+                    "text": "Sportz Option 1.2 (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Asta 1.2",
+                    "text": "Asta 1.2 (Petrol) 7.1 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Asta Option 1.2",
+                    "text": "Asta Option 1.2 (Petrol) 7.3 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.4",
+                    "text": "1.4 (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.4 S",
+                    "text": "1.4 S (Diesel) 8.6 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.4 SX",
+                    "text": "1.4 SX (Diesel) 9.2 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.4 SX with AVN",
+                    "text": "1.4 SX with AVN (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.2",
+                    "text": "1.2 (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.2 S",
+                    "text": "1.2 S (Petrol) 7.3 Lac*"
+                },
+                {
+                    "value": "Hyundai i20 Active 1.2 SX",
+                    "text": "1.2 SX (Petrol) 8.1 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.4 CRDi Base",
+                    "text": "1.4 CRDi L (Diesel) 9.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.4 CRDi S",
+                    "text": "1.4 CRDi S (Diesel) 10.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.4 CRDi S Plus",
+                    "text": "1.4 CRDi S Plus (Diesel) 11.7 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 CRDi SX",
+                    "text": "1.6 CRDi SX (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 CRDi SX Plus",
+                    "text": "1.6 CRDi SX Plus (Diesel) 13.0 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 CRDi AT SX Plus",
+                    "text": "1.6 CRDi AT SX Plus (Diesel) 13.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 CRDi SX Option",
+                    "text": "1.6 CRDi SX Option (Diesel) 13.9 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 VTVT Base",
+                    "text": "1.6 VTVT L (Petrol) 8.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 VTVT S",
+                    "text": "1.6 VTVT S (Petrol) 9.8 Lac*"
+                },
+                {
+                    "value": "Hyundai Creta 1.6 Gamma SX Plus",
+                    "text": "1.6 VTVT SX Plus (Petrol) 11.4 Lac*"
+                },
+                {
+                    "value": "Hyundai EON D Lite",
+                    "text": "D Lite (Petrol) 3.2 Lac*"
+                },
+                {
+                    "value": "Hyundai EON D Lite Optional",
+                    "text": "D Lite Plus (Petrol) 3.4 Lac*"
+                },
+                {
+                    "value": "Hyundai EON Era Plus",
+                    "text": "Era Plus (Petrol) 3.6 Lac*"
+                },
+                {
+                    "value": "Hyundai EON Magna Plus",
+                    "text": "Magna Plus (Petrol) 3.9 Lac*"
+                },
+                {
+                    "value": "Hyundai EON Sportz",
+                    "text": "Sportz (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Hyundai EON 1.0 Kappa Magna Plus",
+                    "text": "1.0 Kappa Magna Plus (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Hyundai EON 1.0 Kappa Magna Plus Optional",
+                    "text": "1.0 Kappa Magna Plus Optional (Petrol) 4.3 Lac*"
+                },
+                {
+                    "value": "Hyundai EON LPG Era Plus",
+                    "text": "LPG Era Plus (LPG) 3.9 Lac*"
+                },
+                {
+                    "value": "Hyundai EON LPG Magna Plus",
+                    "text": "LPG Magna Plus (LPG) 4.2 Lac*"
+                }
+            ]
+        }
+    ],
+    "Honda": [
+        {
+            "value": "Honda Amaze",
+            "text": "Amaze",
+            "inner": []
+        },
+        {
+            "value": "Honda Brio",
+            "text": "Brio",
+            "inner": []
+        },
+        {
+            "value": "Honda City",
+            "text": "City",
+            "inner": []
+        },
+        {
+            "value": "Honda CR-V",
+            "text": "CR V",
+            "inner": []
+        },
+        {
+            "value": "Honda Jazz",
+            "text": "Jazz",
+            "inner": []
+        },
+        {
+            "value": "Honda Mobilio",
+            "text": "Mobilio",
+            "inner": [
+                {
+                    "value": "Honda City i DTec E",
+                    "text": "i DTec E (Diesel) 9.0 Lac*"
+                },
+                {
+                    "value": "Honda City i DTec S",
+                    "text": "i DTec S (Diesel) 9.7 Lac*"
+                },
+                {
+                    "value": "Honda City i DTec SV",
+                    "text": "i DTec SV (Diesel) 10.2 Lac*"
+                },
+                {
+                    "value": "Honda City i DTec V",
+                    "text": "i DTec V (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Honda City i DTec VX",
+                    "text": "i DTec VX (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Honda City i DTec VX Option",
+                    "text": "i DTec VX Option (Diesel) 12.2 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC E",
+                    "text": "i VTEC E (Petrol) 7.8 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC S",
+                    "text": "i VTEC S (Petrol) 8.5 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC SV",
+                    "text": "i VTEC SV (Petrol) 9.1 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC V",
+                    "text": "i VTEC V (Petrol) 9.7 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC CVT SV",
+                    "text": "i VTEC CVT SV (Petrol) 10.1 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC VX",
+                    "text": "i VTEC VX (Petrol) 10.6 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC VX Option",
+                    "text": "i VTEC VX Option (Petrol) 10.9 Lac*"
+                },
+                {
+                    "value": "Honda City i VTEC CVT VX",
+                    "text": "i VTEC CVT VX (Petrol) 11.7 Lac*"
+                },
+                {
+                    "value": "Honda Amaze E i-Dtech",
+                    "text": "E i DTEC (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Honda Amaze EX i-Dtech",
+                    "text": "EX i DTEC (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Honda Amaze S i-Dtech",
+                    "text": "S i DTEC (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Honda Amaze SX i DTEC",
+                    "text": "SX i DTEC (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Honda Amaze VX i DTEC",
+                    "text": "VX i DTEC (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Honda Amaze VX O iDTEC",
+                    "text": "VX O iDTEC (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Honda Amaze E i-Vtech",
+                    "text": "E i VTEC (Petrol) 5.4 Lac*"
+                },
+                {
+                    "value": "Honda Amaze EX i-Vtech",
+                    "text": "EX i VTEC (Petrol) 5.8 Lac*"
+                },
+                {
+                    "value": "Honda Amaze S i-Vtech",
+                    "text": "S i VTEC (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Honda Amaze SX i VTEC",
+                    "text": "SX i VTEC (Petrol) 6.8 Lac*"
+                },
+                {
+                    "value": "Honda Amaze VX i-Vtech",
+                    "text": "VX i VTEC (Petrol) 7.1 Lac*"
+                },
+                {
+                    "value": "Honda Amaze S AT i-Vtech",
+                    "text": "S AT i VTEC (Petrol) 7.2 Lac*"
+                },
+                {
+                    "value": "Honda Amaze VX O i VTEC",
+                    "text": "VX O i VTEC (Petrol) 7.6 Lac*"
+                },
+                {
+                    "value": "Honda Amaze VX AT i-Vtech",
+                    "text": "VX AT i VTEC (Petrol) 8.0 Lac*"
+                },
+                {
+                    "value": "Honda Amaze S Plus i-VTEC",
+                    "text": "S Plus i-VTEC (CNG) 6.3 Lac*"
+                },
+                {
+                    "value": "Honda Brio E MT",
+                    "text": "E MT (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Honda Brio EX MT",
+                    "text": "EX MT (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Honda Brio S MT",
+                    "text": "S MT (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Honda Brio V MT",
+                    "text": "V MT (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Honda Brio VX",
+                    "text": "VX (Petrol) 5.7 Lac*"
+                },
+                {
+                    "value": "Honda Brio VX O",
+                    "text": "VX O (Petrol) 6.1 Lac*"
+                },
+                {
+                    "value": "Honda Brio VX AT",
+                    "text": "VX AT (Petrol) 6.5 Lac*"
+                },
+                {
+                    "value": "Honda Brio VX O AT",
+                    "text": "VX O AT (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.5 E i DTEC",
+                    "text": "1.5 E i DTEC (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.5 S i DTEC",
+                    "text": "1.5 S i DTEC (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.5 SV i DTEC",
+                    "text": "1.5 SV i DTEC (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.5 V i DTEC",
+                    "text": "1.5 V i DTEC (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.5 VX i DTEC",
+                    "text": "1.5 VX i DTEC (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 E i VTEC",
+                    "text": "1.2 E i VTEC (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 S i VTEC",
+                    "text": "1.2 S i VTEC (Petrol) 6.1 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 SV i VTEC",
+                    "text": "1.2 SV i VTEC (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 V i VTEC",
+                    "text": "1.2 V i VTEC (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 S AT i VTEC",
+                    "text": "1.2 S AT i VTEC (Petrol) 7.2 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 VX i VTEC",
+                    "text": "1.2 VX i VTEC (Petrol) 7.5 Lac*"
+                },
+                {
+                    "value": "Honda Jazz 1.2 V AT i VTEC",
+                    "text": "1.2 V AT i VTEC (Petrol) 8.0 Lac*"
+                },
+                {
+                    "value": "Honda CR-V 2.0L 2WD MT",
+                    "text": "2.0L 2WD MT (Petrol) 21.8 Lac*"
+                },
+                {
+                    "value": "Honda CR-V 2.0L 2WD AT",
+                    "text": "2.0L 2WD AT (Petrol) 23.5 Lac*"
+                },
+                {
+                    "value": "Honda CR-V 2.4L 4WD AT",
+                    "text": "2.4L 4WD AT (Petrol) 25.8 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio E i-DTEC",
+                    "text": "E i DTEC (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio S i-DTEC",
+                    "text": "S i DTEC (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio V i-DTEC",
+                    "text": "V i DTEC (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio V Option i-DTEC",
+                    "text": "V Option i DTEC (Diesel) 11.1 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio RS i-DTEC",
+                    "text": "RS i DTEC (Diesel) 11.6 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio RS i-DTEC",
+                    "text": "RS i DTEC (Diesel) 11.6 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio RS Option i-DTEC",
+                    "text": "RS Option i DTEC (Diesel) 12.3 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio RS Option i-DTEC",
+                    "text": "RS Option i DTEC (Diesel) 12.3 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio E i-VTEC",
+                    "text": "E i VTEC (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio S i-VTEC",
+                    "text": "S i VTEC (Petrol) 8.1 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio V i-VTEC",
+                    "text": "V i VTEC (Petrol) 9.4 Lac*"
+                },
+                {
+                    "value": "Honda Mobilio V Option i-VTEC",
+                    "text": "V Option i VTEC (Petrol) 10.1 Lac*"
+                }
+            ]
+        }
+    ],
+    "Toyota": [
+        {
+            "value": "Toyota Camry",
+            "text": "Camry",
+            "inner": []
+        },
+        {
+            "value": "Toyota Corolla Altis",
+            "text": "Corolla Altis",
+            "inner": []
+        },
+        {
+            "value": "Toyota Etios",
+            "text": "Etios",
+            "inner": []
+        },
+        {
+            "value": "Toyota Etios Cross",
+            "text": "Etios Cross",
+            "inner": []
+        },
+        {
+            "value": "Toyota Etios Liva",
+            "text": "Etios Liva",
+            "inner": []
+        },
+        {
+            "value": "Toyota Fortuner",
+            "text": "Fortuner",
+            "inner": []
+        },
+        {
+            "value": "Toyota Innova",
+            "text": "Innova",
+            "inner": []
+        },
+        {
+            "value": "Toyota Land Cruiser",
+            "text": "Land Cruiser 200",
+            "inner": []
+        },
+        {
+            "value": "Toyota Land Cruiser Prado",
+            "text": "Land Cruiser Prado",
+            "inner": []
+        },
+        {
+            "value": "Toyota Prius",
+            "text": "Prius",
+            "inner": [
+                {
+                    "value": "Toyota Camry 2.5 G",
+                    "text": "2.5 G (Petrol) 29.3 Lac*"
+                },
+                {
+                    "value": "Toyota Camry Hybrid",
+                    "text": "Hybrid (Petrol) 32.2 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis D-4D J",
+                    "text": "D 4D J (Diesel) 14.1 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis D-4D JS",
+                    "text": "D 4D JS (Diesel) 14.7 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis D-4D G",
+                    "text": "D 4D G (Diesel) 16.1 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis D-4D GL",
+                    "text": "D 4D GL (Diesel) 17.8 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis JS MT",
+                    "text": "JS MT (Petrol) 13.3 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis G MT",
+                    "text": "G MT (Petrol) 14.8 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis G AT",
+                    "text": "G AT (Petrol) 16.1 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis GL MT",
+                    "text": "GL MT (Petrol) 16.4 Lac*"
+                },
+                {
+                    "value": "Toyota Corolla Altis VL AT",
+                    "text": "VL AT (Petrol) 17.9 Lac*"
+                },
+                {
+                    "value": "Toyota Etios JD",
+                    "text": "JD (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios GD",
+                    "text": "GD (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Toyota Etios VD",
+                    "text": "VD (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Toyota Etios VXD",
+                    "text": "VXD (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Toyota Etios 1.4 Xclusive",
+                    "text": "1.4 Xclusive (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Toyota Etios J",
+                    "text": "J (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Toyota Etios G",
+                    "text": "G (Petrol) 6.5 Lac*"
+                },
+                {
+                    "value": "Toyota Etios V",
+                    "text": "V (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Toyota Etios VX",
+                    "text": "VX (Petrol) 7.6 Lac*"
+                },
+                {
+                    "value": "Toyota Etios 1.5 Xclusive",
+                    "text": "1.5 Xclusive (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Cross 1.4L GD",
+                    "text": "1.4L GD (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Cross 1.4L VD",
+                    "text": "1.4L VD (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Cross 1.2L G",
+                    "text": "1.2L G (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Cross 1.5L V",
+                    "text": "1.5L V (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva JD",
+                    "text": "JD (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva GD",
+                    "text": "GD (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva VD",
+                    "text": "VD (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva D TRD Sportivo",
+                    "text": "D TRD Sportivo (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva VXD",
+                    "text": "VXD (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva J",
+                    "text": "J (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva G",
+                    "text": "G (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva V",
+                    "text": "V (Petrol) 5.7 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva VX",
+                    "text": "VX (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Toyota Etios Liva TRD Sportivo",
+                    "text": "TRD Sportivo (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 4x2 Manual",
+                    "text": "4x2 Manual (Diesel) 24.6 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 2.5 4x2 MT TRD Sportivo",
+                    "text": "2.5 4x2 MT TRD Sportivo (Diesel) 24.8 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 4x2 AT",
+                    "text": "4x2 AT (Diesel) 25.6 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 2.5 4x2 AT TRD Sportivo",
+                    "text": "2.5 4x2 AT TRD Sportivo (Diesel) 25.8 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 4x4 MT",
+                    "text": "4x4 MT (Diesel) 26.5 Lac*"
+                },
+                {
+                    "value": "Toyota Fortuner 4x4 AT",
+                    "text": "4x4 AT (Diesel) 27.5 Lac*"
+                },
+                {
+                    "value": "Toyota Land Cruiser VX Premium",
+                    "text": "VX (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Toyota Land Cruiser Prado VX L",
+                    "text": "VX L (Diesel) 90.6 Lac*"
+                },
+                {
+                    "value": "Toyota Prius Z5",
+                    "text": "Z5 (Petrol) 38.6 Lac*"
+                },
+                {
+                    "value": "Toyota Prius Z6",
+                    "text": "Z6 (Petrol) 40.3 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS W/O A/C 8 BSIII",
+                    "text": "2.5 EV Diesel PS W/O A/C 8 BSIII (Diesel) 10.6 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS W/O A/C 7 BSIII",
+                    "text": "2.5 EV Diesel PS W/O A/C 7 BSIII (Diesel) 10.7 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS W/O A/C 8",
+                    "text": "2.5 EV Diesel PS WO AC 8 (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS W/O A/C 7",
+                    "text": "2.5 EV Diesel PS WO AC 7 (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS 8 Seater BSIII",
+                    "text": "2.5 EV Diesel PS 8 Seater BSIII (Diesel) 11.2 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV Diesel PS 7 Seater BSIII",
+                    "text": "2.5 EV Diesel PS 7 Seater BSIII (Diesel) 11.2 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV (Diesel) PS 8 Seater BS IV",
+                    "text": "2.5 EV (Diesel) PS 8 Seater (Diesel) 11.4 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 EV (Diesel) PS 7 Seater BS IV",
+                    "text": "2.5 EV (Diesel) PS 7 Seater (Diesel) 11.5 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 G (Diesel) 7 Seater",
+                    "text": "2.5 G (Diesel) 7 Seater BSIII (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 G (Diesel) 8 Seater",
+                    "text": "2.5 G (Diesel) 8 Seater BSIII (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 G (Diesel) 7 Seater BS IV",
+                    "text": "2.5 G (Diesel) 7 Seater (Diesel) 12.9 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 G (Diesel) 8 Seater BS IV",
+                    "text": "2.5 G (Diesel) 8 Seater (Diesel) 13.0 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 GX (Diesel) 7 Seater",
+                    "text": "2.5 GX (Diesel) 7 Seater BSIII (Diesel) 13.2 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 GX (Diesel) 8 Seater",
+                    "text": "2.5 GX (Diesel) 8 Seater BSIII (Diesel) 13.3 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 GX (Diesel) 7 Seater BS IV",
+                    "text": "2.5 GX (Diesel) 7 Seater (Diesel) 13.5 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 GX (Diesel) 8 Seater BS IV",
+                    "text": "2.5 GX (Diesel) 8 Seater (Diesel) 13.5 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 VX (Diesel) 7 Seater",
+                    "text": "2.5 VX (Diesel) 7 Seater BS III (Diesel) 15.3 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 VX (Diesel) 8 Seater",
+                    "text": "2.5 VX (Diesel) 8 Seater BSIII (Diesel) 15.4 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 VX (Diesel) 7 Seater BS IV",
+                    "text": "2.5 VX (Diesel) 7 Seater (Diesel) 15.6 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 VX (Diesel) 8 Seater BS IV",
+                    "text": "2.5 VX (Diesel) 8 Seater (Diesel) 15.6 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 ZX Diesel 7 Seater BSIII",
+                    "text": "2.5 ZX Diesel 7 Seater BSIII (Diesel) 16.0 Lac*"
+                },
+                {
+                    "value": "Toyota Innova 2.5 ZX Diesel 7 Seater",
+                    "text": "2.5 ZX Diesel 7 Seater (Diesel) 16.3 Lac*"
+                }
+            ]
+        }
+    ],
+    "Mahindra": [
+        {
+            "value": "Mahindra Bolero",
+            "text": "Bolero",
+            "inner": []
+        },
+        {
+            "value": "Mahindra e2o",
+            "text": "e2o",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Quanto",
+            "text": "Quanto",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Scorpio",
+            "text": "Scorpio",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Thar",
+            "text": "Thar",
+            "inner": []
+        },
+        {
+            "value": "Mahindra TUV 300",
+            "text": "TUV 300",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Verito",
+            "text": "Verito",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Verito Vibe",
+            "text": "Verito Vibe",
+            "inner": []
+        },
+        {
+            "value": "Mahindra XUV500",
+            "text": "XUV 500",
+            "inner": []
+        },
+        {
+            "value": "Mahindra Xylo",
+            "text": "Xylo",
+            "inner": [
+                {
+                    "value": "Mahindra e2o T20",
+                    "text": "T20 (Electric(Battery)) 5.4 Lac*"
+                },
+                {
+                    "value": "Mahindra e2o T2",
+                    "text": "T2 (Electric(Battery)) 8.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero DI NON AC BS III White",
+                    "text": "DI NON AC BS III White (Diesel) 6.2 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero DI NON AC BS III SILVER",
+                    "text": "DI NON AC BS III SILVER (Diesel) 6.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero LX NON AC BS3",
+                    "text": "LX NON AC BS3 (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero EX NON AC",
+                    "text": "EX NON AC (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Plus - Non-AC BSIII",
+                    "text": "Plus Non AC BSIII (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero DI - AC BS III",
+                    "text": "DI AC BS III (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Plus - Non-AC BSIII PS",
+                    "text": "Plus - Non-AC BSIII PS (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero LX NON AC",
+                    "text": "LX NON AC (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Plus Non AC",
+                    "text": "Plus Non AC (Diesel) 7.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero EX AC",
+                    "text": "EX AC (Diesel) 7.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero LX 4WD NON AC BS3",
+                    "text": "LX 4WD NON AC BS3 (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Plus - AC BSIII",
+                    "text": "Plus   AC BSIII (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero SLE BSIII",
+                    "text": "SLE BSIII (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Plus AC",
+                    "text": "Plus AC (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero SLE",
+                    "text": "SLE (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero SLX 2WD BSIII",
+                    "text": "SLX 2WD BSIII (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero SLX",
+                    "text": "SLX (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero ZLX BSIII",
+                    "text": "ZLX BSIII (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero ZLX",
+                    "text": "ZLX (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Bolero Special Edition",
+                    "text": "Special Edition (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Mahindra Quanto C2",
+                    "text": "C2 (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Quanto C4",
+                    "text": "C4 (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Quanto C6",
+                    "text": "C6 (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Quanto C8",
+                    "text": "C8 (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio Getaway",
+                    "text": "Getaway (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S2 7 Seater",
+                    "text": "S2 7 Seater (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S2 9 Seater",
+                    "text": "S2 9 Seater (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio Getaway 4WD",
+                    "text": "Getaway 4WD (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S4 9 Seater",
+                    "text": "S4 9 Seater (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S4 7 Seater",
+                    "text": "S4 7 Seater (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S4 Plus",
+                    "text": "S4 Plus (Diesel) 9.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S6 7 Seater",
+                    "text": "S6 7 Seater (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S6 8 Seater",
+                    "text": "S6 8 Seater (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S4 4WD",
+                    "text": "S4 4WD (Diesel) 10.6 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S4 Plus 4WD",
+                    "text": "S4 Plus 4WD (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S6 Plus 7 Seater",
+                    "text": "S6 Plus 7 Seater (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S6 Plus 8 Seater",
+                    "text": "S6 Plus 8 Seater (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S8 7C Seater",
+                    "text": "S8 7C Seater (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S8 7 Seater",
+                    "text": "S8 7 Seater (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S8 8 Seater",
+                    "text": "S8 8 Seater (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S10 8 Seater",
+                    "text": "S10 8 Seater (Diesel) 12.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S10 7 Seater",
+                    "text": "S10 7 Seater (Diesel) 12.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S10 AT 2WD",
+                    "text": "S10 AT 2WD (Diesel) 13.2 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S10 4WD",
+                    "text": "S10 4WD (Diesel) 13.7 Lac*"
+                },
+                {
+                    "value": "Mahindra Scorpio S10 AT 4WD",
+                    "text": "S10 AT 4WD (Diesel) 14.4 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T4",
+                    "text": "T4 (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T4 Plus",
+                    "text": "T4 Plus (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T6",
+                    "text": "T6 (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T6 Plus",
+                    "text": "T6 Plus (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T8",
+                    "text": "T8 (Diesel) 8.6 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T6 Plus AMT",
+                    "text": "T6 Plus AMT (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Mahindra TUV 300 T8 AMT",
+                    "text": "T8 AMT (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito 1.5 D2 BSIV",
+                    "text": "1.5 D2 (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito 1.5 D4 BSIV",
+                    "text": "1.5 D4 (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito 1.5 D6 BSIV",
+                    "text": "1.5 D6 (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito 1.5 Executive edition",
+                    "text": "1.5 Executive edition (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito Vibe 1.5 dCi D2",
+                    "text": "1.5 dCi D2 (Diesel) 6.1 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito Vibe 1.5 dCi D4",
+                    "text": "1.5 dCi D4 (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Mahindra Verito Vibe 1.5 dCi D6",
+                    "text": "1.5 dCi D6 (Diesel) 7.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Thar DI 4X2",
+                    "text": "DI 4X2 (Diesel) 5.2 Lac*"
+                },
+                {
+                    "value": "Mahindra Thar DI 4X2 PS",
+                    "text": "DI 4X2 PS (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Thar DI 4X4",
+                    "text": "DI 4X4 (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Thar CRDe",
+                    "text": "CRDe (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D2 Maxx",
+                    "text": "D2 Maxx (Diesel) 7.8 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D2 Maxx BSIV",
+                    "text": "D2 Maxx BSIV (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D2 BS III",
+                    "text": "D2 BS III (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D2 BS IV",
+                    "text": "D2 (Diesel) 8.2 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D4 BS III",
+                    "text": "D4 BS III (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo D4",
+                    "text": "D4 (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo H4",
+                    "text": "H4 (Diesel) 9.0 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo H4 ABS",
+                    "text": "H4 ABS (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo H8",
+                    "text": "H8 (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo H8 ABS with Airbags",
+                    "text": "H8 ABS with Airbags (Diesel) 10.7 Lac*"
+                },
+                {
+                    "value": "Mahindra Xylo H9",
+                    "text": "H9 (Diesel) 11.7 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W4",
+                    "text": "W4 (Diesel) 11.5 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W6 2WD",
+                    "text": "W6 (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W8 2WD",
+                    "text": "W8 (Diesel) 14.5 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W8 4WD",
+                    "text": "W8 AWD (Diesel) 15.4 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W10 2WD",
+                    "text": "W10 (Diesel) 15.4 Lac*"
+                },
+                {
+                    "value": "Mahindra XUV500 W10 AWD",
+                    "text": "W10 AWD (Diesel) 16.5 Lac*"
+                }
+            ]
+        }
+    ],
+    "Tata": [
+        {
+            "value": "Tata Aria",
+            "text": "Aria",
+            "inner": []
+        },
+        {
+            "value": "Tata Bolt",
+            "text": "Bolt",
+            "inner": []
+        },
+        {
+            "value": "Tata Indica V2",
+            "text": "Indica eV2",
+            "inner": []
+        },
+        {
+            "value": "Tata Indica Vista",
+            "text": "Vista",
+            "inner": []
+        },
+        {
+            "value": "Tata Indigo CS",
+            "text": "Indigo eCS",
+            "inner": []
+        },
+        {
+            "value": "Tata Manza",
+            "text": "Manza",
+            "inner": []
+        },
+        {
+            "value": "Tata Movus",
+            "text": "Movus",
+            "inner": []
+        },
+        {
+            "value": "Tata Nano",
+            "text": "Nano",
+            "inner": []
+        },
+        {
+            "value": "Tata New Safari",
+            "text": "Safari",
+            "inner": []
+        },
+        {
+            "value": "Tata Safari Storme",
+            "text": "Safari Storme",
+            "inner": []
+        },
+        {
+            "value": "Tata Sumo",
+            "text": "Sumo",
+            "inner": []
+        },
+        {
+            "value": "Tata Venture",
+            "text": "Venture",
+            "inner": []
+        },
+        {
+            "value": "Tata Winger",
+            "text": "Winger",
+            "inner": []
+        },
+        {
+            "value": "Tata Xenon XT",
+            "text": "Xenon XT",
+            "inner": []
+        },
+        {
+            "value": "Tata Zest",
+            "text": "Zest",
+            "inner": [
+                {
+                    "value": "Tata Indica V2 DLS BSIII",
+                    "text": "Tata Indica V2 DLS BSIII (Diesel) 4.4 Lac*"
+                },
+                {
+                    "value": "Tata Indica V2 eLS",
+                    "text": "eLS (Diesel) 4.7 Lac*"
+                },
+                {
+                    "value": "Tata Indica V2 DLX BSIII",
+                    "text": "Tata Indica V2 DLX BSIII (Diesel) 4.8 Lac*"
+                },
+                {
+                    "value": "Tata Indica V2 eLX",
+                    "text": "eLX (Diesel) 5.1 Lac*"
+                },
+                {
+                    "value": "Tata Indica V2 Emax CNG GLS",
+                    "text": "Tata Indica V2 Emax CNG GLS (CNG) 4.1 Lac*"
+                },
+                {
+                    "value": "Tata Indica V2 Emax CNG GLX",
+                    "text": "Tata Indica V2 Emax CNG GLX (CNG) 4.3 Lac*"
+                },
+                {
+                    "value": "Tata Aria Pure LX 4x2",
+                    "text": "Pure LX 4x2 (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Tata Aria Pleasure 4x2",
+                    "text": "Pleasure 4x2 (Diesel) 12.8 Lac*"
+                },
+                {
+                    "value": "Tata Aria Pride 4x4",
+                    "text": "Pride 4x4 (Diesel) 15.7 Lac*"
+                },
+                {
+                    "value": "Tata Indica Vista TDI LS",
+                    "text": "TDI LS (Diesel) 5.1 Lac*"
+                },
+                {
+                    "value": "Tata Indica Vista TDI LX",
+                    "text": "TDI LX (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Tata Indica Vista Quadrajet LS",
+                    "text": "Quadrajet LS (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Tata Indica Vista Quadrajet VX Tech",
+                    "text": "Quadrajet VX Tech (Diesel) 6.2 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS LS (TDI) BS-III",
+                    "text": "LS (TDI) BS III (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS LX (TDI) BS-III",
+                    "text": "LX TDI BS III (Diesel) 5.8 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS eLS BS IV",
+                    "text": "LS (Diesel) 5.8 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS eLX BS IV",
+                    "text": "LX (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS eVX",
+                    "text": "eVX (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS eGLX BS IV",
+                    "text": "GLX (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS eGVX",
+                    "text": "eGVX (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS Emax CNG GLS",
+                    "text": "Emax CNG GLS (CNG) 5.1 Lac*"
+                },
+                {
+                    "value": "Tata Indigo CS Emax CNG GLX",
+                    "text": "Emax CNG GLX (CNG) 5.4 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Quadrajet90 LS",
+                    "text": "Club Class Quadrajet90 LS (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Diesel",
+                    "text": "Club Class Quadrajet 90 LS (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Quadrajet90 LX",
+                    "text": "Club Class Quadrajet90 LX (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Quadrajet90 VX",
+                    "text": "Club Class Quadrajet90 VX (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Quadrajet90 EX",
+                    "text": "Club Class Quadrajet90 EX (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Petrol",
+                    "text": "Club Class Safire90 GLS (Petrol) 6.1 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Safire90 LX",
+                    "text": "Club Class Safire90 GLX (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Safire90 VX",
+                    "text": "Club Class Safire90 GVX (Petrol) 6.7 Lac*"
+                },
+                {
+                    "value": "Tata Manza Club Class Safire90 EX",
+                    "text": "Club Class Safire90 GEX (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Tata Movus CX",
+                    "text": "CX (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Tata Movus CX 7 Seater Captain",
+                    "text": "CX 7 Seater Captain (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Tata Movus CX 8 Seater",
+                    "text": "CX 8 Seater (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Tata Movus CX 9 Seater",
+                    "text": "CX 9 Seater (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Tata Movus LX",
+                    "text": "LX (Diesel) 8.2 Lac*"
+                },
+                {
+                    "value": "Tata Movus LX 7 Seater Captain",
+                    "text": "LX 7 Seater Captain (Diesel) 8.2 Lac*"
+                },
+                {
+                    "value": "Tata Movus LX 8 Seater",
+                    "text": "LX 8 Seater (Diesel) 8.2 Lac*"
+                },
+                {
+                    "value": "Tata Movus LX 9 Seater",
+                    "text": "LX 9 Seater (Diesel) 8.2 Lac*"
+                },
+                {
+                    "value": "Tata New Safari DICOR 2.2 LX 4x2 BS IV",
+                    "text": "Tata New Safari DICOR 2.2 LX 4x2 (Diesel) 9.0 Lac*"
+                },
+                {
+                    "value": "Tata New Safari DICOR 2.2 LX 4x2 BS IV",
+                    "text": "Tata New Safari DICOR 2.2 LX 4x2 (Diesel) 9.0 Lac*"
+                },
+                {
+                    "value": "Tata New Safari DICOR 2.2 EX 4x2 BS IV",
+                    "text": "Tata New Safari DICOR 2.2 EX 4x2 (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Tata New Safari DICOR 2.2 EX 4x2 BS IV",
+                    "text": "Tata New Safari DICOR 2.2 EX 4x2 (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Tata Safari Storme EX",
+                    "text": "EX (Diesel) 11.7 Lac*"
+                },
+                {
+                    "value": "Tata Safari Storme VX",
+                    "text": "VX (Diesel) 13.3 Lac*"
+                },
+                {
+                    "value": "Tata Safari Storme VX 4WD",
+                    "text": "VX 4WD (Diesel) 14.6 Lac*"
+                },
+                {
+                    "value": "Tata Safari Storme VX 4WD",
+                    "text": "VX 4WD (Diesel) 14.6 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold CX BSIII",
+                    "text": "Gold CX BSIII (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold CX PS BSIII",
+                    "text": "Gold CX PS BSIII (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold CX",
+                    "text": "Gold CX (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold CX PS",
+                    "text": "Gold CX PS (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold EX BSIII",
+                    "text": "Gold EX BSIII (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold FX",
+                    "text": "Gold FX (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold EX",
+                    "text": "Gold EX (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Tata Sumo Gold GX",
+                    "text": "Gold GX (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Tata Winger Platinum BSIII",
+                    "text": "Platinum BSIII (Diesel) 7.6 Lac*"
+                },
+                {
+                    "value": "Tata Winger Platinum BSIV",
+                    "text": "Platinum BSIV (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Tata Xenon XT EX 4X2",
+                    "text": "EX 4X2 (Diesel) 10.2 Lac*"
+                },
+                {
+                    "value": "Tata Xenon XT EX 4X4",
+                    "text": "EX 4X4 (Diesel) 11.3 Lac*"
+                },
+                {
+                    "value": "Tata Nano XE",
+                    "text": "XE (Petrol) 2.1 Lac*"
+                },
+                {
+                    "value": "Tata Nano XM",
+                    "text": "XM (Petrol) 2.4 Lac*"
+                },
+                {
+                    "value": "Tata Nano XT",
+                    "text": "XT (Petrol) 2.6 Lac*"
+                },
+                {
+                    "value": "Tata Nano XMA",
+                    "text": "XMA (Petrol) 2.8 Lac*"
+                },
+                {
+                    "value": "Tata Nano XTA",
+                    "text": "XTA (Petrol) 3.0 Lac*"
+                },
+                {
+                    "value": "Tata Nano CNG XM",
+                    "text": "CNG XM (CNG) 2.6 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 75PS XE",
+                    "text": "Quadrajet 1.3 75PS XE (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 XM",
+                    "text": "Quadrajet 1.3 XM (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 XMS",
+                    "text": "Quadrajet 1.3 XMS (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 Anniversary Edition",
+                    "text": "Quadrajet 1.3 Anniversary Edition (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 XMA",
+                    "text": "Quadrajet 1.3 XMA (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 XT",
+                    "text": "Quadrajet 1.3 XT (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Tata Zest Quadrajet 1.3 XTA",
+                    "text": "Quadrajet 1.3 XTA (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Tata Zest Revotron 1.2T XE",
+                    "text": "Revotron 1.2T XE (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Tata Zest Revotron 1.2T XM",
+                    "text": "Revotron 1.2T XM (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Tata Zest Revotron 1.2T XMS",
+                    "text": "Revotron 1.2T XMS (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Tata Zest Revotron 1.2T Anniversary Edition",
+                    "text": "Revotron 1.2T Anniversary Edition (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Tata Zest Revotron 1.2 XT",
+                    "text": "Revotron 1.2 XT (Petrol) 6.5 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XE",
+                    "text": "Quadrajet XE (Diesel) 5.6 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XM",
+                    "text": "Quadrajet XM (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XM",
+                    "text": "Quadrajet XM (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XMS",
+                    "text": "Quadrajet XMS (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XT",
+                    "text": "Quadrajet XT (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Quadrajet XT",
+                    "text": "Quadrajet XT (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Revotron XE",
+                    "text": "Revotron XE (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Revotron XM",
+                    "text": "Revotron XM (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Revotron XMS",
+                    "text": "Revotron XMS (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Tata Bolt Revotron XT",
+                    "text": "Revotron XT (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Tata Venture LX 7 Str",
+                    "text": "LX 7 Str (Diesel) 4.9 Lac*"
+                },
+                {
+                    "value": "Tata Venture LX",
+                    "text": "LX (Diesel) 5.0 Lac*"
+                },
+                {
+                    "value": "Tata Venture EX 7 Str",
+                    "text": "EX 7 Str (Diesel) 5.3 Lac*"
+                },
+                {
+                    "value": "Tata Venture EX",
+                    "text": "EX (Diesel) 5.4 Lac*"
+                },
+                {
+                    "value": "Tata Venture EX 7 Str Captain Seats",
+                    "text": "EX 7 Str Captain Seats (Diesel) 5.4 Lac*"
+                },
+                {
+                    "value": "Tata Venture GX 7 Str",
+                    "text": "GX 7 Str (Diesel) 5.8 Lac*"
+                },
+                {
+                    "value": "Tata Venture GX",
+                    "text": "GX (Diesel) 5.9 Lac*"
+                },
+                {
+                    "value": "Tata Venture GX 7 Str Captain Seats",
+                    "text": "GX 7 Str Captain Seats (Diesel) 6.0 Lac*"
+                }
+            ]
+        }
+    ],
+    "Ford": [
+        {
+            "value": "Ford Classic",
+            "text": "Classic",
+            "inner": []
+        },
+        {
+            "value": "Ford Ecosport",
+            "text": "Ecosport",
+            "inner": []
+        },
+        {
+            "value": "Ford Fiesta",
+            "text": "Fiesta",
+            "inner": []
+        },
+        {
+            "value": "Ford Figo",
+            "text": "Figo",
+            "inner": []
+        },
+        {
+            "value": "Ford Figo Aspire",
+            "text": "Figo Aspire",
+            "inner": [
+                {
+                    "value": "Ford Figo 1.5D Base MT",
+                    "text": "1.5D Base MT (Diesel) 5.4 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.5D Ambiente MT",
+                    "text": "1.5D Ambiente MT (Diesel) 5.8 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.5D Trend MT",
+                    "text": "1.5D Trend MT (Diesel) 6.1 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.5D Titanium MT",
+                    "text": "1.5D Titanium MT (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.5D Titanium Plus MT",
+                    "text": "1.5D Titanium Plus MT (Diesel) 7.6 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.2P Base MT",
+                    "text": "1.2P Base MT (Petrol) 4.4 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.2P Ambiente MT",
+                    "text": "1.2P Ambiente MT (Petrol) 4.7 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.2P Trend MT",
+                    "text": "1.2P Trend MT (Petrol) 5.1 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.2P Titanium MT",
+                    "text": "1.2P Titanium MT (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.2P Titanium Plus MT",
+                    "text": "1.2P Titanium Plus MT (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Ford Figo 1.5P Titanium AT",
+                    "text": "1.5P Titanium AT (Petrol) 7.1 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.4 Duratorq LXI",
+                    "text": "1.4 Duratorq LXI (Diesel) 6.6 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.4 Duratorq CLXI",
+                    "text": "1.4 Duratorq CLXI (Diesel) 7.1 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.4 Duratorq Titanium",
+                    "text": "1.4 Duratorq Titanium (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.6 Duratec LXI",
+                    "text": "1.6 Duratec LXI (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.6 Duratec CLXI",
+                    "text": "1.6 Duratec CLXI (Petrol) 6.0 Lac*"
+                },
+                {
+                    "value": "Ford Classic 1.6 Duratec Titanium",
+                    "text": "1.6 Duratec Titanium (Petrol) 6.8 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.5 TDCi Ambiente",
+                    "text": "1.5 TDCi Ambiente (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.5 TDCi Trend",
+                    "text": "1.5 TDCi Trend (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.5 TDCi Titanium",
+                    "text": "1.5 TDCi Titanium (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.5 TDCi Titanium Plus",
+                    "text": "1.5 TDCi Titanium Plus (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.2 Ti-VCT Ambiente",
+                    "text": "1.2 Ti-VCT Ambiente (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.2 Ti-VCT Trend",
+                    "text": "1.2 Ti-VCT Trend (Petrol) 5.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.2 Ti-VCT Titanium",
+                    "text": "1.2 Ti-VCT Titanium (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.2 Ti-VCT Titanium Plus",
+                    "text": "1.2 Ti-VCT Titanium Plus (Petrol) 7.4 Lac*"
+                },
+                {
+                    "value": "Ford Figo Aspire 1.5 Ti-VCT Titanium",
+                    "text": "1.5 Ti-VCT Titanium (Petrol) 8.0 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 DV5 MT Ambiente",
+                    "text": "1.5 DV5 MT Ambiente (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 DV5 MT Trend",
+                    "text": "1.5 DV5 MT Trend (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 DV5 MT Titanium",
+                    "text": "1.5 DV5 MT Titanium (Diesel) 9.8 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 DV5 MT Titanium Optional",
+                    "text": "1.5 DV5 MT Titanium Optional (Diesel) 10.4 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 Ti VCT MT Ambiente",
+                    "text": "1.5 Ti VCT MT Ambiente (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 Ti VCT MT Trend",
+                    "text": "1.5 Ti VCT MT Trend (Petrol) 7.9 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 Ti VCT MT Titanium",
+                    "text": "1.5 Ti VCT MT Titanium (Petrol) 8.9 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.0 Ecoboost Titanium",
+                    "text": "1.0 Ecoboost Titanium (Petrol) 9.4 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.0 Ecoboost Titanium Optional",
+                    "text": "1.0 Ecoboost Titanium Optional (Petrol) 9.9 Lac*"
+                },
+                {
+                    "value": "Ford Ecosport 1.5 Ti VCT AT Titanium",
+                    "text": "1.5 Ti VCT AT Titanium (Petrol) 10.0 Lac*"
+                },
+                {
+                    "value": "Ford Fiesta 1.5 TDCi Ambiente",
+                    "text": "1.5 TDCi Ambiente (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Ford Fiesta 1.5 TDCi Trend",
+                    "text": "1.5 TDCi Trend (Diesel) 9.6 Lac*"
+                },
+                {
+                    "value": "Ford Fiesta 1.5 TDCi Titanium",
+                    "text": "1.5 TDCi Titanium (Diesel) 10.4 Lac*"
+                }
+            ]
+        }
+    ],
+    "Chevrolet": [
+        {
+            "value": "Chevrolet Beat",
+            "text": "Beat",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Captiva",
+            "text": "Captiva",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Cruze",
+            "text": "Cruze",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Enjoy",
+            "text": "Enjoy",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Sail",
+            "text": "Sail",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Sail Hatchback",
+            "text": "Sail Hatchback",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Spark",
+            "text": "Spark",
+            "inner": []
+        },
+        {
+            "value": "Chevrolet Tavera",
+            "text": "Tavera",
+            "inner": [
+                {
+                    "value": "Chevrolet Beat Diesel PS",
+                    "text": "Diesel PS (Diesel) 5.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat Diesel LS",
+                    "text": "Diesel LS (Diesel) 5.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat Diesel LT",
+                    "text": "Diesel LT (Diesel) 5.9 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat Diesel LT Option",
+                    "text": "Diesel LT Option (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat PS",
+                    "text": "PS (Petrol) 4.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat LS",
+                    "text": "LS (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat LT",
+                    "text": "LT (Petrol) 5.0 Lac*"
+                },
+                {
+                    "value": "Chevrolet Beat LT Option",
+                    "text": "LT Option (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Captiva 2.2 MT 2WD",
+                    "text": "2.2 MT 2WD (Diesel) 25.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Captiva 2.2 AT AWD",
+                    "text": "2.2 AT AWD (Diesel) 27.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Cruze LT",
+                    "text": "LT (Diesel) 14.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Cruze LTZ",
+                    "text": "LTZ (Diesel) 15.7 Lac*"
+                },
+                {
+                    "value": "Chevrolet Cruze LTZ AT",
+                    "text": "LTZ AT (Diesel) 16.8 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.3 Base",
+                    "text": "1.3 Base (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.3 LS",
+                    "text": "1.3 LS (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail LS ABS",
+                    "text": "1.3 LS ABS (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail LT ABS",
+                    "text": "1.3 LT ABS (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.2 Base",
+                    "text": "1.2 Base (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.2 LS",
+                    "text": "1.2 LS (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.2 LS ABS",
+                    "text": "1.2 LS ABS (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail 1.2 LT ABS",
+                    "text": "1.2 LT ABS (Petrol) 7.0 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.3 TCDi",
+                    "text": "1.3 TCDi (Diesel) 5.8 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.3 TCDi LS",
+                    "text": "1.3 TCDi LS (Diesel) 6.4 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.3 TCDi LS ABS",
+                    "text": "1.3 TCDi LS ABS (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.3 TCDi LT ABS",
+                    "text": "1.3 TCDi LT ABS (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.2",
+                    "text": "1.2 (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.2 LS",
+                    "text": "1.2 LS (Petrol) 5.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.2 LS ABS",
+                    "text": "1.2 LS ABS (Petrol) 5.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Sail Hatchback 1.2 LT ABS",
+                    "text": "1.2 LT ABS (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Spark 1.0",
+                    "text": "1.0 (Petrol) 3.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Spark 1.0 LS",
+                    "text": "1.0 LS (Petrol) 3.9 Lac*"
+                },
+                {
+                    "value": "Chevrolet Spark 1.0 LT",
+                    "text": "1.0 LT (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 10 Seats BSIII",
+                    "text": "Neo 3 10 Seats BSIII (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 Max 10 Seats BSIII",
+                    "text": "Neo 3 Max 10 Seats BSIII (Diesel) 8.4 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 Max 7 Seats BSIII",
+                    "text": "Neo 3 Max 7 Seats BSIII (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LS 10 Seats BSIII",
+                    "text": "Neo 3 LS 10 Seats BSIII (Diesel) 9.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LS 7 Seats BSIII",
+                    "text": "Neo 3 LS 7 Seats BSIII (Diesel) 9.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LS 7 C BSIII",
+                    "text": "Neo 3 LS 7 C BSIII (Diesel) 9.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LT 9 Seats BSIII",
+                    "text": "Neo 3 LT 9 Seats BSIII (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LT 8 Seats BSIII",
+                    "text": "Neo 3 LT 8 Seats BSIII (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Chevrolet Tavera Neo 3 LT 7 C BSIII",
+                    "text": "Neo 3 LT 7 C BSIII (Diesel) 11.2 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LS 8",
+                    "text": "1.3 TCDi LS 8 (Diesel) 7.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LS 7",
+                    "text": "1.3 TCDi LS 7 (Diesel) 7.6 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LT 8",
+                    "text": "1.3 TCDi LT 8 (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LT 7",
+                    "text": "1.3 TCDi LT 7 (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LTZ 8",
+                    "text": "1.3 TCDi LTZ 8 (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.3 TCDi LTZ 7",
+                    "text": "1.3 TCDi LTZ 7 (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LS 8",
+                    "text": "1.4 LS 8 (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LS 7",
+                    "text": "1.4 LS 7 (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LT 8",
+                    "text": "1.4 LT 8 (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LT 7",
+                    "text": "1.4 LT 7 (Petrol) 6.9 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LTZ 8",
+                    "text": "1.4 LTZ 8 (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Chevrolet Enjoy 1.4 LTZ 7",
+                    "text": "1.4 LTZ 7 (Petrol) 7.7 Lac*"
+                }
+            ]
+        }
+    ],
+    "Renault": [
+        {
+            "value": "Renault Duster",
+            "text": "Duster",
+            "inner": []
+        },
+        {
+            "value": "Renault Fluence",
+            "text": "Fluence",
+            "inner": []
+        },
+        {
+            "value": "Renault Koleos",
+            "text": "Koleos",
+            "inner": []
+        },
+        {
+            "value": "Renault KWID",
+            "text": "KWID",
+            "inner": []
+        },
+        {
+            "value": "Renault Lodgy",
+            "text": "Lodgy",
+            "inner": []
+        },
+        {
+            "value": "Renault Pulse",
+            "text": "Pulse",
+            "inner": []
+        },
+        {
+            "value": "Renault Scala",
+            "text": "Scala",
+            "inner": [
+                {
+                    "value": "Renault Fluence E2 D",
+                    "text": "E2 D (Diesel) 15.1 Lac*"
+                },
+                {
+                    "value": "Renault Fluence E4 D",
+                    "text": "E4 D (Diesel) 16.7 Lac*"
+                },
+                {
+                    "value": "Renault Koleos 4X2 MT",
+                    "text": "4X2 MT (Diesel) 24.0 Lac*"
+                },
+                {
+                    "value": "Renault Koleos 4X4 MT",
+                    "text": "4X4 MT (Diesel) 27.3 Lac*"
+                },
+                {
+                    "value": "Renault Koleos 4X4 AT",
+                    "text": "4X4 AT (Diesel) 28.4 Lac*"
+                },
+                {
+                    "value": "Renault KWID STD",
+                    "text": "STD (Petrol) 2.7 Lac*"
+                },
+                {
+                    "value": "Renault KWID RXE",
+                    "text": "RXE (Petrol) 3.0 Lac*"
+                },
+                {
+                    "value": "Renault KWID RXE Optional",
+                    "text": "RXE Optional (Petrol) 3.0 Lac*"
+                },
+                {
+                    "value": "Renault KWID RXL",
+                    "text": "RXL (Petrol) 3.2 Lac*"
+                },
+                {
+                    "value": "Renault KWID RXT",
+                    "text": "RXT (Petrol) 3.5 Lac*"
+                },
+                {
+                    "value": "Renault KWID RXT Optional",
+                    "text": "RXT Optional (Petrol) 3.6 Lac*"
+                },
+                {
+                    "value": "Renault Duster 85PS Diesel RxE",
+                    "text": "85PS Diesel RxE (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Renault Duster 85PS Diesel RxL",
+                    "text": "85PS Diesel RxL (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Renault Duster 85PS Diesel RxL Explore",
+                    "text": "85PS Diesel RxL Explore (Diesel) 10.8 Lac*"
+                },
+                {
+                    "value": "Renault Duster 85PS Diesel RxL Plus",
+                    "text": "85PS Diesel RxL Plus (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Renault Duster 110PS Diesel RxL",
+                    "text": "110PS Diesel RxL (Diesel) 11.3 Lac*"
+                },
+                {
+                    "value": "Renault Duster 85PS Diesel RxL Option",
+                    "text": "85PS Diesel RxL Option (Diesel) 11.6 Lac*"
+                },
+                {
+                    "value": "Renault Duster 110PS Diesel RxL Explore",
+                    "text": "110PS Diesel RxL Explore (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Renault Duster 110PS Diesel RxZ Plus",
+                    "text": "110PS Diesel RxZ Plus (Diesel) 12.6 Lac*"
+                },
+                {
+                    "value": "Renault Duster RXL AWD",
+                    "text": "RXL AWD (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Renault Duster 110PS Diesel RXZ Option",
+                    "text": "110PS Diesel RXZ Option (Diesel) 12.7 Lac*"
+                },
+                {
+                    "value": "Renault Duster RXZ AWD",
+                    "text": "RXZ AWD (Diesel) 13.8 Lac*"
+                },
+                {
+                    "value": "Renault Duster Petrol RxE",
+                    "text": "Petrol RxE (Petrol) 8.5 Lac*"
+                },
+                {
+                    "value": "Renault Duster Petrol RxL",
+                    "text": "Petrol RxL (Petrol) 9.7 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 85PS Std",
+                    "text": "85PS Std (Diesel) 8.5 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 85PS RxE",
+                    "text": "85PS RxE (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 85PS RxL",
+                    "text": "85PS RxL (Diesel) 9.9 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 110PS RxL",
+                    "text": "110PS RxL (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 85PS RxZ",
+                    "text": "85PS RxZ (Diesel) 11.2 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 110PS RxZ 8 Seater",
+                    "text": "110PS RxZ 8 Seater (Diesel) 11.8 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy 110PS RxZ 7 Seater",
+                    "text": "110PS RxZ 7 Seater (Diesel) 12.1 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy Stepway Edition 8 Seater",
+                    "text": "Stepway Edition 8 Seater (Diesel) 12.2 Lac*"
+                },
+                {
+                    "value": "Renault Lodgy Stepway Edition 7 Seater",
+                    "text": "Stepway Edition 7 Seater (Diesel) 12.5 Lac*"
+                },
+                {
+                    "value": "Renault Scala Diesel RxE",
+                    "text": "Diesel RxE (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Renault Scala Diesel RxL",
+                    "text": "Diesel RxL (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Renault Scala Diesel RxZ",
+                    "text": "Diesel RxZ (Diesel) 10.3 Lac*"
+                },
+                {
+                    "value": "Renault Scala RxE",
+                    "text": "RxE (Petrol) 7.6 Lac*"
+                },
+                {
+                    "value": "Renault Scala RxL",
+                    "text": "RxL (Petrol) 8.4 Lac*"
+                },
+                {
+                    "value": "Renault Scala RxL AT",
+                    "text": "RxL AT (Petrol) 9.7 Lac*"
+                },
+                {
+                    "value": "Renault Scala RxZ AT",
+                    "text": "RxZ AT (Petrol) 10.6 Lac*"
+                },
+                {
+                    "value": "Renault Pulse RxL Optional",
+                    "text": "RxL ABS (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Renault Pulse RxZ",
+                    "text": "RxZ (Diesel) 7.0 Lac*"
+                },
+                {
+                    "value": "Renault Pulse Petrol RxL",
+                    "text": "Petrol RxL (Petrol) 5.2 Lac*"
+                }
+            ]
+        }
+    ],
+    "Volkswagen": [
+        {
+            "value": "Volkswagen CrossPolo",
+            "text": "Cross Polo",
+            "inner": []
+        },
+        {
+            "value": "Volkswagen Jetta",
+            "text": "Jetta",
+            "inner": []
+        },
+        {
+            "value": "Volkswagen Polo",
+            "text": "Polo",
+            "inner": []
+        },
+        {
+            "value": "Volkswagen Vento",
+            "text": "Vento",
+            "inner": [
+                {
+                    "value": "Volkswagen CrossPolo 1.5 TDI",
+                    "text": "1.5 TDI (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "Volkswagen CrossPolo 1.2 MPI",
+                    "text": "1.2 MPI (Petrol) 7.3 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 2.0L TDI Trendline",
+                    "text": "2.0L TDI Trendline (Diesel) 15.7 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 2.0L TDI Comfortline",
+                    "text": "2.0L TDI Comfortline (Diesel) 17.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 2.0L TDI Highline",
+                    "text": "2.0L TDI Highline (Diesel) 19.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 2.0L TDI Highline AT",
+                    "text": "2.0L TDI Highline AT (Diesel) 20.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 1.4 TSI Trendline",
+                    "text": "1.4 TSI Trendline (Petrol) 14.5 Lac*"
+                },
+                {
+                    "value": "Volkswagen Jetta 1.4 TSI Comfortline",
+                    "text": "1.4 TSI Comfortline (Petrol) 16.0 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.5 TDI Trendline",
+                    "text": "1.5 TDI Trendline (Diesel) 6.9 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.5 TDI Comfortline",
+                    "text": "1.5 TDI Comfortline (Diesel) 7.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.5 TDI Highline",
+                    "text": "1.5 TDI Highline (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo GT 1.5 TDI",
+                    "text": "GT 1.5 TDI (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.2 MPI Trendline",
+                    "text": "1.2 MPI Trendline (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.2 MPI Comfortline",
+                    "text": "1.2 MPI Comfortline (Petrol) 6.2 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo 1.2 MPI Highline",
+                    "text": "1.2 MPI Highline (Petrol) 6.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Polo GT TSI",
+                    "text": "GT TSI (Petrol) 8.8 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.5 TDI Trendline",
+                    "text": "1.5 TDI Trendline (Diesel) 9.4 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.5 TDI Comfortline",
+                    "text": "1.5 TDI Comfortline (Diesel) 10.2 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.5 TDI Highline",
+                    "text": "1.5 TDI Highline (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.5 TDI Comfortline AT",
+                    "text": "1.5 TDI Comfortline AT (Diesel) 11.4 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.5 TDI Highline AT",
+                    "text": "1.5 TDI Highline AT (Diesel) 12.1 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.6 Trendline",
+                    "text": "1.6 Trendline (Petrol) 8.1 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.6 Comfortline",
+                    "text": "1.6 Comfortline (Petrol) 9.0 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.6 Highline",
+                    "text": "1.6 Highline (Petrol) 9.6 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.2 TSI Comfortline AT",
+                    "text": "1.2 TSI Comfortline AT (Petrol) 10.1 Lac*"
+                },
+                {
+                    "value": "Volkswagen Vento 1.2 TSI Highline AT",
+                    "text": "1.2 TSI Highline AT (Petrol) 10.9 Lac*"
+                }
+            ]
+        }
+    ],
+    "Aston Martin": [
+        {
+            "value": "Aston Martin DB9",
+            "text": "DB9",
+            "inner": []
+        },
+        {
+            "value": "Aston Martin Rapide",
+            "text": "Rapide",
+            "inner": []
+        },
+        {
+            "value": "Aston Martin Vanquish",
+            "text": "Vanquish",
+            "inner": []
+        },
+        {
+            "value": "Aston Martin Vantage",
+            "text": "Vantage",
+            "inner": [
+                {
+                    "value": "Aston Martin Rapide S",
+                    "text": "S (Petrol) 4.4 Cr*"
+                },
+                {
+                    "value": "Aston Martin Vanquish V12",
+                    "text": "V12 (Petrol) 3.8 Cr*"
+                },
+                {
+                    "value": "Aston Martin Vantage V8 Sport",
+                    "text": "V8 Sport (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Aston Martin Vantage V8 4.7L",
+                    "text": "V8 4.7L (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Aston Martin Vantage V8 Roadster",
+                    "text": "V8 Roadster (Petrol) 2.8 Cr*"
+                },
+                {
+                    "value": "Aston Martin Vantage V12 6.0L",
+                    "text": "V12 6.0L (Petrol) 3.5 Cr*"
+                },
+                {
+                    "value": "Aston Martin DB9 6 L V12",
+                    "text": "6 L V12 (Petrol) 1.9 Cr*"
+                },
+                {
+                    "value": "Aston Martin DB9 V12 Volante",
+                    "text": "V12 Volante (Petrol) 1.9 Cr*"
+                }
+            ]
+        }
+    ],
+    "Audi": [
+        {
+            "value": "Audi A3",
+            "text": "A3",
+            "inner": []
+        },
+        {
+            "value": "Audi A3 cabriolet",
+            "text": "A3 cabriolet",
+            "inner": []
+        },
+        {
+            "value": "Audi A4",
+            "text": "A4",
+            "inner": []
+        },
+        {
+            "value": "Audi A6",
+            "text": "A6",
+            "inner": []
+        },
+        {
+            "value": "Audi A8",
+            "text": "A8",
+            "inner": []
+        },
+        {
+            "value": "Audi Q3",
+            "text": "Q3",
+            "inner": []
+        },
+        {
+            "value": "Audi Q5",
+            "text": "Q5",
+            "inner": []
+        },
+        {
+            "value": "Audi Q7",
+            "text": "Q7",
+            "inner": []
+        },
+        {
+            "value": "Audi R8",
+            "text": "R8",
+            "inner": []
+        },
+        {
+            "value": "Audi RS5",
+            "text": "RS5",
+            "inner": []
+        },
+        {
+            "value": "Audi RS6",
+            "text": "RS6 Avant",
+            "inner": []
+        },
+        {
+            "value": "Audi RS7",
+            "text": "RS7",
+            "inner": []
+        },
+        {
+            "value": "Audi S6",
+            "text": "S6",
+            "inner": []
+        },
+        {
+            "value": "Audi TT",
+            "text": "TT",
+            "inner": [
+                {
+                    "value": "Audi A3 35 TDI Attraction",
+                    "text": "35 TDI Attraction (Diesel) 25.2 Lac*"
+                },
+                {
+                    "value": "Audi A3 35 TDI Premium",
+                    "text": "35 TDI Premium (Diesel) 29.3 Lac*"
+                },
+                {
+                    "value": "Audi A3 35 TDI Premium Plus",
+                    "text": "35 TDI Premium Plus (Diesel) 33.0 Lac*"
+                },
+                {
+                    "value": "Audi A3 35 TDI Technology",
+                    "text": "35 TDI Technology (Diesel) 34.9 Lac*"
+                },
+                {
+                    "value": "Audi A3 40 TFSI Premium",
+                    "text": "40 TFSI Premium (Petrol) 25.5 Lac*"
+                },
+                {
+                    "value": "Audi A3 cabriolet 40 TFSI Premium Plus",
+                    "text": "40 TFSI Premium Plus (Petrol) 45.9 Lac*"
+                },
+                {
+                    "value": "Audi A6 35 TDI",
+                    "text": "35 TDI Matrix Edition (Diesel) 50.8 Lac*"
+                },
+                {
+                    "value": "Audi A6 35 TFSI",
+                    "text": "35 TFSI (Petrol) 45.9 Lac*"
+                },
+                {
+                    "value": "Audi Q3 30 TDI S Edition",
+                    "text": "30 TDI S Edition (Diesel) 29.8 Lac*"
+                },
+                {
+                    "value": "Audi Q3 35 TDI Quattro Premium",
+                    "text": "35 TDI Quattro Premium (Diesel) 36.5 Lac*"
+                },
+                {
+                    "value": "Audi Q3 35 TDI Quattro Premium Plus",
+                    "text": "35 TDI Quattro Premium Plus (Diesel) 41.2 Lac*"
+                },
+                {
+                    "value": "Audi Q5 30 TDI quattro Premium",
+                    "text": "30 TDI quattro Premium (Diesel) 50.7 Lac*"
+                },
+                {
+                    "value": "Audi Q5 30 TDI quattro Premium Plus",
+                    "text": "30 TDI quattro Premium Plus (Diesel) 52.7 Lac*"
+                },
+                {
+                    "value": "Audi Q5 30 TDI quattro Technology",
+                    "text": "30 TDI quattro Technology (Diesel) 57.4 Lac*"
+                },
+                {
+                    "value": "Audi Q5 45 TDI quattro Technology",
+                    "text": "45 TDI quattro Technology (Diesel) 64.5 Lac*"
+                },
+                {
+                    "value": "Audi Q7 3.0 TDI quattro",
+                    "text": "3.0 TDI Quattro (Diesel) 66.0 Lac*"
+                },
+                {
+                    "value": "Audi Q7 3.0 TDI quattro",
+                    "text": "3.0 TDI Quattro (Diesel) 66.0 Lac*"
+                },
+                {
+                    "value": "Audi Q7 3.0 TDI Quattro Premium Plus",
+                    "text": "3.0 TDI Quattro Premium Plus (Diesel) 71.6 Lac*"
+                },
+                {
+                    "value": "Audi Q7 3.0 TDI Quattro Premium Plus",
+                    "text": "3.0 TDI Quattro Premium Plus (Diesel) 71.6 Lac*"
+                },
+                {
+                    "value": "Audi Q7 3.0 TDI Quattro Technology",
+                    "text": "3.0 TDI Quattro Technology (Diesel) 81.7 Lac*"
+                },
+                {
+                    "value": "Audi A4 35 TDI Premium",
+                    "text": "35 TDI Premium (Diesel) 37.4 Lac*"
+                },
+                {
+                    "value": "Audi A4 35 TDI Premium Sport",
+                    "text": "35 TDI Premium Sport (Diesel) 39.9 Lac*"
+                },
+                {
+                    "value": "Audi A4 35 TDI Technology Edition",
+                    "text": "35 TDI Technology Edition (Diesel) 41.8 Lac*"
+                },
+                {
+                    "value": "Audi A4 35 TFSi Premium",
+                    "text": "35 TFSi Premium (Petrol) 33.5 Lac*"
+                },
+                {
+                    "value": "Audi R8 4.2 FSI quattro",
+                    "text": "4.2 FSI quattro (Petrol) 1.8 Cr*"
+                },
+                {
+                    "value": "Audi R8 V10 Plus",
+                    "text": "V10 Plus (Petrol) 2.1 Cr*"
+                },
+                {
+                    "value": "Audi R8 V10 Coupe",
+                    "text": "V10 Coupe (Petrol) 2.1 Cr*"
+                },
+                {
+                    "value": "Audi R8 Spyder",
+                    "text": "Spyder (Petrol) 2.2 Cr*"
+                },
+                {
+                    "value": "Audi R8 5.2 FSI",
+                    "text": "5.2 FSI (Petrol) 2.2 Cr*"
+                },
+                {
+                    "value": "Audi A8 L 3.0 TDI quattro",
+                    "text": "L 3.0 TDI quattro (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "Audi A8 L 4.2 TDI quattro",
+                    "text": "L 4.2 TDI quattro (Diesel) 1.4 Cr*"
+                },
+                {
+                    "value": "Audi A8 L 4.0 TFSI quattro",
+                    "text": "L 4.0 TFSI quattro (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Audi A8 L W12 quattro",
+                    "text": "L W12 quattro (Petrol) 1.9 Cr*"
+                },
+                {
+                    "value": "Audi RS7 Sportback",
+                    "text": "Sportback (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Audi S6 4.0 TFSI Quattro",
+                    "text": "4.0 TFSI Quattro (Petrol) 97.9 Lac*"
+                },
+                {
+                    "value": "Audi RS5 Coupe",
+                    "text": "Coupe (Petrol) 1.1 Cr*"
+                },
+                {
+                    "value": "Audi RS6 4.0 TFSI",
+                    "text": "4.0 TFSI (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Audi TT 45 TFSI",
+                    "text": "45 TFSI (Petrol) 60.3 Lac*"
+                }
+            ]
+        }
+    ],
+    "Bentley": [
+        {
+            "value": "Bentley Continental",
+            "text": "Continental",
+            "inner": []
+        },
+        {
+            "value": "Bentley Flying Spur",
+            "text": "Flying Spur",
+            "inner": []
+        },
+        {
+            "value": "Bentley Mulsanne",
+            "text": "Mulsanne",
+            "inner": [
+                {
+                    "value": "Bentley Continental GT V8",
+                    "text": "GT V8 (Petrol) 3.4 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT V8 S",
+                    "text": "GT V8 S (Petrol) 3.7 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT",
+                    "text": "GT (Petrol) 3.7 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT V8 Convertible",
+                    "text": "GT V8 Convertible (Petrol) 3.8 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GTC",
+                    "text": "GTC (Petrol) 4.1 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT V8 S Convertible",
+                    "text": "GT V8 S Convertible (Petrol) 4.1 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT Speed",
+                    "text": "GT Speed (Petrol) 4.2 Cr*"
+                },
+                {
+                    "value": "Bentley Continental GT Speed Convertible",
+                    "text": "GT Speed Convertible (Petrol) 4.6 Cr*"
+                },
+                {
+                    "value": "Bentley Flying Spur V8",
+                    "text": "V8 (Petrol) 3.2 Cr*"
+                },
+                {
+                    "value": "Bentley Flying Spur W12",
+                    "text": "W12 (Petrol) 3.4 Cr*"
+                },
+                {
+                    "value": "Bentley Mulsanne 6.8",
+                    "text": "6.8 (Petrol) 5.8 Cr*"
+                }
+            ]
+        }
+    ],
+    "BMW": [
+        {
+            "value": "BMW 1 Series",
+            "text": "1 Series",
+            "inner": []
+        },
+        {
+            "value": "BMW 3 Series",
+            "text": "3 Series",
+            "inner": []
+        },
+        {
+            "value": "BMW 5 Series",
+            "text": "5 Series",
+            "inner": []
+        },
+        {
+            "value": "BMW 6 Series",
+            "text": "6 Series",
+            "inner": []
+        },
+        {
+            "value": "BMW 7 Series",
+            "text": "7 Series",
+            "inner": []
+        },
+        {
+            "value": "BMW i8",
+            "text": "i8",
+            "inner": []
+        },
+        {
+            "value": "BMW M Series",
+            "text": "M Series",
+            "inner": []
+        },
+        {
+            "value": "BMW X1",
+            "text": "X1",
+            "inner": []
+        },
+        {
+            "value": "BMW X3",
+            "text": "X3",
+            "inner": []
+        },
+        {
+            "value": "BMW X5",
+            "text": "X5",
+            "inner": []
+        },
+        {
+            "value": "BMW X6",
+            "text": "X6",
+            "inner": []
+        },
+        {
+            "value": "BMW Z4",
+            "text": "Z4",
+            "inner": [
+                {
+                    "value": "BMW 1 Series 118d Base",
+                    "text": "118d Base (Diesel) 27.2 Lac*"
+                },
+                {
+                    "value": "BMW 1 Series 118d Sport Line",
+                    "text": "118d Sport Line (Diesel) 30.3 Lac*"
+                },
+                {
+                    "value": "BMW 1 Series 118d Sport Plus",
+                    "text": "118d Sport Plus (Diesel) 33.3 Lac*"
+                },
+                {
+                    "value": "BMW 1 Series 116i",
+                    "text": "116i (Petrol) 27.2 Lac*"
+                },
+                {
+                    "value": "BMW 7 Series 730Ld Prestige",
+                    "text": "730Ld Prestige (Diesel) 94.7 Lac*"
+                },
+                {
+                    "value": "BMW 7 Series 730Ld",
+                    "text": "730Ld (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "BMW 7 Series Signature 730Ld",
+                    "text": "Signature 730Ld (Diesel) 1.3 Cr*"
+                },
+                {
+                    "value": "BMW 7 Series ActiveHybrid L",
+                    "text": "ActiveHybrid L (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "BMW 7 Series 750Li",
+                    "text": "750Li (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "BMW 7 Series 760Li",
+                    "text": "760Li (Petrol) 2.0 Cr*"
+                },
+                {
+                    "value": "BMW M Series M3 Sedan",
+                    "text": "M3 Sedan (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "BMW M Series M4 Coupe",
+                    "text": "M4 Coupe (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "BMW M Series M5 Sedan",
+                    "text": "M5 Sedan (Petrol) 1.3 Cr*"
+                },
+                {
+                    "value": "BMW M Series M6 Gran Coupe",
+                    "text": "M6 Gran Coupe (Petrol) 1.8 Cr*"
+                },
+                {
+                    "value": "BMW 3 Series 320d",
+                    "text": "320d Prestige (Diesel) 36.0 Lac*"
+                },
+                {
+                    "value": "BMW 3 Series 320d Luxury Line",
+                    "text": "320d Luxury Line (Diesel) 40.1 Lac*"
+                },
+                {
+                    "value": "BMW 3 Series 320d Sport",
+                    "text": "320d Sport Line (Diesel) 40.1 Lac*"
+                },
+                {
+                    "value": "BMW 3 Series GT 320d Sport Line",
+                    "text": "GT 320d Sport Line (Diesel) 41.2 Lac*"
+                },
+                {
+                    "value": "BMW 3 Series GT 320d Luxury Line",
+                    "text": "GT 320d Luxury Line (Diesel) 44.2 Lac*"
+                },
+                {
+                    "value": "BMW X1 sDrive20d",
+                    "text": "sDrive20d (Diesel) 31.5 Lac*"
+                },
+                {
+                    "value": "BMW X1 sDrive 20d Sportline",
+                    "text": "sDrive 20d Sportline (Diesel) 39.0 Lac*"
+                },
+                {
+                    "value": "BMW X1 sDrive 20d xLine",
+                    "text": "sDrive 20d xLine (Diesel) 39.0 Lac*"
+                },
+                {
+                    "value": "BMW X3 xDrive20d Expedition",
+                    "text": "xDrive20d Expedition (Diesel) 48.2 Lac*"
+                },
+                {
+                    "value": "BMW X3 xDrive20d xLine",
+                    "text": "xDrive20d xLine (Diesel) 52.2 Lac*"
+                },
+                {
+                    "value": "BMW X3 xDrive30d M Sport",
+                    "text": "xDrive30d M Sport (Diesel) 61.6 Lac*"
+                },
+                {
+                    "value": "BMW 5 Series 520d Prestige",
+                    "text": "520d Prestige (Diesel) 46.2 Lac*"
+                },
+                {
+                    "value": "BMW 5 Series 520d Prestige Plus",
+                    "text": "520d Prestige Plus (Diesel) 49.2 Lac*"
+                },
+                {
+                    "value": "BMW 5 Series 520d Luxury Line",
+                    "text": "520d Luxury Line (Diesel) 51.2 Lac*"
+                },
+                {
+                    "value": "BMW 5 Series 530d M Sport",
+                    "text": "530d M Sport (Diesel) 61.6 Lac*"
+                },
+                {
+                    "value": "BMW i8 Hybrid",
+                    "text": "Hybrid (Electric(Battery)) 2.3 Cr*"
+                },
+                {
+                    "value": "BMW X6 xDrive 40d M Sport",
+                    "text": "xDrive 40d M Sport (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "BMW X5 xDrive 30d Expedition",
+                    "text": "xDrive 30d Expedition (Diesel) 67.6 Lac*"
+                },
+                {
+                    "value": "BMW X5 xDrive 30d Design Pure Experience 5 Seater",
+                    "text": "xDrive 30d Design Pure Experience 5 Seater (Diesel) 71.8 Lac*"
+                },
+                {
+                    "value": "BMW X5 xDrive 30d Design Pure Experience 7 Seater",
+                    "text": "xDrive 30d Design Pure Experience 7 Seater (Diesel) 74.8 Lac*"
+                },
+                {
+                    "value": "BMW 6 Series 640d Eminence",
+                    "text": "640d Eminence (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "BMW 6 Series 640d Design Pure Experience",
+                    "text": "640d Design Pure Experience (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "BMW Z4 35i",
+                    "text": "35i (Petrol) 74.8 Lac*"
+                },
+                {
+                    "value": "BMW Z4 35i DPT",
+                    "text": "35i DPT (Petrol) 75.8 Lac*"
+                }
+            ]
+        }
+    ],
+    "Bugatti": [
+        {
+            "value": "Bugatti Veyron",
+            "text": "Veyron",
+            "inner": [
+                {
+                    "value": "Bugatti Veyron 16.4 Grand Sport",
+                    "text": "16.4 Grand Sport (Petrol) 12.5 Cr*"
+                }
+            ]
+        }
+    ],
+    "Caterham": [
+        {
+            "value": "Caterham 7",
+            "text": "7",
+            "inner": [
+                {
+                    "value": "Caterham 7 Classic",
+                    "text": "Classic (Petrol) 28.6 Lac*"
+                }
+            ]
+        }
+    ],
+    "Conquest": [
+        {
+            "value": "Conquest Evade",
+            "text": "Evade",
+            "inner": [
+                {
+                    "value": "Conquest Evade SUV",
+                    "text": "SUV (Diesel) 8.5 Cr*"
+                }
+            ]
+        }
+    ],
+    "Datsun": [
+        {
+            "value": "Datsun GO",
+            "text": "GO",
+            "inner": []
+        },
+        {
+            "value": "Datsun GO Plus",
+            "text": "GO Plus",
+            "inner": [
+                {
+                    "value": "Datsun GO D",
+                    "text": "D (Petrol) 3.3 Lac*"
+                },
+                {
+                    "value": "Datsun GO D1",
+                    "text": "D1 (Petrol) 3.3 Lac*"
+                },
+                {
+                    "value": "Datsun GO A",
+                    "text": "A (Petrol) 3.7 Lac*"
+                },
+                {
+                    "value": "Datsun GO T",
+                    "text": "T (Petrol) 4.1 Lac*"
+                },
+                {
+                    "value": "Datsun GO NXT",
+                    "text": "NXT (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Datsun GO T Option",
+                    "text": "T Option (Petrol) 4.5 Lac*"
+                },
+                {
+                    "value": "Datsun GO Plus D",
+                    "text": "D (Petrol) 3.9 Lac*"
+                },
+                {
+                    "value": "Datsun GO Plus D1",
+                    "text": "D1 (Petrol) 3.9 Lac*"
+                },
+                {
+                    "value": "Datsun GO Plus A",
+                    "text": "A (Petrol) 4.2 Lac*"
+                },
+                {
+                    "value": "Datsun GO Plus T",
+                    "text": "T (Petrol) 4.8 Lac*"
+                },
+                {
+                    "value": "Datsun GO Plus T Option",
+                    "text": "T Option (Petrol) 5.0 Lac*"
+                }
+            ]
+        }
+    ],
+    "DC": [
+        {
+            "value": "DC Avanti",
+            "text": "Avanti",
+            "inner": [
+                {
+                    "value": "DC Avanti 2.0 L",
+                    "text": "2.0 L (Petrol) 34.9 Lac*"
+                }
+            ]
+        }
+    ],
+    "Ferrari": [
+        {
+            "value": "Ferrari 458 Italia",
+            "text": "458 Italia",
+            "inner": []
+        },
+        {
+            "value": "Ferrari 458 Spider",
+            "text": "458 Spider",
+            "inner": []
+        },
+        {
+            "value": "Ferrari California",
+            "text": "California",
+            "inner": []
+        },
+        {
+            "value": "Ferrari F12berlinetta",
+            "text": "F12berlinetta",
+            "inner": []
+        },
+        {
+            "value": "Ferrari FF",
+            "text": "FF",
+            "inner": [
+                {
+                    "value": "Ferrari 458 Spider V8",
+                    "text": "V8 (Petrol) 4.1 Cr*"
+                },
+                {
+                    "value": "Ferrari California T",
+                    "text": "T (Petrol) 3.3 Cr*"
+                },
+                {
+                    "value": "Ferrari F12berlinetta V12",
+                    "text": "V12 (Petrol) 4.7 Cr*"
+                },
+                {
+                    "value": "Ferrari 458 Italia GT",
+                    "text": "Coupe (Petrol) 4.8 Cr*"
+                },
+                {
+                    "value": "Ferrari FF GT",
+                    "text": "GT (Petrol) 4.6 Cr*"
+                }
+            ]
+        }
+    ],
+    "Fiat": [
+        {
+            "value": "Fiat 500",
+            "text": "500",
+            "inner": []
+        },
+        {
+            "value": "Fiat Avventura",
+            "text": "Avventura",
+            "inner": []
+        },
+        {
+            "value": "Fiat Grande Punto",
+            "text": "Punto EVO",
+            "inner": []
+        },
+        {
+            "value": "Fiat Linea",
+            "text": "Linea",
+            "inner": []
+        },
+        {
+            "value": "Fiat Linea Classic",
+            "text": "Linea Classic",
+            "inner": [
+                {
+                    "value": "Fiat 500 Abarth 595 Competizione",
+                    "text": "Abarth 595 Competizione (Petrol) 30.5 Lac*"
+                },
+                {
+                    "value": "Fiat Avventura MULTIJET Active",
+                    "text": "MULTIJET Active (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Fiat Avventura MULTIJET Dynamic",
+                    "text": "MULTIJET Dynamic (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "Fiat Avventura MULTIJET Emotion",
+                    "text": "MULTIJET Emotion (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Fiat Avventura FIRE Active",
+                    "text": "FIRE Active (Petrol) 6.7 Lac*"
+                },
+                {
+                    "value": "Fiat Avventura FIRE Dynamic",
+                    "text": "FIRE Dynamic (Petrol) 7.6 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.3 Active",
+                    "text": "1.3 Active (Diesel) 6.1 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.3 Dynamic",
+                    "text": "1.3 Dynamic (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.3 Emotion",
+                    "text": "1.3 Emotion (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 90HP 1.3 Sport",
+                    "text": "90HP 1.3 Sport (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.2 Active",
+                    "text": "1.2 Active (Petrol) 5.1 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.2 Dynamic",
+                    "text": "1.2 Dynamic (Petrol) 5.6 Lac*"
+                },
+                {
+                    "value": "Fiat Grande Punto EVO 1.4 Emotion",
+                    "text": "1.4 Emotion (Petrol) 7.5 Lac*"
+                },
+                {
+                    "value": "Fiat Linea Classic 1.3 Multijet",
+                    "text": "1.3 Multijet (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Fiat Linea Classic Plus 1.3 Multijet",
+                    "text": "Plus 1.3 Multijet (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "Fiat Linea Classic 1.4 Petrol",
+                    "text": "1.4 Petrol (Petrol) 6.4 Lac*"
+                },
+                {
+                    "value": "Fiat Linea 1.3 Multijet Active",
+                    "text": "1.3 Multijet Active (Diesel) 8.8 Lac*"
+                },
+                {
+                    "value": "Fiat Linea 1.3 Multijet Dynamic",
+                    "text": "1.3 Multijet Dynamic (Diesel) 10.0 Lac*"
+                },
+                {
+                    "value": "Fiat Linea 1.3 Multijet Elegante",
+                    "text": "1.3 Multijet Elegante (Diesel) 10.2 Lac*"
+                },
+                {
+                    "value": "Fiat Linea Emotion (Diesel)",
+                    "text": "1.3 Multijet Emotion (Diesel) 10.5 Lac*"
+                },
+                {
+                    "value": "Fiat Linea Active",
+                    "text": "Fire Active (Petrol) 7.2 Lac*"
+                },
+                {
+                    "value": "Fiat Linea T Jet Active",
+                    "text": "T Jet Active (Petrol) 8.2 Lac*"
+                },
+                {
+                    "value": "Fiat Linea T Jet Dynamic",
+                    "text": "T Jet Dynamic (Petrol) 9.4 Lac*"
+                },
+                {
+                    "value": "Fiat Linea T Jet Emotion",
+                    "text": "T Jet Emotion (Petrol) 10.0 Lac*"
+                }
+            ]
+        }
+    ],
+    "Force": [
+        {
+            "value": "Force Gurkha",
+            "text": "Gurkha",
+            "inner": []
+        },
+        {
+            "value": "Force One",
+            "text": "One SUV",
+            "inner": [
+                {
+                    "value": "Force One EX",
+                    "text": "Force One EX (Diesel) 9.6 Lac*"
+                },
+                {
+                    "value": "Force One SX ABS 7 Seating",
+                    "text": "Force One SX ABS 7 Seating (Diesel) 12.8 Lac*"
+                },
+                {
+                    "value": "Force One SX ABS 6 Seating",
+                    "text": "Force One SX ABS 6 Seating (Diesel) 12.8 Lac*"
+                },
+                {
+                    "value": "Force One 4x4",
+                    "text": "Force One LX 4x4 (Diesel) 14.4 Lac*"
+                },
+                {
+                    "value": "Force Gurkha Soft Top BS3 2WD",
+                    "text": "Soft Top BS3 2WD (Diesel) 6.4 Lac*"
+                },
+                {
+                    "value": "Force Gurkha Soft Top BS3 4WD",
+                    "text": "Soft Top BS3 4WD (Diesel) 8.6 Lac*"
+                },
+                {
+                    "value": "Force Gurkha Hard Top BS3 4WD",
+                    "text": "Hard Top BS3 4WD (Diesel) 8.7 Lac*"
+                }
+            ]
+        }
+    ],
+    "ICML": [
+        {
+            "value": "ICML Extreme",
+            "text": "Extreme",
+            "inner": [
+                {
+                    "value": "ICML Extreme LD DI Non-Ac 9Seater BSIII",
+                    "text": "DI Non Ac 9Seater BSIII (Diesel) 6.5 Lac*"
+                },
+                {
+                    "value": "ICML Extreme Ambulance DI Non AC BSIII",
+                    "text": "Ambulance DI Non AC BSIII (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "ICML Extreme Van BSIII Non AC",
+                    "text": "Van BSIII Non AC (Diesel) 6.7 Lac*"
+                },
+                {
+                    "value": "ICML Extreme Ambulance DI AC BSIII",
+                    "text": "Ambulance DI AC BSIII (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "ICML Extreme Van BSIII AC",
+                    "text": "Van BSIII AC (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "ICML Extreme LD CRDFi Non-AC 9Seater BSIV",
+                    "text": "Winner CRDFi Non AC 9Seater BSIV (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "ICML Extreme LD DI PS AC 9Seater BSIII",
+                    "text": "Winner DI PS AC 9Seater BSIII (Diesel) 7.5 Lac*"
+                },
+                {
+                    "value": "ICML Extreme LD CRDFi AC M Stg 9Seater BSIV",
+                    "text": "Winner CRDFi AC M Stg 9Seater BSIV (Diesel) 7.9 Lac*"
+                },
+                {
+                    "value": "ICML Extreme LD CRDFi PS AC 9Seater BSIII",
+                    "text": "Winner CRDFi PS AC 9Seater BSIII (Diesel) 8.0 Lac*"
+                },
+                {
+                    "value": "ICML Extreme SD DI 9Seater BSIII",
+                    "text": "Xciter DI 9Seater BSIII (Diesel) 8.1 Lac*"
+                },
+                {
+                    "value": "ICML Extreme LD CRDFi PS AC 9Seater BSIV",
+                    "text": "Winner CRDFi PS AC 9Seater BSIV (Diesel) 8.3 Lac*"
+                },
+                {
+                    "value": "ICML Extreme SD CRDFi 9Seater BSIII",
+                    "text": "Xciter CRDFi 9Seater BSIII (Diesel) 8.6 Lac*"
+                },
+                {
+                    "value": "ICML Extreme VD DI 7Seater BSIII",
+                    "text": "Delite DI 7Seater BSIII (Diesel) 8.7 Lac*"
+                },
+                {
+                    "value": "ICML Extreme SD CRDFi 9Seater BSIV",
+                    "text": "Xciter CRDFi 9Seater BSIV (Diesel) 8.9 Lac*"
+                },
+                {
+                    "value": "ICML Extreme VD CRDFi 7Seater BSIII",
+                    "text": "Delite CRDFi 7Seater BSIII (Diesel) 9.2 Lac*"
+                },
+                {
+                    "value": "ICML Extreme VD CRDFi 7Seater BSIV",
+                    "text": "Delite CRDFi 7Seater BSIV (Diesel) 9.5 Lac*"
+                }
+            ]
+        }
+    ],
+    "Isuzu": [
+        {
+            "value": "Isuzu MU 7",
+            "text": "MU 7",
+            "inner": [
+                {
+                    "value": "Isuzu MU 7 4x2 HIPACK",
+                    "text": "4x2 HI PACK (Diesel) 21.8 Lac*"
+                },
+                {
+                    "value": "Isuzu MU 7 AT Premium",
+                    "text": "AT Premium (Diesel) 24.3 Lac*"
+                }
+            ]
+        }
+    ],
+    "Jaguar": [
+        {
+            "value": "Jaguar F Type",
+            "text": "F Type",
+            "inner": []
+        },
+        {
+            "value": "Jaguar XF",
+            "text": "XF",
+            "inner": []
+        },
+        {
+            "value": "Jaguar XJ",
+            "text": "XJ",
+            "inner": [
+                {
+                    "value": "Jaguar F Type Coupe",
+                    "text": "Coupe (Petrol) 1.3 Cr*"
+                },
+                {
+                    "value": "Jaguar F Type S Coupe",
+                    "text": "S Coupe (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Jaguar F Type 3.0 V6 S",
+                    "text": "3.0 V6 S (Petrol) 1.6 Cr*"
+                },
+                {
+                    "value": "Jaguar F Type 5.0 V8 S",
+                    "text": "5.0 V8 S (Petrol) 1.9 Cr*"
+                },
+                {
+                    "value": "Jaguar F Type R Coupe",
+                    "text": "R Coupe (Petrol) 2.0 Cr*"
+                },
+                {
+                    "value": "Jaguar XJ 3.0L Premium Luxury LWB",
+                    "text": "3.0L Premium Luxury LWB (Diesel) 98.7 Lac*"
+                },
+                {
+                    "value": "Jaguar XJ 3.0L Portfolio LWB",
+                    "text": "3.0L Portfolio LWB (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "Jaguar XJ 2.0L Portfolio LWB",
+                    "text": "2.0L Portfolio LWB (Petrol) 99.9 Lac*"
+                },
+                {
+                    "value": "Jaguar XF 2.2 Litre Executive",
+                    "text": "2.2 Litre Executive (Diesel) 48.7 Lac*"
+                },
+                {
+                    "value": "Jaguar XF Aero Sport Edition",
+                    "text": "Aero Sport Edition (Diesel) 52.0 Lac*"
+                },
+                {
+                    "value": "Jaguar XF 2.2 Litre Luxury",
+                    "text": "2.2 Litre Luxury (Diesel) 52.7 Lac*"
+                },
+                {
+                    "value": "Jaguar XF 3.0 Litre S Premium Luxury",
+                    "text": "3.0 Litre S Premium Luxury (Diesel) 61.3 Lac*"
+                },
+                {
+                    "value": "Jaguar XF 2.0 Litre Petrol",
+                    "text": "2.0 Litre Petrol (Petrol) 52.3 Lac*"
+                },
+                {
+                    "value": "Jaguar XF R Supercharged 5.0 Litre V8 Petrol",
+                    "text": "R Supercharged 5.0 Litre V8 Petrol (Petrol) 1.0 Cr*"
+                }
+            ]
+        }
+    ],
+    "Koenigsegg": [
+        {
+            "value": "Koenigsegg Agera",
+            "text": "Agera",
+            "inner": [
+                {
+                    "value": "Koenigsegg Agera 5.0 V8",
+                    "text": "5.0 V8 (Petrol) 12.5 Cr*"
+                }
+            ]
+        }
+    ],
+    "Lamborghini": [
+        {
+            "value": "Lamborghini Aventador",
+            "text": "Aventador",
+            "inner": []
+        },
+        {
+            "value": "Lamborghini Huracan",
+            "text": "Huracan",
+            "inner": [
+                {
+                    "value": "Lamborghini Aventador LP700 4",
+                    "text": "LP700 4 (Petrol) 4.8 Cr*"
+                },
+                {
+                    "value": "Lamborghini Aventador Roadster LP 700 4",
+                    "text": "Roadster LP 700 4 (Petrol) 5.4 Cr*"
+                },
+                {
+                    "value": "Lamborghini Huracan LP 610 4",
+                    "text": "LP 610 4 (Petrol) 4.4 Cr*"
+                }
+            ]
+        }
+    ],
+    "Land Rover": [
+        {
+            "value": "Land Rover Discovery 4",
+            "text": "Discovery 4",
+            "inner": []
+        },
+        {
+            "value": "Land Rover Discovery Sport",
+            "text": "Discovery Sport",
+            "inner": []
+        },
+        {
+            "value": "Land Rover Freelander 2",
+            "text": "Freelander 2",
+            "inner": []
+        },
+        {
+            "value": "Land Rover Range Rover",
+            "text": "Range Rover",
+            "inner": []
+        },
+        {
+            "value": "Land Rover Range Rover Evoque",
+            "text": "Range Rover Evoque",
+            "inner": []
+        },
+        {
+            "value": "Land Rover Range Rover Sport",
+            "text": "Range Rover Sport",
+            "inner": [
+                {
+                    "value": "Land Rover Discovery Sport TD4 S",
+                    "text": "TD4 S (Diesel) 48.6 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport TD4 SE",
+                    "text": "TD4 SE (Diesel) 53.7 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport TD4 SE 7S",
+                    "text": "TD4 SE 7S (Diesel) 55.3 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport TD4 HSE",
+                    "text": "TD4 HSE (Diesel) 56.2 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport TD4 HSE 7S",
+                    "text": "TD4 HSE 7S (Diesel) 57.8 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport SD4 HSE Luxury",
+                    "text": "SD4 HSE Luxury (Diesel) 64.0 Lac*"
+                },
+                {
+                    "value": "Land Rover Discovery Sport SD4 HSE Luxury 7S",
+                    "text": "SD4 HSE Luxury 7S (Diesel) 65.5 Lac*"
+                },
+                {
+                    "value": "Land Rover Range Rover 3.0 HSE",
+                    "text": "3.0 HSE (Diesel) 1.8 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover 3.0 Vogue",
+                    "text": "3.0 Vogue (Diesel) 2.1 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 3.0 Vogue",
+                    "text": "LWB 3.0 Vogue (Diesel) 2.2 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Vogue SE 4.4 SDV8",
+                    "text": "Vogue SE 4.4 SDV8 (Diesel) 2.4 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Autobiography 4.4 SDV8",
+                    "text": "Autobiography 4.4 SDV8 (Diesel) 2.5 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 4.4 SDV8 Vogue SE",
+                    "text": "LWB 4.4 SDV8 Vogue SE (Diesel) 2.6 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 4.4 SDV8 Autobiography",
+                    "text": "LWB 4.4 SDV8 Autobiography (Diesel) 2.7 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 4.4 SDV8 Autobiography Black Edition",
+                    "text": "LWB 4.4 SDV8 Autobiography Black Edition (Diesel) 3.8 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Autobiography 5.0 V8",
+                    "text": "Autobiography 5.0 V8 (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 5.0 V8",
+                    "text": "LWB 5.0 V8 (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover LWB 5.0 V8 Autobiography Black Edition",
+                    "text": "LWB 5.0 V8 Autobiography Black Edition (Petrol) 3.8 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Evoque 2.2L Pure",
+                    "text": "2.2L Pure (Diesel) 48.7 Lac*"
+                },
+                {
+                    "value": "Land Rover Range Rover Evoque 2.2L Dynamic",
+                    "text": "2.2L Dynamic (Diesel) 52.4 Lac*"
+                },
+                {
+                    "value": "Land Rover Range Rover Evoque 2.2L Prestige",
+                    "text": "2.2L Prestige (Diesel) 56.2 Lac*"
+                },
+                {
+                    "value": "Land Rover Range Rover Sport S",
+                    "text": "S (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Sport SE",
+                    "text": "SE (Diesel) 1.3 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Sport HSE",
+                    "text": "HSE (Diesel) 1.5 Cr*"
+                },
+                {
+                    "value": "Land Rover Range Rover Sport Autobiography",
+                    "text": "Autobiography (Petrol) 1.7 Cr*"
+                },
+                {
+                    "value": "Land Rover Discovery 4 SDV6 SE",
+                    "text": "SDV6 SE (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "Land Rover Discovery 4 SDV6 HSE",
+                    "text": "SDV6 HSE (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Land Rover Freelander 2 S Business Edition",
+                    "text": "S Business Edition (Diesel) 41.8 Lac*"
+                },
+                {
+                    "value": "Land Rover Freelander 2 SE",
+                    "text": "SE (Diesel) 45.7 Lac*"
+                },
+                {
+                    "value": "Land Rover Freelander 2 Sterling Edition",
+                    "text": "Sterling Edition (Diesel) 47.4 Lac*"
+                },
+                {
+                    "value": "Land Rover Freelander 2 HSE",
+                    "text": "HSE (Diesel) 51.4 Lac*"
+                }
+            ]
+        }
+    ],
+    "Mahindra Ssangyong": [
+        {
+            "value": "Mahindra Ssangyong Rexton",
+            "text": "Rexton",
+            "inner": [
+                {
+                    "value": "Mahindra Ssangyong Rexton RX6",
+                    "text": "RX6 (Diesel) 22.5 Lac*"
+                },
+                {
+                    "value": "Mahindra Ssangyong Rexton RX7",
+                    "text": "RX7 (Diesel) 23.9 Lac*"
+                }
+            ]
+        }
+    ],
+    "Maserati": [
+        {
+            "value": "Maserati Ghibli",
+            "text": "Ghibli",
+            "inner": []
+        },
+        {
+            "value": "Maserati Gran Cabrio",
+            "text": "Gran Cabrio",
+            "inner": []
+        },
+        {
+            "value": "Maserati Gran Turismo",
+            "text": "Gran Turismo",
+            "inner": []
+        },
+        {
+            "value": "Maserati Quattroporte",
+            "text": "Quattroporte",
+            "inner": [
+                {
+                    "value": "Maserati Ghibli Diesel",
+                    "text": "Diesel (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "Maserati Gran Cabrio 4.7 V8",
+                    "text": "4.7 V8 (Petrol) 2.0 Cr*"
+                },
+                {
+                    "value": "Maserati Gran Turismo 4.2 V8",
+                    "text": "4.2 V8 (Petrol) 1.8 Cr*"
+                },
+                {
+                    "value": "Maserati Quattroporte Diesel",
+                    "text": "Diesel (Diesel) 1.5 Cr*"
+                },
+                {
+                    "value": "Maserati Quattroporte GTS",
+                    "text": "GTS (Petrol) 2.2 Cr*"
+                }
+            ]
+        }
+    ],
+    "Mercedes-Benz": [
+        {
+            "value": "Mercedes-Benz A Class",
+            "text": "A-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz B Class",
+            "text": "B-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz CLA",
+            "text": "CLA-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz CLS-Class",
+            "text": "CLS-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz E-Class",
+            "text": "E-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz G Class",
+            "text": "G-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz GL-Class",
+            "text": "GL-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz GLA",
+            "text": "GLA",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz GLA Class",
+            "text": "GLA-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz M-Class",
+            "text": "M-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz New C-Class",
+            "text": "C-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz S-Class",
+            "text": "S-Class",
+            "inner": []
+        },
+        {
+            "value": "Mercedes-Benz SLK-Class",
+            "text": "SLK-Class",
+            "inner": [
+                {
+                    "value": "Mercedes-Benz B Class B200 CDI Sport",
+                    "text": "B200 CDI Sport (Diesel) 30.4 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz B Class B180 Sport",
+                    "text": "B180 Sport (Petrol) 29.4 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz CLS-Class 250 CDI",
+                    "text": "250 CDI (Diesel) 78.9 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz CLA 200 CDI Style",
+                    "text": "200 CDI Style (Diesel) 30.5 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz CLA 200 CDI Sport",
+                    "text": "200 CDI Sport (Diesel) 34.7 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz CLA 200 CGI",
+                    "text": "200 CGI Sport (Petrol) 33.9 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz CLA 45 AMG",
+                    "text": "45 AMG (Petrol) 70.1 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz A Class A200 CDI Sport",
+                    "text": "A200 CDI Sport (Diesel) 29.1 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz A Class A180 Sport",
+                    "text": "A180 Sport (Petrol) 26.8 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz GL-Class 350 CDI Blue Efficiency",
+                    "text": "350 CDI Blue Efficiency (Diesel) 79.2 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz GL-Class 63 AMG",
+                    "text": "63 AMG (Petrol) 1.7 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz GLA 45 AMG",
+                    "text": "45 AMG 4MATIC (Petrol) 75.0 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz GLA Class 200 CDI",
+                    "text": "200 CDI STYLE (Diesel) 33.5 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz GLA Class 200 CDI SPORT",
+                    "text": "200 CDI SPORT (Diesel) 35.8 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz GLA Class 200",
+                    "text": "200 SPORT (Petrol) 34.8 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz E-Class E250 CDI Avantgarde",
+                    "text": "E250 CDI Avantgarde (Diesel) 50.7 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz E-Class E350 CDI Avantgrade",
+                    "text": "E350 CDI Avantgrade (Diesel) 61.8 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz E-Class E 200 CGI",
+                    "text": "E 200 CGI (Petrol) 48.5 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz E-Class E400 Cabriolet",
+                    "text": "E400 Cabriolet (Petrol) 81.0 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz E-Class E 63 AMG",
+                    "text": "E 63 AMG (Petrol) 1.3 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz M-Class ML 250 CDI",
+                    "text": "ML 250 CDI (Diesel) 57.9 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz M-Class ML 350 CDI",
+                    "text": "ML 350 CDI (Diesel) 69.4 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz M-Class ML 63 AMG 4MATIC",
+                    "text": "ML 63 AMG 4MATIC (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz New C-Class C 220 CDI Style",
+                    "text": "C 220 CDI Style (Diesel) 36.9 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz New C-Class C 220 CDI Avantgarde",
+                    "text": "C 220 CDI Avantgarde (Diesel) 39.5 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz New C-Class C 200 CGI",
+                    "text": "C 200 CGI (Petrol) 42.6 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz New C-Class C 63 S AMG",
+                    "text": "C 63 S AMG (Petrol) 1.3 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz G Class G63 AMG",
+                    "text": "G63 AMG (Petrol) 2.3 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S 350 CDI",
+                    "text": "S 350 CDI (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S 500 L Launch Edition",
+                    "text": "S 500 (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class Maybach S500",
+                    "text": "Maybach S500 (Petrol) 1.7 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S 500 Coupe",
+                    "text": "S 500 Coupe (Petrol) 2.1 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S 63 AMG",
+                    "text": "S 63 AMG (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class Maybach S600",
+                    "text": "Maybach S600 (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S 63 AMG Coupe",
+                    "text": "S 63 AMG Coupe (Petrol) 2.7 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz S-Class S Guard",
+                    "text": "S Guard (Petrol) 9.2 Cr*"
+                },
+                {
+                    "value": "Mercedes-Benz SLK-Class SLK 350",
+                    "text": "SLK 350 (Petrol) 87.9 Lac*"
+                },
+                {
+                    "value": "Mercedes-Benz SLK-Class 55 AMG",
+                    "text": "55 AMG (Petrol) 1.2 Cr*"
+                }
+            ]
+        }
+    ],
+    "Mini": [
+        {
+            "value": "Mini 3 DOOR",
+            "text": "3 DOOR",
+            "inner": []
+        },
+        {
+            "value": "Mini 5 DOOR",
+            "text": "5 DOOR",
+            "inner": []
+        },
+        {
+            "value": "Mini Cooper Convertible",
+            "text": "Cooper Convertible",
+            "inner": []
+        },
+        {
+            "value": "Mini Cooper Countryman",
+            "text": "Countryman",
+            "inner": [
+                {
+                    "value": "Mini 3 DOOR Cooper D",
+                    "text": "Cooper D (Diesel) 31.8 Lac*"
+                },
+                {
+                    "value": "Mini 3 DOOR Cooper S",
+                    "text": "Cooper S (Petrol) 35.2 Lac*"
+                },
+                {
+                    "value": "Mini 5 DOOR Cooper D",
+                    "text": "Cooper D (Diesel) 35.6 Lac*"
+                },
+                {
+                    "value": "Mini Cooper Convertible 1.6",
+                    "text": "1.6 (Petrol) 37.9 Lac*"
+                },
+                {
+                    "value": "Mini Cooper Countryman Cooper D",
+                    "text": "Cooper D (Diesel) 40.8 Lac*"
+                }
+            ]
+        }
+    ],
+    "Mitsubishi": [
+        {
+            "value": "Mitsubishi Pajero",
+            "text": "Pajero",
+            "inner": [
+                {
+                    "value": "Mitsubishi Pajero Sport Anniversary Edition",
+                    "text": "Sport Limited Edition (Diesel) 24.4 Lac*"
+                },
+                {
+                    "value": "Mitsubishi Pajero Sport 4X2 AT",
+                    "text": "Sport 4X2 AT (Diesel) 25.0 Lac*"
+                },
+                {
+                    "value": "Mitsubishi Pajero Sport 4X4",
+                    "text": "Sport 4X4 (Diesel) 25.3 Lac*"
+                }
+            ]
+        }
+    ],
+    "Nissan": [
+        {
+            "value": "Nissan Evalia",
+            "text": "Evalia",
+            "inner": []
+        },
+        {
+            "value": "Nissan Micra Active",
+            "text": "Micra Active",
+            "inner": []
+        },
+        {
+            "value": "Nissan Micra",
+            "text": "Micra",
+            "inner": []
+        },
+        {
+            "value": "Nissan Sunny",
+            "text": "Sunny",
+            "inner": []
+        },
+        {
+            "value": "Nissan Terrano",
+            "text": "Terrano",
+            "inner": [
+                {
+                    "value": "Nissan Evalia XE",
+                    "text": "XE (Diesel) 9.3 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia XE Plus",
+                    "text": "XE Plus (Diesel) 9.9 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia XL",
+                    "text": "XL (Diesel) 10.7 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia XL Option",
+                    "text": "XL Option (Diesel) 11.0 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia XV",
+                    "text": "XV (Diesel) 11.5 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia XV Option",
+                    "text": "XV Option (Diesel) 11.7 Lac*"
+                },
+                {
+                    "value": "Nissan Evalia SV",
+                    "text": "SV (Diesel) 12.5 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Active XL",
+                    "text": "XL (Petrol) 4.6 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Active XV",
+                    "text": "XV (Petrol) 4.9 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Active XV S",
+                    "text": "XV S (Petrol) 5.2 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Diesel XE",
+                    "text": "Diesel XE (Diesel) 5.9 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Diesel XL",
+                    "text": "Diesel XL (Diesel) 6.3 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Diesel XL Optional",
+                    "text": "Diesel XL Optional (Diesel) 6.8 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Diesel XV",
+                    "text": "Diesel XV (Diesel) 7.3 Lac*"
+                },
+                {
+                    "value": "Nissan Micra Diesel XV Premium",
+                    "text": "Diesel XV Premium (Diesel) 7.7 Lac*"
+                },
+                {
+                    "value": "Nissan Micra XL",
+                    "text": "XL (Petrol) 5.4 Lac*"
+                },
+                {
+                    "value": "Nissan Micra XL Optional",
+                    "text": "XL Optional (Petrol) 6.0 Lac*"
+                },
+                {
+                    "value": "Nissan Micra XL X Shift",
+                    "text": "XL X Shift (Petrol) 6.3 Lac*"
+                },
+                {
+                    "value": "Nissan Micra XL CVT",
+                    "text": "XL CVT (Petrol) 6.5 Lac*"
+                },
+                {
+                    "value": "Nissan Micra AT",
+                    "text": "AT (Petrol) 7.2 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny Diesel XE",
+                    "text": "Diesel XE (Diesel) 8.9 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny Diesel XL",
+                    "text": "Diesel XL (Diesel) 9.6 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny Diesel XV",
+                    "text": "Diesel XV (Diesel) 10.0 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny XV D Premium Leather",
+                    "text": "XV D Premium Leather (Diesel) 10.6 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny XV D Premium Safety",
+                    "text": "XV D Premium Safety (Diesel) 10.8 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny XE",
+                    "text": "XE (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny XL",
+                    "text": "XL (Petrol) 8.5 Lac*"
+                },
+                {
+                    "value": "Nissan Sunny XL CVT",
+                    "text": "XL CVT (Petrol) 9.9 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XE 85 PS",
+                    "text": "XE 85 PS (Diesel) 10.4 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XL 85 PS",
+                    "text": "XL 85 PS (Diesel) 11.4 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XL Plus 85 PS",
+                    "text": "XL Plus 85 PS (Diesel) 11.7 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XL 110 PS",
+                    "text": "XL 110 PS (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XV 110 PS",
+                    "text": "XV 110 PS (Diesel) 12.9 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XV Premium 110 PS",
+                    "text": "XV Premium 110 PS (Diesel) 13.2 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XV 110 PS Limited Edition",
+                    "text": "XV 110 PS Anniversary Edition (Diesel) 13.4 Lac*"
+                },
+                {
+                    "value": "Nissan Terrano XL",
+                    "text": "XL (Petrol) 10.4 Lac*"
+                }
+            ]
+        }
+    ],
+    "Porsche": [
+        {
+            "value": "Porsche 911",
+            "text": "911",
+            "inner": []
+        },
+        {
+            "value": "Porsche Boxster",
+            "text": "Boxster",
+            "inner": []
+        },
+        {
+            "value": "Porsche Cayenne",
+            "text": "Cayenne",
+            "inner": []
+        },
+        {
+            "value": "Porsche Cayman",
+            "text": "Cayman",
+            "inner": []
+        },
+        {
+            "value": "Porsche Macan",
+            "text": "Macan",
+            "inner": []
+        },
+        {
+            "value": "Porsche Panamera",
+            "text": "Panamera",
+            "inner": [
+                {
+                    "value": "Porsche 911 Carrera",
+                    "text": "Carrera (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4 Black Edition",
+                    "text": "Carrera 4 Black Edition (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera Cabriolet Black Edition",
+                    "text": "Carrera Cabriolet Black Edition (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4",
+                    "text": "Carrera 4 (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera Cabriolet",
+                    "text": "Carrera Cabriolet (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4 Cabriolet Black Edition",
+                    "text": "Carrera 4 Cabriolet Black Edition (Petrol) 1.6 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera S",
+                    "text": "Carrera S (Petrol) 1.6 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Targa 4",
+                    "text": "Targa 4 (Petrol) 1.6 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4 Cabriolet",
+                    "text": "Carrera 4 Cabriolet (Petrol) 1.6 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4S",
+                    "text": "Carrera 4S (Petrol) 1.7 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera S Cabriolet",
+                    "text": "Carrera S Cabriolet (Petrol) 1.7 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Targa 4S",
+                    "text": "Targa 4S (Petrol) 1.8 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Carrera 4S Cabriolet",
+                    "text": "Carrera 4S Cabriolet (Petrol) 1.9 Cr*"
+                },
+                {
+                    "value": "Porsche 911 GT3",
+                    "text": "GT3 (Petrol) 2.1 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Turbo",
+                    "text": "Turbo (Petrol) 2.2 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Turbo Cabriolet",
+                    "text": "Turbo Cabriolet (Petrol) 2.3 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Turbo S",
+                    "text": "Turbo S (Petrol) 2.6 Cr*"
+                },
+                {
+                    "value": "Porsche 911 Turbo S Cabriolet",
+                    "text": "Turbo S Cabriolet (Petrol) 2.8 Cr*"
+                },
+                {
+                    "value": "Porsche Boxster S",
+                    "text": "S (Petrol) 1.0 Cr*"
+                },
+                {
+                    "value": "Porsche Boxster GTS",
+                    "text": "GTS (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne Base",
+                    "text": "Base (Diesel) 1.0 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne Diesel",
+                    "text": "Diesel (Diesel) 1.1 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne S Diesel",
+                    "text": "S Diesel (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne S",
+                    "text": "S (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne GTS",
+                    "text": "GTS (Petrol) 1.4 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne Turbo",
+                    "text": "Turbo (Petrol) 1.8 Cr*"
+                },
+                {
+                    "value": "Porsche Cayenne Turbo S",
+                    "text": "Turbo S (Petrol) 2.5 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera Diesel",
+                    "text": "Diesel (Diesel) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera Base",
+                    "text": "Base (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera 4",
+                    "text": "4 (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera GTS",
+                    "text": "GTS (Petrol) 1.5 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera Turbo",
+                    "text": "Turbo (Petrol) 1.9 Cr*"
+                },
+                {
+                    "value": "Porsche Panamera Turbo S",
+                    "text": "Turbo S (Petrol) 2.4 Cr*"
+                },
+                {
+                    "value": "Porsche Macan S Diesel",
+                    "text": "S Diesel (Diesel) 1.0 Cr*"
+                },
+                {
+                    "value": "Porsche Macan Turbo",
+                    "text": "Turbo (Petrol) 1.1 Cr*"
+                },
+                {
+                    "value": "Porsche Cayman S",
+                    "text": "S (Petrol) 1.1 Cr*"
+                },
+                {
+                    "value": "Porsche Cayman GTS",
+                    "text": "GTS (Petrol) 1.2 Cr*"
+                },
+                {
+                    "value": "Porsche Cayman GT4",
+                    "text": "GT4 (Petrol) 1.3 Cr*"
+                }
+            ]
+        }
+    ],
+    "Premier": [
+        {
+            "value": "Premier Rio",
+            "text": "Rio",
+            "inner": [
+                {
+                    "value": "Premier Rio DX",
+                    "text": "DX (Diesel) 6.0 Lac*"
+                },
+                {
+                    "value": "Premier Rio DX Beige Interior",
+                    "text": "DX Beige Interior (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Premier Rio CRDi4 DX",
+                    "text": "CRDi4 DX (Diesel) 7.2 Lac*"
+                },
+                {
+                    "value": "Premier Rio LX",
+                    "text": "LX (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Premier Rio CRDi4 LX",
+                    "text": "CRDi4 LX (Diesel) 7.4 Lac*"
+                },
+                {
+                    "value": "Premier Rio Petrol GX",
+                    "text": "Petrol GX (Petrol) 5.1 Lac*"
+                },
+                {
+                    "value": "Premier Rio GX Beieg Interior",
+                    "text": "GX Beieg Interior (Petrol) 6.5 Lac*"
+                },
+                {
+                    "value": "Premier Rio Petrol GLX",
+                    "text": "Petrol GLX (Petrol) 6.8 Lac*"
+                }
+            ]
+        }
+    ],
+    "Rolls-Royce": [
+        {
+            "value": "Rolls-Royce Ghost",
+            "text": "Ghost",
+            "inner": []
+        },
+        {
+            "value": "Rolls-Royce Phantom",
+            "text": "Phantom",
+            "inner": []
+        },
+        {
+            "value": "Rolls-Royce Wraith",
+            "text": "Wraith",
+            "inner": [
+                {
+                    "value": "Rolls-Royce Ghost Series II Standard",
+                    "text": "Series II Standard (Petrol) 4.7 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Ghost Series II Extended Wheelbase",
+                    "text": "Series II Extended Wheelbase (Petrol) 4.9 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Phantom Phantom",
+                    "text": "Series II (Petrol) 6.5 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Phantom Coupe",
+                    "text": "Coupe (Petrol) 7.0 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Phantom Drophead Coupe",
+                    "text": "Drophead Coupe (Petrol) 7.5 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Phantom Extended Wheelbase",
+                    "text": "Extended Wheelbase (Petrol) 7.5 Cr*"
+                },
+                {
+                    "value": "Rolls-Royce Wraith Coupe",
+                    "text": "Coupe (Petrol) 4.7 Cr*"
+                }
+            ]
+        }
+    ],
+    "Skoda": [
+        {
+            "value": "Skoda Octavia",
+            "text": "Octavia",
+            "inner": []
+        },
+        {
+            "value": "Skoda Rapid",
+            "text": "Rapid",
+            "inner": []
+        },
+        {
+            "value": "Skoda Superb",
+            "text": "Superb",
+            "inner": []
+        },
+        {
+            "value": "Skoda Yeti",
+            "text": "New  Yeti",
+            "inner": [
+                {
+                    "value": "Skoda Octavia Ambition 2.0 TDI MT",
+                    "text": "Ambition 2.0 TDI MT (Diesel) 17.9 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Ambition 2.0 TDI AT",
+                    "text": "Ambition 2.0 TDI AT (Diesel) 19.2 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Elegance 2.0 TDI AT",
+                    "text": "Elegance 2.0 TDI AT (Diesel) 21.1 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Style Plus 2.0 TDI AT",
+                    "text": "Style Plus 2.0 TDI AT (Diesel) 21.8 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Ambition 1.4 TSI MT",
+                    "text": "Ambition 1.4 TSI MT (Petrol) 16.1 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Elegance 1.8 TSI AT",
+                    "text": "Elegance 1.8 TSI AT (Petrol) 19.5 Lac*"
+                },
+                {
+                    "value": "Skoda Octavia Style Plus 1.8 TSI AT",
+                    "text": "Style Plus 1.8 TSI AT (Petrol) 20.2 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Active",
+                    "text": "1.5 TDI Active (Diesel) 9.0 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Ambition",
+                    "text": "1.5 TDI Ambition (Diesel) 9.5 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Ambition With Alloy Wheel",
+                    "text": "1.5 TDI Ambition With Alloy Wheel (Diesel) 9.7 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Elegance",
+                    "text": "1.5 TDI Elegance (Diesel) 10.1 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Elegance Black Package",
+                    "text": "1.5 TDI Elegance Black Package (Diesel) 10.2 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Elegance Plus",
+                    "text": "1.5 TDI Elegance Plus (Diesel) 10.4 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI Elegance Plus Black Package",
+                    "text": "1.5 TDI Elegance Plus Black Package (Diesel) 10.6 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Ambition",
+                    "text": "1.5 TDI AT Ambition (Diesel) 10.9 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Ambition With Alloy Wheel",
+                    "text": "1.5 TDI AT Ambition With Alloy Wheel (Diesel) 11.1 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Elegance",
+                    "text": "1.5 TDI AT Elegance (Diesel) 11.4 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Elegance Black Package",
+                    "text": "1.5 TDI AT Elegance Black Package (Diesel) 11.6 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Elegance Plus",
+                    "text": "1.5 TDI AT Elegance Plus (Diesel) 11.8 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.5 TDI AT Elegance Plus Black Package",
+                    "text": "1.5 TDI AT Elegance Plus Black Package (Diesel) 11.9 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Active",
+                    "text": "1.6 MPI Active (Petrol) 7.7 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Ambition",
+                    "text": "1.6 MPI Ambition (Petrol) 8.6 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Ambition With Alloy Wheel",
+                    "text": "1.6 MPI Ambition With Alloy Wheel (Petrol) 8.8 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Elegance",
+                    "text": "1.6 MPI Elegance (Petrol) 9.1 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Elegance Black Package",
+                    "text": "1.6 MPI Elegance Black Package (Petrol) 9.2 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Elegance Plus",
+                    "text": "1.6 MPI Elegance Plus (Petrol) 9.4 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI Elegance Plus Black Package",
+                    "text": "1.6 MPI Elegance Plus Black Package (Petrol) 9.6 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI AT Elegance",
+                    "text": "1.6 MPI AT Elegance (Petrol) 10.1 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI AT Elegance Black Package",
+                    "text": "1.6 MPI AT Elegance Black Package (Petrol) 10.2 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI AT Elegance Plus",
+                    "text": "1.6 MPI AT Elegance Plus (Petrol) 10.4 Lac*"
+                },
+                {
+                    "value": "Skoda Rapid 1.6 MPI AT Elegance Plus Black Package",
+                    "text": "1.6 MPI AT Elegance Plus Black Package (Petrol) 10.6 Lac*"
+                },
+                {
+                    "value": "Skoda Superb Elegance 2.0 TDI CR AT",
+                    "text": "Elegance 2.0 TDI CR AT (Diesel) 26.9 Lac*"
+                },
+                {
+                    "value": "Skoda Superb Elegance 1.8 TSI MT",
+                    "text": "Elegance 1.8 TSI MT (Petrol) 22.2 Lac*"
+                },
+                {
+                    "value": "Skoda Superb Elegance 1.8 TSI AT",
+                    "text": "Elegance 1.8 TSI AT (Petrol) 23.8 Lac*"
+                },
+                {
+                    "value": "Skoda Yeti Elegance 4X2",
+                    "text": "Skoda Yeti Elegance 4X2 (Diesel) 20.6 Lac*"
+                },
+                {
+                    "value": "Skoda Yeti Elegance 4X4",
+                    "text": "Skoda Yeti Elegance 4X4 (Diesel) 22.3 Lac*"
+                }
+            ]
+        }
+    ],
+    "Volvo": [
+        {
+            "value": "Volvo S 80",
+            "text": "S 80",
+            "inner": []
+        },
+        {
+            "value": "Volvo S60",
+            "text": "S60",
+            "inner": []
+        },
+        {
+            "value": "Volvo V40 Cross Country",
+            "text": "V40 Cross Country",
+            "inner": []
+        },
+        {
+            "value": "Volvo V40",
+            "text": "V40",
+            "inner": []
+        },
+        {
+            "value": "Volvo XC 90",
+            "text": "XC 90",
+            "inner": []
+        },
+        {
+            "value": "Volvo XC60",
+            "text": "XC60",
+            "inner": [
+                {
+                    "value": "Volvo S60 D4 KINETIC",
+                    "text": "D4 KINETIC (Diesel) 36.5 Lac*"
+                },
+                {
+                    "value": "Volvo S60 D4 Momentum",
+                    "text": "D4 Momentum (Diesel) 39.2 Lac*"
+                },
+                {
+                    "value": "Volvo S60 D5 Inscription",
+                    "text": "D5 Inscription (Diesel) 42.3 Lac*"
+                },
+                {
+                    "value": "Volvo S60 T6",
+                    "text": "T6 (Petrol) 47.4 Lac*"
+                },
+                {
+                    "value": "Volvo V40 Cross Country D3",
+                    "text": "D3 (Diesel) 35.8 Lac*"
+                },
+                {
+                    "value": "Volvo V40 Cross Country T4",
+                    "text": "T4 (Petrol) 29.6 Lac*"
+                },
+                {
+                    "value": "Volvo V40 D3",
+                    "text": "D3 Kinetic (Diesel) 26.0 Lac*"
+                },
+                {
+                    "value": "Volvo V40 D3 R Design",
+                    "text": "D3 R-Design (Diesel) 29.0 Lac*"
+                },
+                {
+                    "value": "Volvo XC60 D4 KINETIC",
+                    "text": "D4 KINETIC (Diesel) 48.1 Lac*"
+                },
+                {
+                    "value": "Volvo XC60 D4 SUMMUM",
+                    "text": "D4 SUMMUM (Diesel) 51.5 Lac*"
+                },
+                {
+                    "value": "Volvo XC60 D5 Summum",
+                    "text": "D5 Summum (Diesel) 55.4 Lac*"
+                },
+                {
+                    "value": "Volvo XC 90 D5 Inscription",
+                    "text": "D5 Inscription (Diesel) 63.1 Lac*"
+                },
+                {
+                    "value": "Volvo XC 90 D5 Momentum",
+                    "text": "D5 Momentum (Diesel) 68.2 Lac*"
+                },
+                {
+                    "value": "Volvo S 80 D4",
+                    "text": "D4 (Diesel) 45.8 Lac*"
+                },
+                {
+                    "value": "Volvo S 80 D5",
+                    "text": "D5 (Diesel) 49.5 Lac*"
+                }
+            ]
+        }
+    ]
+}
