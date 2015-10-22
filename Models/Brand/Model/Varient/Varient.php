@@ -1,6 +1,6 @@
 <?php
 
-namespace SmartCarBazar\Models\Brand\Model\Varient;
+namespace SmartCarBazar\Models\Brand\Model;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 
