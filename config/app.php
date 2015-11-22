@@ -13,7 +13,7 @@ return [
       |
      */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
     /*
       |--------------------------------------------------------------------------
       | Application URL
@@ -28,6 +28,7 @@ return [
     'title' => 'SmartCarBazar',
     'base_url' => 'smartcarbazar.com',
     'static_subdomains' => array('dev.smartcarbazar', 'qa.smartcarbazar', 'smartcarbazar'),
+    'backend_uri' => 'admin',
     /*
       |--------------------------------------------------------------------------
       | Application Timezone

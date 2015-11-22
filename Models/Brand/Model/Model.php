@@ -5,11 +5,13 @@ namespace SmartCarBazar\Models\Brand;
 use SmartCarBazar\Models\CommonAttributes as CommonAttributes;
 
 class Model extends CommonAttributes {
+
     public function varients() {
         return $this->hasMany('SmartCarBazar\Models\Model\Varient');
     }
+
     public function brand() {
-        return $this->hasOne('SmartCarBazar\Models\Brand','id','parent_id');
+        return $this->hasOne('SmartCarBazar\Models\Brand', 'id', 'parent_id');
     }
 
     public function getAll() {

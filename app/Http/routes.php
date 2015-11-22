@@ -15,8 +15,8 @@ Route::get('/', function() {
 
     return view('admin.dashboard.index');
 });
-//Route::get('/', 'CorporateController@index');
-Route::group(['prefix' => 'admin'], function () {
+$admin_routes_prefix  = config('app.backend_uri');
+Route::group(['prefix' => $admin_routes_prefix], function () {
     Route::resource('vehicle', 'Admin\VehicleController');
     Route::get('dashboard', 'Admin\DashboardController@index');
 });

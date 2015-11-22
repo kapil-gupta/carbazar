@@ -22,7 +22,7 @@
         ],
         "psr-4": {
             "SmartCarBazar\\": "app/",
-            "SmartCarBazar\\Models\\": "Models/"
+            "Models\\": "Models/"
         }
     },
     "autoload-dev": {
