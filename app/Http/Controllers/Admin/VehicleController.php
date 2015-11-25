@@ -5,10 +5,10 @@ namespace SmartCarBazar\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use SmartCarBazar\Http\Requests\StoreVehicleRequest as StoreVehicleRequest;
 use SmartCarBazar\Http\Controllers\CorporateController as CorporateController;
-use SmartCarBazar\Models\Vehicle;
+use \SmartCarBazar\Models\Vehicle;
 use \Lang;
-use SmartCarBazar\Models\Brand\Model;
-use SmartCarBazar\Models\Category;
+use \SmartCarBazar\Models\Brand\Model as Model;
+use \SmartCarBazar\Models\Category as Category;
 class VehicleController extends CorporateController {
 
     public function __construct() {
@@ -49,7 +49,6 @@ class VehicleController extends CorporateController {
         $this->page->getBody()->addToData('Brands', $AllBrands);
         $this->page->getBody()->addToData('Categories', $AllCategories);
 
-
         return view($this->viewBase . "." . __FUNCTION__, array('page' => $this->page));
     }
 
@@ -68,7 +67,7 @@ class VehicleController extends CorporateController {
         $result = $ModelVehicle->add($input);
 
         if ($result['status']) {
-            return redirect()->admin_route('vehicle.create')->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
+            return redirect(admin_route('vehicle.edit',['id'=>$result['id'],'tab2'=>'show']))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }
@@ -81,7 +80,25 @@ class VehicleController extends CorporateController {
      * @return \Illuminate\Http\Response
      */
     public function show($id) {
-        //
+        $ModelVehicle = new \SmartCarBazar\Models\Vehicle();
+        $vehicle = $ModelVehicle->view($id, 0);
+        dd($vehicle);
+        /* Breadcrumbs */
+        $title = "Edit Vehicle";
+        $this->page->getBody()->addBreadcrumb('Vehicle', '/admin/vehicle');
+        $this->page->getBody()->addBreadcrumb($vehicle->name, admin_route('vehicle.show',$vehicle->id));
+        $this->page->getBody()->addBreadcrumb('Edit');
+        /* Breadcrumbs */
+        /* Page Maker */
+        $this->page->getHead()->setDescription('add area');
+        $this->page->getHead()->setKeywords('manage, edit, area, manage area, edit area');
+        $this->page->setTitle($title);
+        $this->page->getBody()->addToData('Brands', $AllBrands);
+        $this->page->getBody()->addToData('Categories', $AllCategories);
+        $this->page->getBody()->addToData('Vehicle', $vehicle);
+
+
+        return view($this->viewBase . "." . __FUNCTION__, array('page' => $this->page));
     }
 
     /**
@@ -94,13 +111,16 @@ class VehicleController extends CorporateController {
         $ModelVehicle = new \SmartCarBazar\Models\Vehicle();
         $Brands = new \SmartCarBazar\Models\Brand\Model();
         $Category = new \SmartCarBazar\Models\Category();
+        $ModelFeatureCategory = new \SmartCarBazar\Models\FeatureCategory();
+        $FeatureCategory = $ModelFeatureCategory->getAll();
+        //dd($FeatureCategory);
         $AllBrands = $Brands->getAll();
         $AllCategories = $Category->getAll();
         $vehicle = $ModelVehicle->view($id, 0);
         /* Breadcrumbs */
         $title = "Edit Vehicle";
         $this->page->getBody()->addBreadcrumb('Vehicle', '/admin/vehicle');
-        $this->page->getBody()->addBreadcrumb($vehicle->name, 'admin/vehicle/'.$vehicle->id);
+        $this->page->getBody()->addBreadcrumb($vehicle->name, admin_route('vehicle.show',$vehicle->id));
         $this->page->getBody()->addBreadcrumb('Edit');
         /* Breadcrumbs */
         /* Page Maker */
@@ -110,6 +130,7 @@ class VehicleController extends CorporateController {
         $this->page->getBody()->addToData('Brands', $AllBrands);
         $this->page->getBody()->addToData('Categories', $AllCategories);
         $this->page->getBody()->addToData('Vehicle', $vehicle);
+        $this->page->getBody()->addToData('FeatureCategory', $FeatureCategory);
 
 
         return view($this->viewBase . "." . __FUNCTION__, array('page' => $this->page));
@@ -128,7 +149,7 @@ class VehicleController extends CorporateController {
         $result = $ModelVehicle->edit($input,$id);
 
         if ($result['status']) {
-            return redirect('admin/vehicle/create')->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
+            return redirect(admin_route('vehicle.show',$id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }

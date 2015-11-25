@@ -24,6 +24,7 @@ class Vehicle extends BaseModel {
             $vehicle = self::create($data);
             if($vehicle){
                 $returnResponse['status'] =1;
+                $returnResponse['id'] =$vehicle;
             }else{
                 $returnResponse['status'] =0;
             }

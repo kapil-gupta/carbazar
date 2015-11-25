@@ -22,8 +22,9 @@
         ],
         "psr-4": {
             "SmartCarBazar\\": "app/",
-            "Models\\": "Models/"
-        }
+            "SmartCarBazar\\Models\\": "Models/"
+        },
+        "files":["app/Http/Helpers.php"]
     },
     "autoload-dev": {
         "classmap": [
