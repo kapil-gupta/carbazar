@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/app/Http/Requests/EditVehicleRequest.php</file>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/Models/Feature.php</file>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/app/Http/Constants.php</file>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/app/Http/Controllers/Admin/VehicleController.php</file>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/Models/Vehicle/Vehicle.php</file>
+            <file>file:/C:/xampp/htdocs/smartcarbazar/resources/views/admin/vehicle/edit.blade.php</file>
+        </group>
     </open-files>
 </project-private>

@@ -4,6 +4,7 @@ namespace SmartCarBazar\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use \Exception as Exception;
+
 class Vehicle extends BaseModel {
 
     use SoftDeletes;
@@ -18,17 +19,20 @@ class Vehicle extends BaseModel {
         return $this->hasMany('SmartCarBazar\Models\Brand\Model');
     }
 
+    public function features() {
+        return $this->belongsToMany('SmartCarBazar\Models\Feature', 'vehicle_features');
+    }
+
     public function add($data, $corporate_id = 0) {
-        $returnResponse = ['status'=>1,'code'=>null,'msg'=>null];
+        $returnResponse = ['status' => 1, 'code' => null, 'msg' => null];
         try {
             $vehicle = self::create($data);
-            if($vehicle){
-                $returnResponse['status'] =1;
-                $returnResponse['id'] =$vehicle;
-            }else{
-                $returnResponse['status'] =0;
+            if ($vehicle) {
+                $returnResponse['status'] = 1;
+                $returnResponse['id'] = $vehicle;
+            } else {
+                $returnResponse['status'] = 0;
             }
-            
         } catch (Exception $e) {
             $returnResponse['status'] = 0;
             $returnResponse['code'] = $e->getCode();
@@ -63,19 +67,25 @@ class Vehicle extends BaseModel {
     }
 
     public function edit($id, $data) {
-        $v = Validator::make($data, $this->rules, $this->messages);
-        if ($v->passes()) {
-            $city = $this::find($id);
-            try {
-                $city->update($data);
-                return $city;
-            } catch (Exception $e) {
-                //$this->validations->add('error', Lang::get('messages.crud.failed', array('action' => 'Update')));
-                throw new DBException($e->getMessage(), $e->getCode(), $e->getPrevious());
+        $feature = $data['features'];
+        unset($data['features']);
+        $vehicle = $this::find($id);
+        $returnResponse = ['status' => 1, 'code' => null, 'msg' => null];
+        try {
+            $vehicle->update($data);
+            $vehicle->features()->sync(explode(',', $feature));
+            if ($vehicle) {
+                $returnResponse['status'] = 1;
+                $returnResponse['id'] = $vehicle->id;
+            } else {
+                $returnResponse['status'] = 0;
             }
-        } else {
-            $this->validations->merge($v->getMessageBag()->toArray());
+        } catch (Exception $e) {
+            $returnResponse['status'] = 0;
+            $returnResponse['code'] = $e->getCode();
+            $returnResponse['msg'] = 'There is some error Please try After some time';
         }
+        return $returnResponse;
     }
 
     public function listing($limit = 25, $active = true, $fields = array(), $filters = array(), $sort = 'name', $with = 'city') {

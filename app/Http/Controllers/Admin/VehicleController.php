@@ -2,8 +2,11 @@
 
 namespace SmartCarBazar\Http\Controllers\Admin;
 
+use \File;
 use Illuminate\Http\Request;
-use SmartCarBazar\Http\Requests\StoreVehicleRequest as StoreVehicleRequest;
+use SmartCarBazar\Http\Requests\StoreVehicleRequest;
+use SmartCarBazar\Http\Requests\EditVehicleRequest;
+use SmartCarBazar\Http\Requests\ImageUploadRequest;
 use SmartCarBazar\Http\Controllers\CorporateController as CorporateController;
 use \SmartCarBazar\Models\Vehicle;
 use \Lang;
@@ -67,7 +70,7 @@ class VehicleController extends CorporateController {
         $result = $ModelVehicle->add($input);
 
         if ($result['status']) {
-            return redirect(admin_route('vehicle.edit',['id'=>$result['id'],'tab2'=>'show']))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
+            return redirect(admin_route('vehicle.edit',['id'=>$result['id'],'tab'=>'images']))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }
@@ -107,7 +110,8 @@ class VehicleController extends CorporateController {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id) {
+    public function edit($id,Request $request) {
+        $tab = $request->get('tab',null);
         $ModelVehicle = new \SmartCarBazar\Models\Vehicle();
         $Brands = new \SmartCarBazar\Models\Brand\Model();
         $Category = new \SmartCarBazar\Models\Category();
@@ -115,8 +119,13 @@ class VehicleController extends CorporateController {
         $FeatureCategory = $ModelFeatureCategory->getAll();
         //dd($FeatureCategory);
         $AllBrands = $Brands->getAll();
+        foreach($AllBrands as $brand) {
+          $BrandList[$brand->id] =$brand->brand->name.' '.$brand->name;    
+        }
         $AllCategories = $Category->getAll();
         $vehicle = $ModelVehicle->view($id, 0);
+        $vehicleFeatures = $vehicle->features()->lists('feature_id','feature_id')->toArray();
+        //echo '<pre>';print_r(($vehicleFeatures->lists('feature_id')->toArray()));exit;
         /* Breadcrumbs */
         $title = "Edit Vehicle";
         $this->page->getBody()->addBreadcrumb('Vehicle', '/admin/vehicle');
@@ -127,11 +136,12 @@ class VehicleController extends CorporateController {
         $this->page->getHead()->setDescription('add area');
         $this->page->getHead()->setKeywords('manage, edit, area, manage area, edit area');
         $this->page->setTitle($title);
-        $this->page->getBody()->addToData('Brands', $AllBrands);
+        $this->page->getBody()->addToData('Brands', $BrandList);
         $this->page->getBody()->addToData('Categories', $AllCategories);
         $this->page->getBody()->addToData('Vehicle', $vehicle);
         $this->page->getBody()->addToData('FeatureCategory', $FeatureCategory);
-
+        $this->page->getBody()->addToData('vehicleFeatures', $vehicleFeatures);
+        $this->page->getBody()->addToData('tab', $tab);
 
         return view($this->viewBase . "." . __FUNCTION__, array('page' => $this->page));
     }
@@ -143,10 +153,33 @@ class VehicleController extends CorporateController {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(StoreVehicleRequest $request, $id) {
+    public function update(EditVehicleRequest $request, $vehicle_id) {
+        //echo '<pre>'; print_r($request->all());exit;
         $input = $request->only(['name', 'category_id', 'price', 'description', 'model_id', 'is_active', 'meta_title', 'meta_keywords', 'meta_description']);
+        $checkbox_name_ids = $request->get('check_validate');
+        $radio_name_ids = $request->get('radio_validate');
+        //$temp = array_merge($checkbox_name_ids,$radio_name_ids);
+        $features = null;
+        if(0 < count($checkbox_name_ids)){
+            foreach($checkbox_name_ids as $id){
+                if( $features!='')
+                $features.=','.implode(',',$request->get('features_checkbox_'.$id));
+                else
+                    $features.=implode(',',$request->get('features_checkbox_'.$id));
+            }
+        }
+        //echo $features.'<br>';exit;
+        if(0 < count($radio_name_ids)){
+            $temp = [];
+            foreach($radio_name_ids as $id){
+                $temp[]=$request->get('features_radio_'.$id);
+            }
+             $features.=','.implode(',',$temp);
+        }
+        $input['features']  =$features;
+        //echo '<pre>'; print_r($input);exit;
         $ModelVehicle = new Vehicle();
-        $result = $ModelVehicle->edit($input,$id);
+        $result = $ModelVehicle->edit($vehicle_id,$input);
 
         if ($result['status']) {
             return redirect(admin_route('vehicle.show',$id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
@@ -163,6 +196,20 @@ class VehicleController extends CorporateController {
      */
     public function destroy($id) {
         //
+    }
+    public  function ImageUpload(ImageUploadRequest $request){
+        $file = $request->file('file'); 
+        $extension = File::extension($file->getClientOriginalName());
+        //$directory = VEHICLE_IMAGE_PATH.'\\'.sha1(time());
+        $filename = sha1(time().time()).".{$extension}";
+        $upload_success = $request->file('file')->move(VEHICLE_IMAGE_PATH, $filename);
+        //$upload_success = Input::upload('file', $directory, $filename);
+
+        if( $upload_success ) {
+        	return \Response::json('success', 200);
+        } else {
+        	return \Response::json('error', 400);
+        }
     }
 
 }

@@ -4,9 +4,10 @@ var FormDropzone = function () {
     return {
         //main function to initiate the module
         init: function () {  
-
+            
             Dropzone.options.myDropzone = {
                 init: function() {
+                    
                     this.on("addedfile", function(file) {
                         // Create the remove button
                         var removeButton = Dropzone.createElement("<button class='btn btn-sm btn-block'>Remove file</button>");

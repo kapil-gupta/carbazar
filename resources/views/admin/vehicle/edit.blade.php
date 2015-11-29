@@ -3,15 +3,21 @@
 
 @section('pageHeadSpecificCSS')	{{-- Page Head Specific CSS Files --}}
 {!! Html::style('admin/global/plugins/select2/select2.css') !!}
+{!! Html::style('admin/global/plugins/dropzone/css/dropzone.css') !!}
 @stop
 
 @section('pageHeadSpecificJS')	{{-- Page Head Specific JS Files --}}
 @stop
 <?php
-$AllBrands = $page->getBody()->getDataByKey('Brands');
+$BrandList = $page->getBody()->getDataByKey('Brands');
 $AllCategories = $page->getBody()->getDataByKey('Categories');
 $Vehicle = $page->getBody()->getDataByKey('Vehicle');
 $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
+$VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
+$tab = $page->getBody()->getDataByKey('tab');
+/* echo '<pre>';
+  print_r($errors);
+  echo '</pre>'; */
 ?>
 @section('bodyContent')	{{-- Page Body Content --}}
 <!-- START :: Logo -->
@@ -19,12 +25,13 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
     <div class="col-md-12">
         <!-- <form class="form-horizontal form-row-seperated" action="javascript:;">-->
         {!! Form::model($Vehicle, array('name'=>'create', 'method'=>'PUT', 'url'=>admin_route('vehicle.update',$Vehicle->id), 'class'=>'form-horizontal form-row-seperated','id'=>'form_sample_3')) !!}
+        <input type="hidden" name="vehicle_id" id="vehicle_id" value="{{$Vehicle->id}}" />
         <div class="portlet light">
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-basket font-green-sharp"></i>
                     <span class="caption-subject font-green-sharp bold uppercase">
-                        Edit Product </span>
+                        Edit {{ $Vehicle->name}} </span>
                 </div>
                 <div class="actions btn-set">
                     <!-- <button type="button" name="back" class="btn btn-default btn-circle"><i class="fa fa-angle-left"></i> Back</button>
@@ -57,7 +64,7 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
             <div class="portlet-body form">
                 <div class="tabbable">
                     <ul class="nav nav-tabs">
-                        <li class="active">
+                        <li <?php if (null == $tab) echo 'class="active"'; ?>>
                             <a href="#tab_general" data-toggle="tab">
                                 General </a>
                         </li>
@@ -65,11 +72,11 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
                             <a href="#tab_meta" data-toggle="tab">
                                 Meta </a>
                         </li>
-                        <li>
+                        <li <?php if ('images' == $tab) echo 'class="active"'; ?>>
                             <a href="#tab_images" data-toggle="tab">
                                 Images </a>
                         </li>
-                        <li>
+                        <li <?php if ('features' == $tab) echo 'class="active"'; ?>>
                             <a href="#tab_features" data-toggle="tab">
                                 Features
                             </a>
@@ -77,7 +84,7 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
 
                     </ul>
                     <div class="tab-content no-space">
-                        <div class="tab-pane active" id="tab_general">
+                        <div class="tab-pane <?php if (null == $tab) echo 'active'; ?>" id="tab_general">
                             <div class="form-body">
                                 <div class="form-group {{($errors->has('category_id')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Select Category: <span class="required">
@@ -119,18 +126,7 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
                                             * </span>
                                     </label>
                                     <div class="col-md-10">
-                                        <select class="form-control input-xlarge select2me" name="model_id" id="model_id" data-placeholder="Select...">
-                                            <option value=""></option>
-                                            @foreach($AllBrands as $brand)
-                                            <option value="{{$brand->id}}"
-                                            <?php
-                                            if ($brand->id == Input::old('model_id')) {
-                                                echo 'selected';
-                                            }
-                                            ?>
-                                                    >{{$brand->brand->name." ".$brand->name}}</option>
-                                            @endforeach
-                                        </select>
+                                        {!! Form::select('model_id',$BrandList, Input::old('model_id'), array('class'=>'form-control input-xlarge select2me','data-placeholder'=>'Select..')) !!}
                                         @if ($errors->has('model_id'))
                                         <span id="name-error" class="help-block help-block-error">{{$errors->first('model_id')}}</span>
                                         @endif
@@ -197,226 +193,161 @@ $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="tab_images">
-                            <div class="alert alert-success margin-bottom-10">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-                                <i class="fa fa-warning fa-lg"></i> Image type and information need to be specified.
+                        <div class="tab-pane <?php if ('images' == $tab) echo 'active'; ?>" id="tab_images">
+                            <div class="col-md-12">
+                                <p><span class="label label-danger">NOTE: </span>&nbsp; This plugins works only on Latest Chrome, Firefox, Safari, Opera & Internet Explorer 10.</p>
+                                <div id="mydropzone" class="dropzone"></div>
                             </div>
-                            <div id="tab_images_uploader_container" class="text-align-reverse margin-bottom-10">
-                                <a id="tab_images_uploader_pickfiles" href="javascript:;" class="btn yellow">
-                                    <i class="fa fa-plus"></i> Select Files </a>
-                                <a id="tab_images_uploader_uploadfiles" href="javascript:;" class="btn green">
-                                    <i class="fa fa-share"></i> Upload Files </a>
-                            </div>
-                            <div class="row">
-                                <div id="tab_images_uploader_filelist" class="col-md-6 col-sm-12">
-                                </div>
-                            </div>
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                    <tr role="row" class="heading">
-                                        <th width="8%">
-                                            Image
-                                        </th>
-                                        <th width="25%">
-                                            Label
-                                        </th>
-                                        <th width="8%">
-                                            Sort Order
-                                        </th>
-                                        <th width="10%">
-                                            Base Image
-                                        </th>
-                                        <th width="10%">
-                                            Small Image
-                                        </th>
-                                        <th width="10%">
-                                            Thumbnail
-                                        </th>
-                                        <th width="10%">
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="../../assets/admin/pages/media/works/img1.jpg" class="fancybox-button" data-rel="fancybox-button">
-                                                <img class="img-responsive" src="../../assets/admin/pages/media/works/img1.jpg" alt="">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][1][label]" value="Thumbnail image">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][1][sort_order]" value="1">
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][1][image_type]" value="1">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][1][image_type]" value="2">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][1][image_type]" value="3" checked>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:;" class="btn default btn-sm">
-                                                <i class="fa fa-times"></i> Remove </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="../../assets/admin/pages/media/works/img2.jpg" class="fancybox-button" data-rel="fancybox-button">
-                                                <img class="img-responsive" src="../../assets/admin/pages/media/works/img2.jpg" alt="">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][2][label]" value="Product image #1">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][2][sort_order]" value="1">
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][2][image_type]" value="1">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][2][image_type]" value="2" checked>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][2][image_type]" value="3">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:;" class="btn default btn-sm">
-                                                <i class="fa fa-times"></i> Remove </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="../../assets/admin/pages/media/works/img3.jpg" class="fancybox-button" data-rel="fancybox-button">
-                                                <img class="img-responsive" src="../../assets/admin/pages/media/works/img3.jpg" alt="">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][3][label]" value="Product image #2">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" name="product[images][3][sort_order]" value="1">
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][3][image_type]" value="1" checked>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][3][image_type]" value="2">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <label>
-                                                <input type="radio" name="product[images][3][image_type]" value="3">
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <a href="javascript:;" class="btn default btn-sm">
-                                                <i class="fa fa-times"></i> Remove </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
                         </div>
-                        <div class="tab-pane" id="tab_features">
+                        <div class="tab-pane <?php if ('features' == $tab) echo 'active'; ?>" id="tab_features">
                             <div class="portlet box">
                                 <div class="portlet-body form">
                                     <!-- BEGIN FORM-->
                                     <div class="form-body">
                                         @foreach($FeatureCategory  as $category)
-                                        <h3 class="form-section">{{$category->name}}</h3>
+                                        <h3 class="form-section green">{{$category->name}}</h3>
                                         @if($category->features->count() > 0 )
-                                        @foreach($category->features as $feature)
-                                        {{$feature->name}}
+                                        @if(TEXT == $category->input_type)
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-3">First Name</label>
-                                                    <div class="col-md-9">
-                                                        <input type="text" class="form-control" placeholder="Chee Kin">
-                                                        <span class="help-block">
-                                                            This is inline help </span>
+                                            <?php
+                                            $i = 1;
+                                            foreach ($category->features as $feature) {
+                                                ?>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">{{$feature->name}}</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" class="form-control" placeholder="Chee Kin">
+                                                            <span class="help-block">
+                                                                This is inline help </span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!--/span-->
-                                            <div class="col-md-6">
-                                                <div class="form-group has-error">
-                                                    <label class="control-label col-md-3">Last Name</label>
-                                                    <div class="col-md-9">
-                                                        <select name="foo" class="select2me form-control">
-                                                            <option value="1">Abc</option>
-                                                            <option value="1">Abc</option>
-                                                            <option value="1">This is a really long value that breaks the fluid design for a select2</option>
-                                                        </select>
-                                                        <span class="help-block">
-                                                            This field has error. </span>
+                                                <?php
+                                                if ($i % 2 == 0) {
+                                                    echo '</div><div class="row">';
+                                                }
+                                                $i++;
+                                            }
+                                            ?>
+
+                                        </div>
+                                        @endif
+                                        @if(CHECKBOX == $category->input_type)
+                                        <input name="check_validate[]" type="hidden" value="{{ $category->id }}" />
+                                        <input name="check_validate_message[]" type="hidden" value="{{ 'Please select atleast one  '.$category->name }}" />
+                                        <div class="row">
+                                            <div class="form-group {{($errors->has('features_checkbox_'.$category->id)) ? "has-error" : ""}}">
+
+                                                <div class="checkbox-inline" data-error-container="#form_2_services_error">
+                                                    <?php
+                                                    foreach ($category->features as $feature) {
+                                                        echo '<label>';
+                                                        echo Form::checkbox("features_checkbox_" . $category->id . "[]", $feature->id, in_array($feature->id, $VehicleFeatures));
+                                                        echo $feature->name . '</label>&nbsp;&nbsp;';
+                                                    }
+                                                    ?>
+                                                    @if ($errors->has('features_checkbox_'.$category->id))
+                                                    <div id="form_2_membership_error">
+                                                        <span id="membership-error" class="help-block">{{ $errors->first('features_checkbox_'.$category->id) }}</span>
                                                     </div>
+                                                    @endif 
                                                 </div>
+
                                             </div>
-                                            <!--/span-->
+
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if(RADIO == $category->input_type)
+                                    <input name="radio_validate[]" type="hidden" value="{{ $category->id }}" />
+                                    <input name="radio_validate_message[]" type="hidden" value="{{ 'Please select '.$category->name }}" />
+                                    <div class="row">
+                                        <div class="form-group {{($errors->has('features_radio_'.$category->id)) ? "has-error" : ""}}">
+                                            <label class="control-label">&nbsp;&nbsp;&nbsp;</label>
+                                            <div class="col-md-9">
+                                                <div class="radio-list" data-error-container="#form_2_services_error">
+                                                    <?php
+                                                    foreach ($category->features as $feature) {
+                                                        echo '<label class="radio-inline">';
+                                                        echo Form::radio("features_radio_" . $category->id, $feature->id, in_array($feature->id, $VehicleFeatures));
+                                                        echo $feature->name . '</label>&nbsp;';
+                                                    }
+                                                    ?>
+                                                </div>
+                                                @if ($errors->has('features_radio_'.$category->id))
+                                                <div id="form_2_membership_error">
+                                                    <span id="membership-error" class="help-block">{{ $errors->first('features_radio_'.$category->id) }}</span>
+                                                </div>
+                                                @endif
+                                            </div>
+
                                         </div>
 
-                                        @endforeach
-                                        @endif
-                                        <!--/row-->
-                                        @endforeach
-
                                     </div>
+                                    @endif
+                                    @endif
+                                    <!--/row-->
+                                    @endforeach
+
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
             </div>
-            {!! Form::close() !!}
-
         </div>
+        {!! Form::close() !!}
+
     </div>
-    @stop
+</div>
+@stop
 
-    @section('pageFooterSpecificPlugin')	{{-- Page Footer Specific Plugin Files --}}
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    {!! Html::script('admin/global/plugins/jquery-validation/js/jquery.validate.min.js') !!}
-    {!! Html::script('admin/global/plugins/jquery-validation/js/additional-methods.min.js') !!}
-    {!! Html::script('admin/global/plugins/select2/select2.min.js') !!}
-    {!! Html::script('admin/global/plugins/ckeditor/ckeditor.js') !!}
-    {!! Html::script('admin/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js') !!}
-    <!-- END PAGE LEVEL PLUGINS -->
-    @stop
+@section('pageFooterSpecificPlugin')	{{-- Page Footer Specific Plugin Files --}}
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+{!! Html::script('admin/global/plugins/jquery-validation/js/jquery.validate.min.js') !!}
+{!! Html::script('admin/global/plugins/jquery-validation/js/additional-methods.min.js') !!}
+{!! Html::script('admin/global/plugins/select2/select2.min.js') !!}
+{!! Html::script('admin/global/plugins/ckeditor/ckeditor.js') !!}
+{!! Html::script('admin/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js') !!}
+<!-- END PAGE LEVEL PLUGINS -->
+@stop
 
-    @section('pageFooterSpecificJS')
-    {!! Html::script('admin/custom/vehicle/create-form-validation.js') !!}
-    {!! Html::script('admin/custom/vehicle/create.js') !!}
-    @stop
+@section('pageFooterSpecificJS')
+{!! Html::script('admin/global/plugins/dropzone/dropzone.js') !!}
+{!! Html::script('admin/pages/scripts/form-dropzone.js') !!}
+{!! Html::script('admin/custom/vehicle/create-form-validation.js') !!}
+{!! Html::script('admin/custom/vehicle/create.js') !!}
+@stop
 
-    @section('pageFooterScriptInitialize')	{{-- Page Footer Script Initialization Code --}}
-    <script>
-        jQuery(document).ready(function () {
-            Metronic.init(); // init metronic core componets
-            Layout.init(); // init layout
-            //FormValidation.init();
-            VehicleAdd.init();
+@section('pageFooterScriptInitialize')	{{-- Page Footer Script Initialization Code --}}
+<script>
+    jQuery(document).ready(function () {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('input[name="_token"]').val()
+            }
         });
-    </script>
-    @stop
+        // var Dropzone = new Dropzone("div#mydropzone", { url: "file-upload"});
+        Dropzone.autoDiscover = false;
+        Metronic.init(); // init metronic core componets
+        Layout.init(); // init layout
+        //FormValidation.init();
+        VehicleAdd.init();
+        $("#mydropzone").dropzone({
+            url: "{{ admin_route('vehicle.imageupload')}}",
+            headers: {
+                'X-CSRF-Token': $('input[name="_token"]').val()
+            },
+            sending: function (file, xhr, formData) {
+                // Pass token. You can use the same method to pass any other values as well such as a id to associate the image with for example.
+                formData.append("vehicle_id", $('#vehicle_id').val()); // Laravel expect the token post value to be named _token by default
+            }
+        });
+        //FormDropzone.init();
+    });
+</script>
+@stop
