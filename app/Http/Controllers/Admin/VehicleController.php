@@ -180,9 +180,10 @@ class VehicleController extends CorporateController {
         //echo '<pre>'; print_r($input);exit;
         $ModelVehicle = new Vehicle();
         $result = $ModelVehicle->edit($vehicle_id,$input);
-
-        if ($result['status']) {
-            return redirect(admin_route('vehicle.show',$id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
+        if ($result['status'] && !isset($result['tab'])) {
+            return redirect(admin_route('vehicle.show',$vehicle_id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'updated'))));
+        }if (!$result['status'] && isset($result['tab'])) {
+            return redirect(admin_route('vehicle.edit',['id'=>$result['id'],'tab'=>$result['tab']]))->withErrors(['error' => $result['error']]);
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }

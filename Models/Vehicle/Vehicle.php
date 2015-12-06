@@ -9,6 +9,7 @@ class Vehicle extends BaseModel {
 
     use SoftDeletes;
 
+    protected $morphClass = 'vehicle';
     protected $table = 'vehicle';
     protected $dates = ['deleted_at'];
     protected $guarded = ['id'];
@@ -21,6 +22,10 @@ class Vehicle extends BaseModel {
 
     public function features() {
         return $this->belongsToMany('SmartCarBazar\Models\Feature', 'vehicle_features');
+    }
+
+    public function photos() {
+        return $this->morphMany('SmartCarBazar\Models\Photo', 'imageable');
     }
 
     public function add($data, $corporate_id = 0) {
@@ -74,11 +79,20 @@ class Vehicle extends BaseModel {
         try {
             $vehicle->update($data);
             $vehicle->features()->sync(explode(',', $feature));
-            if ($vehicle) {
+            if($vehicle->photos()->count()==0){
+                $returnResponse['status'] = 0;
+                $returnResponse['id'] = $vehicle->id;
+                $returnResponse['tab'] ='images' ;
+                $returnResponse['error'] = 'Please upload min 1 photo';
+            }
+            elseif ($vehicle->features()->count()==0) {
+                $returnResponse['status'] = 0;
+                $returnResponse['id'] = $vehicle->id;
+                $returnResponse['tab'] ='images' ;
+                $returnResponse['error'] = 'Please select min 1 feature in each category';
+            } else {
                 $returnResponse['status'] = 1;
                 $returnResponse['id'] = $vehicle->id;
-            } else {
-                $returnResponse['status'] = 0;
             }
         } catch (Exception $e) {
             $returnResponse['status'] = 0;

@@ -15,9 +15,6 @@ $Vehicle = $page->getBody()->getDataByKey('Vehicle');
 $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
 $VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
 $tab = $page->getBody()->getDataByKey('tab');
-/* echo '<pre>';
-  print_r($errors);
-  echo '</pre>'; */
 ?>
 @section('bodyContent')	{{-- Page Body Content --}}
 <!-- START :: Logo -->
@@ -26,6 +23,7 @@ $tab = $page->getBody()->getDataByKey('tab');
         <!-- <form class="form-horizontal form-row-seperated" action="javascript:;">-->
         {!! Form::model($Vehicle, array('name'=>'create', 'method'=>'PUT', 'url'=>admin_route('vehicle.update',$Vehicle->id), 'class'=>'form-horizontal form-row-seperated','id'=>'form_sample_3')) !!}
         <input type="hidden" name="vehicle_id" id="vehicle_id" value="{{$Vehicle->id}}" />
+        <input type="hidden" name="vehicle_type" id="vehicle_type" value="Vehicle" />
         <div class="portlet light">
             <div class="portlet-title">
                 <div class="caption">
@@ -338,13 +336,97 @@ $tab = $page->getBody()->getDataByKey('tab');
         //FormValidation.init();
         VehicleAdd.init();
         $("#mydropzone").dropzone({
+            init: function () {
+                addRemoveLinks: true,
+                this.on("success", function (file, response) {
+                    //alert(JSON.stringify(response));
+                    file.serverId = response.id;
+                    file.name = response.name;
+                    file.size = response.size;
+
+                });
+                this.on("removedfile", function (file) {
+                    if (!file.serverId) {
+                        return;
+                    }
+                    var url = '{{ route("image.delete", ":id") }}';
+                    url = url.replace(':id', file.serverId);
+                    //$.post(url);
+                    $.ajax({
+                        url: url,
+                        type: 'DELETE',
+                        success: function(result) {
+                            // Do something with the result
+                        }
+                    });
+                });
+                        thisDropzone = this;
+                        $.get("{{ route('vehicle.images',array($Vehicle->id,'Vehicle'))}}", function (data) {
+                               $.each(data, function (key, value) {
+                 
+                                        var mockFile = {name: value.name, size: value.size, serverId: value.id};
+                         
+                                        thisDropzone.options.addedfile.call(thisDropzone, mockFile);
+         
+                                        thisDropzone.options.thumbnail.call(thisDropzone, mockFile, '/imagecache/small/' + value.name);
+                                                        var removeButton = Dropzone.createElement("<button class='btn btn-sm btn-block'>Remove file</button>");
+                        removeButton.addEventListener("click", function (e) {
+                            // Make sure the button click doesn't submit the form:
+                            e.preventDefault();
+                            e.stopPropagation();
+                            thisDropzone.removeFile(mockFile);
+                        });
+                        mockFile.previewElement.appendChild(removeButton);
+                                });
+             
+                        });
+                this.on("addedfile", function (file) {
+                    // Create the remove button
+                    var removeButton = Dropzone.createElement("<button class='btn btn-sm btn-block'>Remove file</button>");
+
+                    // Capture the Dropzone instance as closure.
+                    var _this = this;
+
+                    // Listen to the click event
+                    removeButton.addEventListener("click", function (e) {
+                        // Make sure the button click doesn't submit the form:
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        // Remove the file preview.
+                        _this.removeFile(file);
+                        // If you want to the delete the file on the server as well,
+                        // you can do the AJAX request here.
+                        alert(file.serverId);
+                    });
+
+                    // Add the button to the file preview element.
+                    file.previewElement.appendChild(removeButton);
+                });
+                    },
             url: "{{ admin_route('vehicle.imageupload')}}",
             headers: {
                 'X-CSRF-Token': $('input[name="_token"]').val()
             },
             sending: function (file, xhr, formData) {
                 // Pass token. You can use the same method to pass any other values as well such as a id to associate the image with for example.
-                formData.append("vehicle_id", $('#vehicle_id').val()); // Laravel expect the token post value to be named _token by default
+                formData.append("imageable_id", $('#vehicle_id').val()); // Laravel expect the token post value to be named _token by default
+                formData.append("imageable_type", $('#vehicle_type').val());
+            },
+            error: function (file, response) {
+                //alert(JSON.stringify(response));
+                if ($.type(response) === "string")
+                    var message = response; //dropzone sends it's own error messages in string
+                else
+                    var message = response.file;
+                file.previewElement.classList.add("dz-error");
+                _ref = file.previewElement.querySelectorAll("[data-dz-errormessage]");
+                _results = [];
+                for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+                    node = _ref[_i];
+                    _results.push(node.textContent = message);
+                }
+                return _results;
             }
         });
         //FormDropzone.init();
