@@ -2,14 +2,16 @@
 
 namespace SmartCarBazar\Http\Controllers\Auth;
 
-use SmartCarBazar\User;
+use SmartCarBazar\Models\User;
 use Validator;
 use SmartCarBazar\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-
-class AuthController extends Controller
+use SmartCarBazar\Http\Controllers\CorporateController as CorporateController;
+class AuthController extends CorporateController
 {
+    public $redirectPath = '';
+    public $redirectAfterLogout='';
     /*
     |--------------------------------------------------------------------------
     | Registration & Login Controller
@@ -30,7 +32,10 @@ class AuthController extends Controller
      */
     public function __construct()
     {
+        $this->redirectAfterLogout = '/auth/login';
+        $this->redirectPath = admin_route('dashboard');
         $this->middleware('guest', ['except' => 'getLogout']);
+        parent::__construct();
     }
 
     /**
@@ -62,4 +67,5 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+     
 }

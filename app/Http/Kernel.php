@@ -29,5 +29,6 @@ class Kernel extends HttpKernel
         'auth' => \SmartCarBazar\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \SmartCarBazar\Http\Middleware\RedirectIfAuthenticated::class,
+        'acl' => \SmartCarBazar\Http\Middleware\CheckPermission::class,
     ];
 }

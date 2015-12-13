@@ -10,7 +10,8 @@
         "baum/baum": "~1.1",
         "laravelcollective/html": "~5.0",
         "intervention/image": "^2.3",
-        "intervention/imagecache": "^2.3"
+        "intervention/imagecache": "^2.3",
+        "yajra/laravel-datatables-oracle": "^5.12"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

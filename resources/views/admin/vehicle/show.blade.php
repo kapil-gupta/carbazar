@@ -2,167 +2,249 @@
 
 
 @section('pageHeadSpecificCSS')	{{-- Page Head Specific CSS Files --}}
-{!! Html::style('admin/global/plugins/select2/select2.css') !!}
+{!! Html::style('admin/global/plugins/fancybox/source/jquery.fancybox.css') !!}
+{!! Html::style('admin/pages/css/portfolio.css') !!}
 @stop
 
 @section('pageHeadSpecificJS')	{{-- Page Head Specific JS Files --}}
 @stop
 <?php
-$AllBrands = $page->getBody()->getDataByKey('Brands');
-$AllCategories = $page->getBody()->getDataByKey('Categories');
+$BrandList = $page->getBody()->getDataByKey('Brands');
+$Vehicle = $page->getBody()->getDataByKey('Vehicle');
+$FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
+$VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
+//$tab = $page->getBody()->getDataByKey('tab');
 ?>
 @section('bodyContent')	{{-- Page Body Content --}}
 <!-- START :: Logo -->
 <div class="row">
     <div class="col-md-12">
-        <div class="portlet light">
+        <!-- <form class="form-horizontal form-row-seperated" action="javascript:;">-->
+        <div class="portlet light bordered">
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-basket font-green-sharp"></i>
                     <span class="caption-subject font-green-sharp bold uppercase">
-                        Add Vehicle </span>
-                    <!--<span class="caption-helper">Man Tops</span>-->
+                        {{ $Vehicle->name}} </span>
+                </div>
+                <div class="actions btn-set">
+                    <!-- <button type="button" name="back" class="btn btn-default btn-circle"><i class="fa fa-angle-left"></i> Back</button>
+                    <button class="btn btn-default btn-circle "><i class="fa fa-reply"></i> Reset</button>
+                    <button class="btn green-haze btn-circle"><i class="fa fa-check"></i> Save</button>-->
+                    <a class="btn green-haze btn-circle" href="{{admin_route('vehicle.edit',$Vehicle->id)}}"><i class="fa fa-check-circle"></i> Edit</a>
                 </div>
             </div>
-            <div class="portlet-body">
-                {!! Form::open( array('name'=>'create', 'method'=>'POST', 'url'=>'admin/vehicle', 'class'=>'form-horizontal form-row-seperated','id'=>'form_sample_3')) !!}
-                <div class="form-body">
-                    <div class="form-group {{($errors->has('category_id')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Select Category: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-10">
-                            {!!  Form::select('category_id',$AllCategories , Input::old('category_id'), ['id'=>'category_id','placeholder' => 'Select a Category','class'=>'form-control input-xlarge select2me']) !!}
-                            @if ($errors->has('category_id'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('category_id')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('name')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Name: 
-                            <span class="required">*</span>
-                        </label>
-                        <div class="col-md-10">
-                            {!! Form::text('name', Input::old('name'), array('id'=>'name','class'=>'form-control','placeholder'=>'Vehicle name')) !!}
-                            @if ($errors->has('name'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('name')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('description')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Description: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-10">
-                            {!! Form::textarea('description', Input::old('description'), array('id'=>'decription','class'=>'form-control','placeholder'=>'Vehicle Description','rows'=>6,'data-error-container'=>'editor2_error')) !!}
-                            <div id="editor2_error"></div>
-                            @if ($errors->has('description'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('description')}}</span>
-                            @endif
-                        </div>
-                    </div>
+            <div class="portlet-body form bordered">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab_general" data-toggle="tab">
+                                General </a>
+                        </li>
+                        <li>
+                            <a href="#tab_meta" data-toggle="tab">
+                                Meta </a>
+                        </li>
+                        <li>
+                            <a href="#tab_images" data-toggle="tab">
+                                Images </a>
+                        </li>
+                        <li>
+                            <a href="#tab_features" data-toggle="tab">
+                                Features
+                            </a>
+                        </li>
 
-                    <div class="form-group {{($errors->has('model_id')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Select Model: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-10">
-                            <select class="form-control input-xlarge select2me" name="model_id" id="model_id" data-placeholder="Select...">
-                                <option value=""></option>
-                                @foreach($AllBrands as $brand)
-                                <option value="{{$brand->id}}"
-                                        <?php if($brand->id==Input::old('model_id')){echo 'selected';} ?>
-                                        >{{$brand->brand->name." ".$brand->name}}</option>
-                                @endforeach
-                            </select>
-                            @if ($errors->has('model_id'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('model_id')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('price')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Price: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-2">
-                            {!! Form::text('price', Input::old('price'),['id'=>'price','class'=>'form-control','placeholder'=>'Price']) !!}
-                            @if ($errors->has('price'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('price')}}</span>
-                            @endif
-                        </div>
-                    </div>
+                    </ul>
+                    <div class="tab-content no-space">
+                        <div class="tab-pane active" id="tab_general">
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Category:</label>
+                                            <div class="col-md-10">
+                                                <p class="form-control-static">{{$Vehicle->category->name}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Name: </label>
+                                            <div class="col-md-10">
+                                                <p class="form-control-static">{{$Vehicle->name}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Model:</label>
+                                            <div class="col-md-10"><p class="form-control-static">{{$Vehicle->model->brand->name." ".$Vehicle->model->name}}</p></div>
+                                        </div>
 
-                    <div class="form-group {{($errors->has('is_active')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Status: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-10">
-                            {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , Input::old('is_active'), ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
-                            @if ($errors->has('is_active'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('is_active')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('meta_title')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Meta Title:</label>
-                        <div class="col-md-10">
-                            {!! Form::text('meta_title', Input::old('meta_title'), array('id'=>'meta_title','class'=>'form-control','placeholder'=>'Meta Title','maxlength'=>100)) !!}
-                            <span class="help-block"> max 100 chars </span>
-                            @if ($errors->has('meta_title'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_title')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('meta_keywords')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Meta Keywords:</label>
-                        <div class="col-md-10">
-                            {!! Form::textarea('meta_keywords', Input::old('meta_keywords'), array('id'=>'meta_keywords','class'=>'form-control maxlength-handler','placeholder'=>'Meta Keywords','rows'=>8,'maxlength'=>255)) !!}
-                            <span class="help-block"> max 1000 chars </span>
-                            @if ($errors->has('meta_keywords'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_keywords')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-group {{($errors->has('meta_description')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Meta Description:</label>
-                        <div class="col-md-10">
-                            {!! Form::textarea('meta_description', Input::old('meta_description'), array('id'=>'meta_description','class'=>'form-control maxlength-handler','placeholder'=>'Meta Description','rows'=>8,'maxlength'=>255)) !!}
-                            <span class="help-block">max 255 chars </span>
-                            @if ($errors->has('meta_description'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_description')}}</span>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="form-actions">
-                        <div class="row">
-                            <div class="col-md-offset-3 col-md-9">
-                                <button type="submit" class="btn green">Submit</button>
-                                <button type="button" class="btn default">Cancel</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Price:</label>
+                                            <div class="col-md-2"><p class="form-control-static">{{$Vehicle->price}}</p></div>
+                                        </div>
+                                        s
+                                    </div>
+                                </div>  
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-md-2 control-label">Status:</label>
+                                            <div class="col-md-10"><p class="form-control-static">{{$Vehicle->IsActive}}</p></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="tab-pane" id="tab_meta">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Meta Title:</label>
+                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_title}}</p></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Meta Keywords:</label>
+                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_keywords}}</p></div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Meta Description:</label>
+                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_description}}</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_images">
+                            <div class="row mix-grid thumbnails">
+                                @foreach($Vehicle->photos  as $photo)
+                                <div class="col-md-4 mix category_1">
+                                    <div class="mix-inner">
+                                        <img class="img-responsive" src="{{route('imagecache',['large',$photo->name])}}" alt="">
+                                        <div class="mix-details">
+                                            <h3>{{$Vehicle->name}}</h3>
+                                            <a class="mix-preview fancybox-button" href="{{route('imagecache',['original',$photo->name])}}" title="{{$Vehicle->name}}" data-rel="fancybox-button">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_features">
+                            <div class="portlet box">
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <div class="form-body">
+                                        @foreach($FeatureCategory  as $category)
+                                        <h3 class="form-section green">{{$category->name}}</h3>
+                                        @if($category->features->count() > 0 )
+                                        @if(TEXT == $category->input_type)
+                                        <div class="row">
+                                            <?php
+                                            $i = 1;
+                                            foreach ($category->features as $feature) {
+                                                ?>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">{{$feature->name}}</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" class="form-control" placeholder="Chee Kin">
+                                                            <span class="help-block">
+                                                                This is inline help </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <?php
+                                                if ($i % 2 == 0) {
+                                                    echo '</div><div class="row">';
+                                                }
+                                                $i++;
+                                            }
+                                            ?>
+
+                                        </div>
+                                        @endif
+                                        @if(CHECKBOX == $category->input_type)
+                                        <div class="row">
+                                            <div class="form-group {{($errors->has('features_checkbox_'.$category->id)) ? "has-error" : ""}}">
+
+                                                <div class="checkbox-inline" data-error-container="#form_2_services_error">
+                                                    <?php
+                                                    foreach ($category->features as $feature) {
+                                                        echo '<label>';
+                                                        echo Form::checkbox("features_checkbox_" . $category->id . "[]", $feature->id, in_array($feature->id, $VehicleFeatures));
+                                                        echo $feature->name . '</label>&nbsp;&nbsp;';
+                                                    }
+                                                    ?>
+                                                    @if ($errors->has('features_checkbox_'.$category->id))
+                                                    <div id="form_2_membership_error">
+                                                        <span id="membership-error" class="help-block">{{ $errors->first('features_checkbox_'.$category->id) }}</span>
+                                                    </div>
+                                                    @endif 
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @if(RADIO == $category->input_type)
+                                    <div class="row">
+                                        <div class="form-group {{($errors->has('features_radio_'.$category->id)) ? "has-error" : ""}}">
+                                            <label class="control-label">&nbsp;&nbsp;&nbsp;</label>
+                                            <div class="col-md-9">
+                                                <div class="radio-list" data-error-container="#form_2_services_error">
+                                                    <?php
+                                                    foreach ($category->features as $feature) {
+                                                        echo '<label class="radio-inline">';
+                                                        echo Form::radio("features_radio_" . $category->id, $feature->id, in_array($feature->id, $VehicleFeatures));
+                                                        echo $feature->name . '</label>&nbsp;';
+                                                    }
+                                                    ?>
+                                                </div>
+                                                @if ($errors->has('features_radio_'.$category->id))
+                                                <div id="form_2_membership_error">
+                                                    <span id="membership-error" class="help-block">{{ $errors->first('features_radio_'.$category->id) }}</span>
+                                                </div>
+                                                @endif
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    @endif
+                                    @endif
+                                    <!--/row-->
+                                    @endforeach
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                {!! Form::close() !!}
             </div>
         </div>
-
     </div>
 </div>
 @stop
 
 @section('pageFooterSpecificPlugin')	{{-- Page Footer Specific Plugin Files --}}
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-{!! Html::script('admin/global/plugins/jquery-validation/js/jquery.validate.min.js') !!}
-{!! Html::script('admin/global/plugins/jquery-validation/js/additional-methods.min.js') !!}
-{!! Html::script('admin/global/plugins/select2/select2.min.js') !!}
-{!! Html::script('admin/global/plugins/ckeditor/ckeditor.js') !!}
-{!! Html::script('admin/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js') !!}
+{!! Html::script('admin/global/plugins/jquery-mixitup/jquery.mixitup.min.js') !!}
+{!! Html::script('admin/global/plugins/fancybox/source/jquery.fancybox.pack.js') !!}
 <!-- END PAGE LEVEL PLUGINS -->
 @stop
 
 @section('pageFooterSpecificJS')
-{!! Html::script('admin/custom/vehicle/create-form-validation.js') !!}
-{!! Html::script('admin/custom/vehicle/create.js') !!}
+{!! Html::script('admin/pages/scripts/portfolio.js') !!}
 @stop
 
 @section('pageFooterScriptInitialize')	{{-- Page Footer Script Initialization Code --}}
@@ -170,8 +252,7 @@ $AllCategories = $page->getBody()->getDataByKey('Categories');
     jQuery(document).ready(function () {
         Metronic.init(); // init metronic core componets
         Layout.init(); // init layout
-        //FormValidation.init();
-        VehicleAdd.init();
+         Portfolio.init();
     });
 </script>
 @stop

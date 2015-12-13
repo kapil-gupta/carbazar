@@ -14,6 +14,21 @@ class EditVehicleRequest extends Request {
      *
      * @return bool
      */
+    public function response(array $errors) {
+        if ($this->ajax() || $this->wantsJson()) {
+            return new JsonResponse($errors, 422);
+        }
+        if(count($this->extraMessage) > 0){
+            $url = $this->url();
+            $url .= '/edit/?tab=features';
+        } else{
+            $url=$this->getRedirectUrl();
+        }
+        return $this->redirector->to($url)
+                        ->withInput($this->except($this->dontFlash))
+                        ->withErrors($errors, $this->errorBag);
+    }
+
     public function authorize() {
         return true;
     }
@@ -29,10 +44,10 @@ class EditVehicleRequest extends Request {
      * @return array
      */
     public function rules() {
-        /*$Vehicle_id = $this->getSegmentFromEnd();
-        $Model = 
-        $vehicle = $vehicle->find();
-        */
+        /* $Vehicle_id = $this->getSegmentFromEnd();
+          $Model =
+          $vehicle = $vehicle->find();
+         */
         $radio_validation_array = [];
         $radio_validation_message_array = [];
 
@@ -91,7 +106,7 @@ class EditVehicleRequest extends Request {
             'model_id.required' => 'Please select Vehicle brand/model',
             'category_id.required' => 'Please select Vehicle brand/model',
             'price.required' => 'Please select Vehicle brand/model',
-            'is_active.required' => 'Please select Vehicle brand/model',
+            'is_active.required' => 'Please select status',
             'meta_title.required' => 'Meta title is required',
             'meta_keywords.required' => 'Meta keywords are required',
             'meta_description.required' => 'Meta description is required',

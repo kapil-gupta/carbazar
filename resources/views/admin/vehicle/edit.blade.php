@@ -32,31 +32,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                         Edit {{ $Vehicle->name}} </span>
                 </div>
                 <div class="actions btn-set">
-                    <!-- <button type="button" name="back" class="btn btn-default btn-circle"><i class="fa fa-angle-left"></i> Back</button>
-                    <button class="btn btn-default btn-circle "><i class="fa fa-reply"></i> Reset</button>
-                    <button class="btn green-haze btn-circle"><i class="fa fa-check"></i> Save</button>-->
                     <button class="btn green-haze btn-circle"><i class="fa fa-check-circle"></i> Save & Continue Edit</button>
-                    <!-- <div class="btn-group">
-                        <a class="btn yellow btn-circle" href="javascript:;" data-toggle="dropdown">
-                            <i class="fa fa-share"></i> More <i class="fa fa-angle-down"></i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li>
-                                <a href="javascript:;">
-                                    Duplicate </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    Delete </a>
-                            </li>
-                            <li class="divider">
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    Print </a>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
             <div class="portlet-body form">
@@ -147,7 +123,10 @@ $tab = $page->getBody()->getDataByKey('tab');
                                             * </span>
                                     </label>
                                     <div class="col-md-10">
-                                        {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , Input::old('is_active'), ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
+                                        <?php 
+                                            $is_active = Input::old('is_active')=='Active' ? 1:0; 
+                                        ?>
+                                        {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , $is_active, ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
                                         @if ($errors->has('is_active'))
                                         <span id="name-error" class="help-block help-block-error">{{$errors->first('is_active')}}</span>
                                         @endif
@@ -337,7 +316,7 @@ $tab = $page->getBody()->getDataByKey('tab');
         VehicleAdd.init();
         $("#mydropzone").dropzone({
             init: function () {
-                addRemoveLinks: true,
+               
                 this.on("success", function (file, response) {
                     //alert(JSON.stringify(response));
                     file.serverId = response.id;
@@ -345,6 +324,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                     file.size = response.size;
 
                 });
+               
                 this.on("removedfile", function (file) {
                     if (!file.serverId) {
                         return;
@@ -404,6 +384,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                     file.previewElement.appendChild(removeButton);
                 });
                     },
+            acceptedFiles: 'image/*',
             url: "{{ admin_route('vehicle.imageupload')}}",
             headers: {
                 'X-CSRF-Token': $('input[name="_token"]').val()

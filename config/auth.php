@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => SmartCarBazar\User::class,
+    'model' => SmartCarBazar\Models\User::class,
 
     /*
     |--------------------------------------------------------------------------

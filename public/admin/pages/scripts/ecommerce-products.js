@@ -33,7 +33,7 @@ var EcommerceProducts = function () {
                 ],
                 "pageLength": 10, // default record count per page
                 "ajax": {
-                    "url": "demo/ecommerce_products.php", // ajax source
+                  //  "url": "demo/ecommerce_products.php", // ajax source
                 },
                 "order": [
                     [1, "asc"]

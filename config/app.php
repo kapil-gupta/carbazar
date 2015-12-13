@@ -73,7 +73,7 @@ return [
       |
      */
     'key' => env('APP_KEY', 'SomeRandomString'),
-    'cipher' => 'AES-256-CBC',
+    'cipher' => MCRYPT_RIJNDAEL_128,
     /*
       |--------------------------------------------------------------------------
       | Logging Configuration
@@ -133,7 +133,8 @@ return [
         SmartCarBazar\Providers\EventServiceProvider::class,
         SmartCarBazar\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
+        yajra\Datatables\DatatablesServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -183,5 +184,6 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' =>Intervention\Image\Facades\Image::class,
         //'MorphVehicle' =>SmartCarBazar\Models\Vehicle::class
+        'Datatables' => yajra\Datatables\Datatables::class,
     ],
 ];

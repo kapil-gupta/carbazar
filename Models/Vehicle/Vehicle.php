@@ -15,11 +15,16 @@ class Vehicle extends BaseModel {
     protected $guarded = ['id'];
     protected $fillable = ['name', 'category_id', 'model_id', 'description', 'price', 'meta_title', 'meta_keywords', 'meta_description', 'is_active', 'created_by', 'updated_by'];
     public $timestamps = true;
-
-    public function model() {
-        return $this->hasMany('SmartCarBazar\Models\Brand\Model');
+    public function  getIsActiveAttribute($val){
+        return $val ? 'Active':'Not active';
     }
 
+    public function model() {
+        return $this->belongsTo('SmartCarBazar\Models\Brand\Model');
+    }
+    public function category() {
+        return $this->belongsTo('SmartCarBazar\Models\Category');
+    }
     public function features() {
         return $this->belongsToMany('SmartCarBazar\Models\Feature', 'vehicle_features');
     }
@@ -79,13 +84,16 @@ class Vehicle extends BaseModel {
         try {
             $vehicle->update($data);
             $vehicle->features()->sync(explode(',', $feature));
+            $Category = new \SmartCarBazar\Models\Category();
+            $AllCategories = $Category->getAll();
+            
             if($vehicle->photos()->count()==0){
                 $returnResponse['status'] = 0;
                 $returnResponse['id'] = $vehicle->id;
                 $returnResponse['tab'] ='images' ;
                 $returnResponse['error'] = 'Please upload min 1 photo';
             }
-            elseif ($vehicle->features()->count()==0) {
+            elseif ($vehicle->features()->count() <count($AllCategories)) {
                 $returnResponse['status'] = 0;
                 $returnResponse['id'] = $vehicle->id;
                 $returnResponse['tab'] ='images' ;
@@ -122,6 +130,10 @@ class Vehicle extends BaseModel {
         } catch (Exception $e) {
             throw new DBException($e->getMessage(), $e->getCode(), $e->getPrevious());
         }
+    }
+    public function ajaxListing($params){
+        $length = $params['length'] ? $params['length']:10;
+        $length = $params['length'] ? $params['length']:10;
     }
 
     public function remove($id) {
