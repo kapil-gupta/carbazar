@@ -48,98 +48,49 @@
         <!-- END SIDEBAR TOGGLER BUTTON -->
         <!-- BEGIN LOGIN -->
         <div class="content">
-            
-            <!-- BEGIN LOGIN FORM -->
-            <form class="login-form" action="/auth/login" method="post">
+
+            <!-- END LOGIN FORM -->
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+            <form class="forget-form" action="{{ url('/password/email') }}" method="post">
                 {!! csrf_field() !!}
-                <h3 class="form-title">Login to your account</h3>
-                @if($errors->has('email') || $errors->has('password'))
-                <div class="alert alert-danger">
-                    <button class="close" data-close="alert"></button>
-                    <span>
-                        <strong>Error(s):</strong>
-                        <?php
-                        if ($errors->has('email') && $errors->has('password')) {
-                            echo $errors->first('email') . '<br>' .
-                                    $errors->first('password');
-                        }else if ($errors->has('email') && !$errors->has('password')) {
-                            echo $errors->first('email');
-                        }if (!$errors->has('email') && $errors->has('password')) {
-                            echo $errors->first('password');
-                        }
-                        ?>
-                    </span>
-                </div>
-                @else
-                <div class="alert alert-danger display-hide">
-                    <button class="close" data-close="alert"></button>
-                    <span>Enter any username and password. </span>
+                @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
                 </div>
                 @endif
-                <div class="form-group">
-                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                    <label class="control-label visible-ie8 visible-ie9">Username</label>
+                <h3>Forget Password ?</h3>
+                <p>
+                    Enter your e-mail address below to reset your password.
+                </p>
+                <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                     <div class="input-icon">
-                        <i class="fa fa-user"></i>
-                        <input class="form-control placeholder-no-fix" type="email"  placeholder="Email" name="email" value="{{ old('email') }}"/>
+                        <i class="fa fa-envelope"></i>
+                        <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" value="{{ old('email') }}"/>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label visible-ie8 visible-ie9">Password</label>
-                    <div class="input-icon">
-                        <i class="fa fa-lock"></i>
-                        <input class="form-control placeholder-no-fix" type="password" placeholder="Password" name="password"/>
-                    </div>
+                    @if ($errors->has('email'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('email') }}</strong>
+                    </span>
+                    @endif
                 </div>
                 <div class="form-actions">
-                    <label class="checkbox">
-                        <input type="checkbox" name="remember" value="1"/> Remember me </label>
+                    <a href="{{ url('/login') }}" id="back-btn" class="btn" style="background-color: #FFF;">
+                        <i class="m-icon-swapleft"></i> Back </a>
                     <button type="submit" class="btn blue pull-right">
-                        Login <i class="m-icon-swapright m-icon-white"></i>
+                        Submit <i class="m-icon-swapright m-icon-white"></i>
                     </button>
                 </div>
-                <!-- <div class="login-options">
-                        <h4>Or login with</h4>
-                        <ul class="social-icons">
-                                <li>
-                                        <a class="facebook" data-original-title="facebook" href="#">
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="twitter" data-original-title="Twitter" href="#">
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="googleplus" data-original-title="Goole Plus" href="#">
-                                        </a>
-                                </li>
-                                <li>
-                                        <a class="linkedin" data-original-title="Linkedin" href="#">
-                                        </a>
-                                </li>
-                        </ul>
-                </div>-->
-                <div class="forget-password">
-                    <h4>Forgot your password ?</h4>
-                    <p>
-                        no worries, click <a href="/password/email" id="forget-password">
-                            here </a>
-                        to reset your password.
-                    </p>
-                </div>
-                <!--<div class="create-account">
-                        <p>
-                                 Don't have an account yet ?&nbsp; <a href="javascript:;" id="register-btn">
-                                Create an account </a>
-                        </p>
-                </div>-->
             </form>
-            <!-- END LOGIN FORM -->
+            <!-- END FORGOT PASSWORD FORM -->
+            <!-- BEGIN REGISTRATION FORM -->
 
+            <!-- END REGISTRATION FORM -->
         </div>
         <!-- END LOGIN -->
         <!-- BEGIN COPYRIGHT -->
-         @include('admin/elements/copyright')
+        <div class="copyright">
+            2014 &copy; Metronic - Admin Dashboard Template.
+        </div>
         <!-- END COPYRIGHT -->
         <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- BEGIN CORE PLUGINS -->
@@ -163,26 +114,26 @@
         <script src="/admin/global/scripts/metronic.js" type="text/javascript"></script>
         <script src="/admin/layout3/scripts/layout.js" type="text/javascript"></script>
         <script src="/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-        <script src="/admin/custom/vehicle/login.js" type="text/javascript"></script>
+        <script src="/admin/custom/vehicle/password.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <script>
-jQuery(document).ready(function () {
-    Metronic.init(); // init metronic core components
-    Layout.init(); // init current layout
-    Login.init();
-    Demo.init();
-    // init background slide images
-    $.backstretch([
-        "/admin/pages/media/bg/1.jpg",
-        "/admin/pages/media/bg/2.jpg",
-        "/admin/pages/media/bg/3.jpg",
-        "/admin/pages/media/bg/4.jpg"
-    ], {
-        fade: 1000,
-        duration: 8000
-    }
-    );
-});
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Login.init();
+            Demo.init();
+            // init background slide images
+            $.backstretch([
+                "/admin/pages/media/bg/1.jpg",
+                "/admin/pages/media/bg/2.jpg",
+                "/admin/pages/media/bg/3.jpg",
+                "/admin/pages/media/bg/4.jpg"
+            ], {
+                fade: 1000,
+                duration: 8000
+            }
+            );
+        });
         </script>
         <!-- END JAVASCRIPTS -->
     </body>

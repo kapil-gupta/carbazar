@@ -1,8 +1,6 @@
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
-    <div class="container">
-        {!! date('Y')!!} &copy; SmartCarBazar. All Rights Reserved.
-    </div>
+    @include('admin/elements/copyright')
 </div>
 <div class="scroll-to-top">
     <i class="icon-arrow-up"></i>

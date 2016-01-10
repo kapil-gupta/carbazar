@@ -3,6 +3,8 @@
 namespace SmartCarBazar\Models;
 
 //use Illuminate\Database\Eloquent\Model;
+use \Hash;
+use Auth;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -35,6 +37,10 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public function setPasswordAttribute($password) {
+        $this->attributes['password'] = Hash::make($password);
+    }
 
     /*
       |--------------------------------------------------------------------------
@@ -95,6 +101,26 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
      */
     public function roles() {
         return $this->belongsToMany('SmartCarBazar\Models\Role');
+    }
+
+    public function login($username, $password, $corporate_id = null) {
+        try {
+            $credentials = array('email' => $username, 'password' => $password);
+            $flag = Auth::attempt($credentials);
+            if($flag){
+                $user = Auth::user();
+                $user->last_login = date('Y-m-d H:i:s');
+                $user->last_activity = date('Y-m-d H:i:s');
+                $user->save();
+                return $user;
+            }
+            return false;
+        } catch (\Exception $e) {
+            echo $e->getMessage();exit;
+           // $this->validations->add('error', 'Please enter valid credentials.');
+        }
+
+        return false;
     }
 
 }
