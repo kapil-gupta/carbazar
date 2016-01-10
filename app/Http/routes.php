@@ -54,6 +54,8 @@ Route::group(['prefix' => $admin_routes_prefix,'middleware' => ['web','lock','au
     Route::get('dashboard', ['as' => 'admin.dashboard', 'uses' => 'Admin\DashboardController@index']);
     Route::post('vehicle/image-upload', ['as' => 'admin.vehicle.imageupload', 'uses' => 'Admin\PhotoController@save']);
     Route::get('/image/{size}/{file}', 'Admin\PhotoController@getImage');
+    Route::get('page-list', ['as' => 'page.list', 'uses' => 'Admin\PageController@getList']);
+    Route::resource('page', 'Admin\PageController');
 });
 Route::get('vehicle/images/{id}/{type}', ['as' => 'vehicle.images', 'uses' => 'Admin\PhotoController@getImage']);
 Route::delete('image/{id}', ['as' => 'image.delete', 'uses' => 'Admin\PhotoController@delete']);

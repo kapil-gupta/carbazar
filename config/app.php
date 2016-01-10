@@ -136,6 +136,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         yajra\Datatables\DatatablesServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
+        Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------

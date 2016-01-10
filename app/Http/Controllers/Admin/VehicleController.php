@@ -115,7 +115,7 @@ class VehicleController extends CorporateController {
      * @return \Illuminate\Http\Response
      */
     public function show($id) {
-        $ModelVehicle = new \SmartCarBazar\Models\Vehicle();
+        $ModelVehicle = new Vehicle();
         $vehicle = $ModelVehicle->view($id, 0);
         $ModelFeatureCategory = new \SmartCarBazar\Models\FeatureCategory();
         $FeatureCategory = $ModelFeatureCategory->getAll();
@@ -150,7 +150,6 @@ class VehicleController extends CorporateController {
         $Category = new \SmartCarBazar\Models\Category();
         $ModelFeatureCategory = new \SmartCarBazar\Models\FeatureCategory();
         $FeatureCategory = $ModelFeatureCategory->getAll();
-        //dd($FeatureCategory);
         $AllBrands = $Brands->getAll();
         foreach ($AllBrands as $brand) {
             $BrandList[$brand->id] = $brand->brand->name . ' ' . $brand->name;

@@ -1,7 +1,7 @@
 <?php
 
 namespace SmartCarBazar\Models;
-use SmartCarBazar\Models\CommonAttributes as CommonAttributes;
+use SmartCarBazar\Models\CommonAttributes;
 
 class FeatureCategory extends CommonAttributes {
     public function features() {

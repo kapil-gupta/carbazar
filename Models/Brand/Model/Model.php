@@ -2,7 +2,7 @@
 
 namespace SmartCarBazar\Models\Brand;
 
-use SmartCarBazar\Models\CommonAttributes as CommonAttributes;
+use SmartCarBazar\Models\CommonAttributes;
 
 class Model extends CommonAttributes {
 

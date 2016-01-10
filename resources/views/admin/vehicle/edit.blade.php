@@ -123,8 +123,8 @@ $tab = $page->getBody()->getDataByKey('tab');
                                             * </span>
                                     </label>
                                     <div class="col-md-10">
-                                        <?php 
-                                            $is_active = Input::old('is_active')=='Active' ? 1:0; 
+                                        <?php
+                                        $is_active = Input::old('is_active') == 'Active' ? 1 : 0;
                                         ?>
                                         {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , $is_active, ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
                                         @if ($errors->has('is_active'))
@@ -141,7 +141,13 @@ $tab = $page->getBody()->getDataByKey('tab');
                                 <div class="form-group {{($errors->has('meta_title')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Meta Title:</label>
                                     <div class="col-md-10">
-                                        {!! Form::text('meta_title', Input::old('meta_title'), array('id'=>'meta_title','class'=>'form-control','placeholder'=>'Meta Title','maxlength'=>100)) !!}
+                                        <?php
+                                        $meta_title = $Vehicle->seo->title;
+                                        if (Input::old('meta_title')) {
+                                            $meta_title = Input::old('meta_title');
+                                        }
+                                        ?>
+                                        {!! Form::text('meta_title', $meta_title, array('id'=>'meta_title','class'=>'form-control','placeholder'=>'Meta Title','maxlength'=>100)) !!}
                                         <span class="help-block"> max 100 chars </span>
                                         @if ($errors->has('meta_title'))
                                         <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_title')}}</span>
@@ -151,7 +157,13 @@ $tab = $page->getBody()->getDataByKey('tab');
                                 <div class="form-group {{($errors->has('meta_keywords')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Meta Keywords:</label>
                                     <div class="col-md-10">
-                                        {!! Form::textarea('meta_keywords', Input::old('meta_keywords'), array('id'=>'meta_keywords','class'=>'form-control maxlength-handler','placeholder'=>'Meta Keywords','rows'=>8,'maxlength'=>255)) !!}
+                                        <?php
+                                        $meta_keywords = $Vehicle->seo->keyword;
+                                        if (Input::old('meta_keywords')) {
+                                            $meta_keywords = Input::old('meta_keywords');
+                                        }
+                                        ?>
+                                        {!! Form::textarea('meta_keywords', $meta_keywords, array('id'=>'meta_keywords','class'=>'form-control maxlength-handler','placeholder'=>'Meta Keywords','rows'=>8,'maxlength'=>255)) !!}
                                         <span class="help-block"> max 1000 chars </span>
                                         @if ($errors->has('meta_keywords'))
                                         <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_keywords')}}</span>
@@ -161,7 +173,13 @@ $tab = $page->getBody()->getDataByKey('tab');
                                 <div class="form-group {{($errors->has('meta_description')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Meta Description:</label>
                                     <div class="col-md-10">
-                                        {!! Form::textarea('meta_description', Input::old('meta_description'), array('id'=>'meta_description','class'=>'form-control maxlength-handler','placeholder'=>'Meta Description','rows'=>8,'maxlength'=>255)) !!}
+                                        <?php
+                                        $meta_description = $Vehicle->seo->description;
+                                        if (Input::old('meta_description')) {
+                                            $meta_description = Input::old('meta_description');
+                                        }
+                                        ?>
+                                        {!! Form::textarea('meta_description', $meta_description, array('id'=>'meta_description','class'=>'form-control maxlength-handler','placeholder'=>'Meta Description','rows'=>8,'maxlength'=>255)) !!}
                                         <span class="help-block">max 255 chars </span>
                                         @if ($errors->has('meta_description'))
                                         <span id="name-error" class="help-block help-block-error">{{$errors->first('meta_description')}}</span>
@@ -316,7 +334,7 @@ $tab = $page->getBody()->getDataByKey('tab');
         VehicleAdd.init();
         $("#mydropzone").dropzone({
             init: function () {
-               
+
                 this.on("success", function (file, response) {
                     //alert(JSON.stringify(response));
                     file.serverId = response.id;
@@ -324,7 +342,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                     file.size = response.size;
 
                 });
-               
+
                 this.on("removedfile", function (file) {
                     if (!file.serverId) {
                         return;
@@ -335,7 +353,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                     $.ajax({
                         url: url,
                         type: 'DELETE',
-                        success: function(result) {
+                        success: function (result) {
                             // Do something with the result
                         }
                     });

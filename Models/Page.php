@@ -4,34 +4,38 @@ namespace SmartCarBazar\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use \Exception as Exception;
+use SmartCarBazar\Models\CommonAttributes;
+use SmartCarBazar\Models\Seo;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Vehicle extends BaseModel {
+class Page extends CommonAttributes implements SluggableInterface {
 
-    use SoftDeletes;
+    use SluggableTrait;
 
-    protected $morphClass = 'vehicle';
-    protected $table = 'vehicle';
+    protected $sluggable = [
+        'build_from' => 'name',
+        'save_to' => 'slug',
+    ];
+    ///protected $morphClass = 'vehicle';
+    protected $table = 'common_attributes';
     protected $dates = ['deleted_at'];
     protected $guarded = ['id'];
-    protected $fillable = ['name', 'category_id', 'model_id', 'description', 'price','is_active', 'created_by', 'updated_by'];
+    protected $fillable = ['name', 'parent_id', 'type', 'slug', 'description', 'is_active', 'created_by', 'updated_by'];
     public $timestamps = true;
-    public function  getIsActiveAttribute($val){
-        return $val ? 'Active':'Not active';
+
+    public function getIsActiveAttribute($val) {
+        return $val ? 'Active' : 'Not active';
     }
 
-    public function model() {
-        return $this->belongsTo('SmartCarBazar\Models\Brand\Model');
-    }
     public function category() {
         return $this->belongsTo('SmartCarBazar\Models\Category');
-    }
-    public function features() {
-        return $this->belongsToMany('SmartCarBazar\Models\Feature', 'vehicle_features');
     }
 
     public function photos() {
         return $this->morphMany('SmartCarBazar\Models\Photo', 'imageable');
     }
+
     public function seo() {
         return $this->morphOne('SmartCarBazar\Models\Seo', 'seoable');
     }
@@ -39,23 +43,35 @@ class Vehicle extends BaseModel {
     public function add($data, $corporate_id = 0) {
         $returnResponse = ['status' => 1, 'code' => null, 'msg' => null];
         try {
+            if (empty($data['parent_id']) || '' == $data['parent_id'])
+                unset($data['parent_id']);
+            $data['type'] = 'page';
             $seo['title'] = $data['meta_title'];
             $seo['keyword'] = $data['meta_keywords'];
             $seo['description'] = $data['meta_description'];
             unset($data['meta_title']);
             unset($data['meta_keywords']);
             unset($data['meta_description']);
-            
-            $vehicle = self::create($data);
-             if ($vehicle)
-                $vehicle->seo()->create($seo);
-            if ($vehicle) {
+            $page = self::create($data);
+
+            if ($page)
+                $page->seo()->create($seo);
+            //dd(\DB::getQueryLog());
+            if ($page) {
                 $returnResponse['status'] = 1;
-                $returnResponse['id'] = $vehicle;
+                $returnResponse['id'] = $page;
             } else {
                 $returnResponse['status'] = 0;
             }
-        } catch (Exception $e) {
+        } catch (\Illuminate\Database\QueryException $e) {
+            $errorCode = $e->errorInfo[1];
+            if ($errorCode == 1062) {
+                // houston, we have a duplicate entry problem
+                $returnResponse['status'] = 0;
+                $returnResponse['code'] = 1062;
+                $returnResponse['msg'] = 'Please enter a unique page name';
+            }
+        } catch (\Exception $e) {
             $returnResponse['status'] = 0;
             $returnResponse['code'] = $e->getCode();
             $returnResponse['msg'] = 'There is some error Please try After some time';
@@ -89,40 +105,35 @@ class Vehicle extends BaseModel {
     }
 
     public function edit($id, $data) {
-        $feature = $data['features'];
-        unset($data['features']);
-        $vehicle = $this::find($id);
+        $page = $this::find($id);
         $returnResponse = ['status' => 1, 'code' => null, 'msg' => null];
         try {
+            if (empty($data['parent_id']) || '' == $data['parent_id'])
+                unset($data['parent_id']);
             $seo['title'] = $data['meta_title'];
             $seo['keyword'] = $data['meta_keywords'];
             $seo['description'] = $data['meta_description'];
             unset($data['meta_title']);
             unset($data['meta_keywords']);
             unset($data['meta_description']);
-            $vehicle->update($data);
-            if ($vehicle->seo()->count())
-                $vehicle->seo()->update($seo);
-            $vehicle->features()->sync(explode(',', $feature));
-            $Category = new \SmartCarBazar\Models\Category();
-            $AllCategories = $Category->getAll();
-            
-            if($vehicle->photos()->count()==0){
-                $returnResponse['status'] = 0;
-                $returnResponse['id'] = $vehicle->id;
-                $returnResponse['tab'] ='images' ;
-                $returnResponse['error'] = 'Please upload min 1 photo';
-            }
-            elseif ($vehicle->features()->count() <count($AllCategories)) {
-                $returnResponse['status'] = 0;
-                $returnResponse['id'] = $vehicle->id;
-                $returnResponse['tab'] ='images' ;
-                $returnResponse['error'] = 'Please select min 1 feature in each category';
-            } else {
+            $res = $page->update($data);
+            if ($page->seo()->count())
+                $page->seo()->update($seo);
+            if ($page) {
                 $returnResponse['status'] = 1;
-                $returnResponse['id'] = $vehicle->id;
+                $returnResponse['id'] = $page;
+            } else {
+                $returnResponse['status'] = 0;
             }
-        } catch (Exception $e) {
+        } catch (\Illuminate\Database\QueryException $e) {
+            $errorCode = $e->errorInfo[1];
+            if ($errorCode == 1062) {
+                // houston, we have a duplicate entry problem
+                $returnResponse['status'] = 0;
+                $returnResponse['code'] = 1062;
+                $returnResponse['msg'] = 'Please enter a unique page name';
+            }
+        } catch (\Exception $e) {
             $returnResponse['status'] = 0;
             $returnResponse['code'] = $e->getCode();
             $returnResponse['msg'] = 'There is some error Please try After some time';
@@ -151,9 +162,10 @@ class Vehicle extends BaseModel {
             throw new DBException($e->getMessage(), $e->getCode(), $e->getPrevious());
         }
     }
-    public function ajaxListing($params){
-        $length = $params['length'] ? $params['length']:10;
-        $length = $params['length'] ? $params['length']:10;
+
+    public function ajaxListing($params) {
+        $length = $params['length'] ? $params['length'] : 10;
+        $length = $params['length'] ? $params['length'] : 10;
     }
 
     public function remove($id) {

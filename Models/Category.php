@@ -11,9 +11,17 @@ class Category extends CommonAttributes {
     public function getAll() {
         return $this::category()->active()->lists('name','id');
     }
+    public function getPagesCategory() {
+        return $this::pages()->active()->lists('name','id');
+    }
     public function scopeCategory($query)
     {
         return $query->where('type','category');
+    }
+    
+    public function scopePages($query)
+    {
+        return $query->where('type','page');
     }
     public function scopeActive($query)
     {
