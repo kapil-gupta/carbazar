@@ -21,12 +21,12 @@ class PageController extends CorporateController {
     }
 
     public function getList() {
-        $ModelPage = new \SmartCarBazar\Models\Vehicle();
-
-        $records = $ModelPage::with('category', 'model', 'model.brand')->select('*');
+        $ModelPage = new \SmartCarBazar\Models\Page();
+        $records = $ModelPage::with('parent')->page()->get();
         return Datatables::of($records)
                         ->addColumn('action', function ($records) {
-                            return '<a href="' . admin_route('vehicle.edit', $records->id) . '" class="btn btn-xs default btn-editable"><i class="fa fa-pencil"></i> Edit</a>';
+                            return '<a href="' . admin_route('page.edit', $records->id) . '" class="btn btn-xs default btn-editable red-stripe"><i class="fa fa-pencil"></i> Edit</a>'
+                                    . '<a href="' . admin_route('page.show', $records->id) . '" class="btn default btn-xs green-stripe">View</a>';
                         })
                         ->editColumn('id', 'ID: {{$id}}')
                         ->setRowId('id')
@@ -67,7 +67,6 @@ class PageController extends CorporateController {
     public function create() {
         $Category = new Category();
         $AllCategories = $Category->getPagesCategory();
-        //print_r($AllCategories);die;
         /* Breadcrumbs */
         $title = "Create Page";
         $this->page->getBody()->addBreadcrumb('Pages', '/page');
@@ -89,12 +88,12 @@ class PageController extends CorporateController {
      * @return \Illuminate\Http\Response
      */
     public function store(StorePageRequest $request) {
-        $input = $request->only(['name', 'parent_id','description',  'is_active', 'meta_title', 'meta_keywords', 'meta_description']);
+        $input = $request->only(['name', 'parent_id', 'description', 'is_active', 'meta_title', 'meta_keywords', 'meta_description']);
         $ModelPage = new Page();
         $result = $ModelPage->add($input);
 
         if ($result['status']) {
-            return redirect(admin_route('page.edit', ['id' => $result['id'], 'tab' => 'images']))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
+            return redirect(admin_route('page.show', ['id' => $result['id']]))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'created'))));
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }
@@ -111,7 +110,7 @@ class PageController extends CorporateController {
         $page = $ModelPage->view($id, 0);
         /* Breadcrumbs */
         $title = "Page";
-        $this->page->getBody()->addBreadcrumb('Page',  admin_route('page.index'));
+        $this->page->getBody()->addBreadcrumb('Page', admin_route('page.index'));
         $this->page->getBody()->addBreadcrumb($page->name, admin_route('page.show', $page->id));
         $this->page->getBody()->addBreadcrumb('Edit');
         /* Breadcrumbs */
@@ -133,12 +132,12 @@ class PageController extends CorporateController {
     public function edit($id, Request $request) {
         $Category = new Category();
         $AllCategories = $Category->getPagesCategory();
-        $ModelPage = new Page(); 
+        $ModelPage = new Page();
         $page = $ModelPage->view($id, 0);
-         
+
         /* Breadcrumbs */
         $title = "Edit Page";
-        $this->page->getBody()->addBreadcrumb('Vehicle', admin_route('page.index'));
+        $this->page->getBody()->addBreadcrumb('Pages', admin_route('page.index'));
         $this->page->getBody()->addBreadcrumb($page->name, admin_route('page.show', $page->id));
         $this->page->getBody()->addBreadcrumb('Edit');
         /* Breadcrumbs */
@@ -159,13 +158,11 @@ class PageController extends CorporateController {
      * @return \Illuminate\Http\Response
      */
     public function update(EditPageRequest $request, $page_id) {
-        $input = $request->only(['name', 'parent_id','description',  'is_active', 'meta_title', 'meta_keywords', 'meta_description']);
+        $input = $request->only(['name', 'parent_id', 'description', 'is_active', 'meta_title', 'meta_keywords', 'meta_description']);
         $ModelPage = new Page();
         $result = $ModelPage->edit($page_id, $input);
-        if ($result['status'] && !isset($result['tab'])) {
-            return redirect(admin_route('vehicle.show', $page_id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'updated'))));
-        } elseif (!$result['status'] && isset($result['tab'])) {
-            return redirect(admin_route('vehicle.edit', ['id' => $result['id'], 'tab' => $result['tab']]))->withErrors(['error' => $result['error']]);
+        if ($result['status']) {
+            return redirect(admin_route('page.show', $page_id))->with(array('success' => Lang::get('messages.crud.success', array('action' => 'updated'))));
         } else {
             return back()->withErrors(['error' => $result['msg']]);
         }

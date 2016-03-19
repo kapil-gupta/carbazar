@@ -19,7 +19,7 @@ $AllCategories = $page->getBody()->getDataByKey('Categories');
                 <div class="caption">
                     <i class="icon-basket font-green-sharp"></i>
                     <span class="caption-subject font-green-sharp bold uppercase">
-                        Add Vehicle </span>
+                        Add Page </span>
                     <!--<span class="caption-helper">Man Tops</span>-->
                 </div>
             </div>
@@ -31,7 +31,7 @@ $AllCategories = $page->getBody()->getDataByKey('Categories');
                                 * </span>
                         </label>
                         <div class="col-md-10">
-                            {!!  Form::select('parent_id',$AllCategories , Input::old('parent_id'), ['id'=>'parent_id','placeholder' => 'Select a Category','class'=>'form-control input-xlarge select2me']) !!}
+                            {!!  Form::select('parent_id',$AllCategories , Input::old('parent_id'), ['id'=>'parent_id','placeholder' => 'Select a parent','class'=>'form-control input-xlarge select2me']) !!}
                             @if ($errors->has('parent_id'))
                             <span id="name-error" class="help-block help-block-error">{{$errors->first('parent_id')}}</span>
                             @endif
@@ -67,7 +67,11 @@ $AllCategories = $page->getBody()->getDataByKey('Categories');
                                 * </span>
                         </label>
                         <div class="col-md-10">
-                            {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , Input::old('is_active'), ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
+                            <?php 
+                            $is_active = strtolower(Input::old('is_active'));
+                            $is_active = str_replace(' ' ,'_',$is_active);
+                            ?>
+                            {!!  Form::select('is_active',['active'=>'Active','not_active'=>'Not Active'] , $is_active, ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
                             @if ($errors->has('is_active'))
                             <span id="name-error" class="help-block help-block-error">{{$errors->first('is_active')}}</span>
                             @endif

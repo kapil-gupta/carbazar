@@ -46,38 +46,37 @@ $Page = $page->getBody()->getDataByKey('Page');
                     <div class="tab-content no-space">
                         <div class="tab-pane active" id="tab_general">
                             <div class="form-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Parent:</label>
-                                            <div class="col-md-10">
-                                                @if($Page->category()->count()){{$Page->category->name}}@endif
-                                            </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Parent:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                             @if($Page->category()->count()){{$Page->category->name}}@endif
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Name: </label>
-                                            <div class="col-md-10">
-                                               {{$Page->name}}
-                                            </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Name: 
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Page->name}}
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Description:</label>
-                                            <div class="col-md-10">{!! $Page->description !!}</div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Description:
                                         </div>
-
+                                        <div class="col-md-7 value">
+                                            {!! $Page->description !!}
+                                        </div>
                                     </div>
-                                </div>  
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Status:</label>
-                                            <div class="col-md-10">{{$Page->IsActive}}</div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Status:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            {{$Page->IsActive}}
                                         </div>
                                     </div>
                                 </div>
@@ -85,20 +84,31 @@ $Page = $page->getBody()->getDataByKey('Page');
                         </div>
                         <div class="tab-pane" id="tab_meta">
                             <div class="form-body">
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                    <label class="col-md-2 control-label">Meta Title:</label>
-                                    <div class="col-md-10">{{$Page->seo->title}}</div></div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                    <label class="col-md-2 control-label">Meta Keywords:</label>
-                                    <div class="col-md-10">{{$Page->seo->keywords}}</div></div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                    <label class="col-md-2 control-label">Meta Description:</label>
-                                    <div class="col-md-10">{{$Page->seo->description}}</div></div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Meta Title:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            {{$Page->seo->title}}
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Meta Keywords:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            {{$Page->seo->keyword}}
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 name">
+                                            Meta Description:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                            {{$Page->seo->description}}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

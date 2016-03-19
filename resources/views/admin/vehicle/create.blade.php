@@ -92,17 +92,6 @@ $AllCategories = $page->getBody()->getDataByKey('Categories');
                         </div>
                     </div>
 
-                    <div class="form-group {{($errors->has('is_active')) ? "has-error" : ""}}">
-                        <label class="col-md-2 control-label">Status: <span class="required">
-                                * </span>
-                        </label>
-                        <div class="col-md-10">
-                            {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , Input::old('is_active'), ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
-                            @if ($errors->has('is_active'))
-                            <span id="name-error" class="help-block help-block-error">{{$errors->first('is_active')}}</span>
-                            @endif
-                        </div>
-                    </div>
                     <div class="form-group {{($errors->has('meta_title')) ? "has-error" : ""}}">
                         <label class="col-md-2 control-label">Meta Title:</label>
                         <div class="col-md-10">

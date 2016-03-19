@@ -12,8 +12,8 @@
  */
 
 Route::get('/', function() {
-
-    return view('admin.dashboard.index');
+return view('frontend.dashboard.index');
+   // return view('admin.dashboard.index');
 });
 $admin_routes_prefix = config('app.backend_uri');
 Route::get('/login', function() {

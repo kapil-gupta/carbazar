@@ -15,6 +15,7 @@ $Vehicle = $page->getBody()->getDataByKey('Vehicle');
 $FeatureCategory = $page->getBody()->getDataByKey('FeatureCategory');
 $VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
 $tab = $page->getBody()->getDataByKey('tab');
+//print_r($Vehicle);exit;
 ?>
 @section('bodyContent')	{{-- Page Body Content --}}
 <!-- START :: Logo -->
@@ -60,6 +61,16 @@ $tab = $page->getBody()->getDataByKey('tab');
                     <div class="tab-content no-space">
                         <div class="tab-pane <?php if (null == $tab) echo 'active'; ?>" id="tab_general">
                             <div class="form-body">
+                                <div class="form-group {{($errors->has('is_active')) ? "has-error" : ""}}">
+                                    <label class="col-md-2 control-label">Status: <span class="required">
+                                            * </span>
+                                    </label>
+                                    <div class="col-md-10">
+                                        <?php
+                                        echo $Vehicle->is_active;
+                                        ?>
+                                    </div>
+                                </div>
                                 <div class="form-group {{($errors->has('category_id')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Select Category: <span class="required">
                                             * </span>
@@ -82,18 +93,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                                         @endif
                                     </div>
                                 </div>
-                                <div class="form-group {{($errors->has('description')) ? "has-error" : ""}}">
-                                    <label class="col-md-2 control-label">Description: <span class="required">
-                                            * </span>
-                                    </label>
-                                    <div class="col-md-10">
-                                        {!! Form::textarea('description', Input::old('description'), array('id'=>'decription','class'=>'form-control','placeholder'=>'Vehicle Description','rows'=>6,'data-error-container'=>'editor2_error')) !!}
-                                        <div id="editor2_error"></div>
-                                        @if ($errors->has('description'))
-                                        <span id="name-error" class="help-block help-block-error">{{$errors->first('description')}}</span>
-                                        @endif
-                                    </div>
-                                </div>
+                                
 
                                 <div class="form-group {{($errors->has('model_id')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Select Model: <span class="required">
@@ -118,17 +118,15 @@ $tab = $page->getBody()->getDataByKey('tab');
                                     </div>
                                 </div>
 
-                                <div class="form-group {{($errors->has('is_active')) ? "has-error" : ""}}">
-                                    <label class="col-md-2 control-label">Status: <span class="required">
+                                <div class="form-group {{($errors->has('description')) ? "has-error" : ""}}">
+                                    <label class="col-md-2 control-label">Description: <span class="required">
                                             * </span>
                                     </label>
                                     <div class="col-md-10">
-                                        <?php
-                                        $is_active = Input::old('is_active') == 'Active' ? 1 : 0;
-                                        ?>
-                                        {!!  Form::select('is_active',['0'=>'Not Active','1'=>'Active'] , $is_active, ['id'=>'is_active','placeholder' => 'Select Status','class'=>'table-group-action-input form-control input-medium']) !!}
-                                        @if ($errors->has('is_active'))
-                                        <span id="name-error" class="help-block help-block-error">{{$errors->first('is_active')}}</span>
+                                        {!! Form::textarea('description', Input::old('description'), array('id'=>'decription','class'=>'form-control','placeholder'=>'Vehicle Description','rows'=>6,'data-error-container'=>'editor2_error')) !!}
+                                        <div id="editor2_error"></div>
+                                        @if ($errors->has('description'))
+                                        <span id="name-error" class="help-block help-block-error">{{$errors->first('description')}}</span>
                                         @endif
                                     </div>
                                 </div>
@@ -141,11 +139,11 @@ $tab = $page->getBody()->getDataByKey('tab');
                                 <div class="form-group {{($errors->has('meta_title')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Meta Title:</label>
                                     <div class="col-md-10">
-                                        <?php
+                                        <?php 
                                         $meta_title = $Vehicle->seo->title;
                                         if (Input::old('meta_title')) {
                                             $meta_title = Input::old('meta_title');
-                                        }
+                                        } 
                                         ?>
                                         {!! Form::text('meta_title', $meta_title, array('id'=>'meta_title','class'=>'form-control','placeholder'=>'Meta Title','maxlength'=>100)) !!}
                                         <span class="help-block"> max 100 chars </span>
@@ -157,7 +155,7 @@ $tab = $page->getBody()->getDataByKey('tab');
                                 <div class="form-group {{($errors->has('meta_keywords')) ? "has-error" : ""}}">
                                     <label class="col-md-2 control-label">Meta Keywords:</label>
                                     <div class="col-md-10">
-                                        <?php
+                                        <?php 
                                         $meta_keywords = $Vehicle->seo->keyword;
                                         if (Input::old('meta_keywords')) {
                                             $meta_keywords = Input::old('meta_keywords');

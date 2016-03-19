@@ -70,31 +70,31 @@
                     <table class="table table-striped table-bordered table-hover" id="datatable_products">
                         <thead>
                             <tr role="row" class="heading">
-                                <th width="10%">
+                                <th>
                                     ID
                                 </th>
-                                <th width="15%">
+                                <th>
                                     Product&nbsp;Name
                                 </th>
-                                <th width="15%">
+                                <th>
                                     Category
                                 </th>
-                                <th width="15%">
+                                <th>
                                    Brand
                                 </th>
-                                <th width="15%">
+                                <th>
                                     Model
                                 </th>
-                                <th width="10%">
+                                <th>
                                     Price
                                 </th>
-                                <th width="15%">
+                                <th>
                                     Date&nbsp;Created
                                 </th>
-                                <th width="10%">
+                                <th>
                                     Status
                                 </th>
-                                <th width="10%">
+                                <th>
                                     Action
                                 </th>
                             </tr>

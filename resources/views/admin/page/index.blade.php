@@ -22,37 +22,44 @@
         <!-- Begin: life time stats -->
         <div class="portlet light">
             <div class="portlet-title">
-               <div class="caption">
+                <div class="caption">
                     <i class="fa fa-gift font-green-sharp"></i>
-                    <span class="caption-subject font-green-sharp bold uppercase">Vehicles</span>
+                    <span class="caption-subject font-green-sharp bold uppercase">Pages</span>
                 </div>
-                 <!--<div class="actions">
+                <div class="actions">
                     <div class="btn-group">
-                        <a class="btn btn-default btn-circle" href="javascript:;" data-toggle="dropdown">
-                            <i class="fa fa-share"></i> Tools <i class="fa fa-angle-down"></i>
+                        <a class="btn btn-default btn-circle green" href="javascript:;" data-toggle="dropdown">
+                            Add New
                         </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li>
-                                <a href="javascript:;">
-                                    Export to Excel </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    Export to CSV </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    Export to XML </a>
-                            </li>
-                            <li class="divider">
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    Print Invoices </a>
-                            </li>
-                        </ul>
                     </div>
-                </div>-->
+                </div>
+                <!--<div class="actions">
+                   <div class="btn-group">
+                       <a class="btn btn-default btn-circle" href="javascript:;" data-toggle="dropdown">
+                           <i class="fa fa-share"></i> Tools <i class="fa fa-angle-down"></i>
+                       </a>
+                       <ul class="dropdown-menu pull-right">
+                           <li>
+                               <a href="javascript:;">
+                                   Export to Excel </a>
+                           </li>
+                           <li>
+                               <a href="javascript:;">
+                                   Export to CSV </a>
+                           </li>
+                           <li>
+                               <a href="javascript:;">
+                                   Export to XML </a>
+                           </li>
+                           <li class="divider">
+                           </li>
+                           <li>
+                               <a href="javascript:;">
+                                   Print Invoices </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>-->
             </div> 
             <div class="portlet-body">
                 <div class="table-container">
@@ -70,31 +77,26 @@
                     <table class="table table-striped table-bordered table-hover" id="datatable_products">
                         <thead>
                             <tr role="row" class="heading">
-                                <th width="10%">
+                                <th>
                                     ID
                                 </th>
-                                <th width="15%">
-                                    Product&nbsp;Name
-                                </th>
-                                <th width="15%">
+
+                                <th>
                                     Category
                                 </th>
-                                <th width="15%">
-                                   Brand
+                                <th>
+                                    Page Name
                                 </th>
-                                <th width="15%">
-                                    Model
+                                <th>
+                                    Description
                                 </th>
-                                <th width="10%">
-                                    Price
-                                </th>
-                                <th width="15%">
+                                <th>
                                     Date&nbsp;Created
                                 </th>
-                                <th width="10%">
+                                <th>
                                     Status
                                 </th>
-                                <th width="10%">
+                                <th>
                                     Action
                                 </th>
                             </tr>
@@ -132,17 +134,15 @@
         $('#datatable_products').DataTable({
             processing: true,
             serverSide: true,
-            ajax: '{!! route('vehicle.list') !!}',
+            ajax: '{!! route('page.list') !!}',
             columns: [
                 {data: 'id', name: 'id'},
+                {data: 'parent.name', name: 'parent', orderable: false, searchable: false, defaultContent: ''},
                 {data: 'name', name: 'name'},
-                {data: 'category.name', name: 'categroy', orderable: false, searchable: false},
-                {data: 'model.brand.name' , name: 'brand', orderable: false, searchable: false},
-                {data: 'model.name' , name: 'model', orderable: false, searchable: false},
-                {data: 'price', name: 'price'},
+                {data: 'description', name: 'description'},
                 {data: 'created_at', name: 'created_at'},
                 {data: 'is_active', name: 'is_active'},
-                 {data: 'action', name: 'action', orderable: false, searchable: false}
+                {data: 'action', name: 'action', orderable: false, searchable: false}
             ]
         });
     });

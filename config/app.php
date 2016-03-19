@@ -24,9 +24,9 @@ return [
       | your application so that it is used when running Artisan tasks.
       |
      */
-    'url' => 'http://dev.smartcarbazar.com',
+    'url' => 'http://smartcarbazar.local',
     'title' => 'SmartCarBazar',
-    'base_url' => 'smartcarbazar.com',
+    'base_url' => 'smartcarbazar.local',
     'static_subdomains' => array('dev.smartcarbazar', 'qa.smartcarbazar', 'smartcarbazar'),
     'backend_uri' => 'admin',
     /*
@@ -138,6 +138,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
         Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider::class,
+        Pingpong\Menus\MenusServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -188,5 +189,6 @@ return [
         'Image' =>Intervention\Image\Facades\Image::class,
         //'MorphVehicle' =>SmartCarBazar\Models\Vehicle::class
         'Datatables' => yajra\Datatables\Datatables::class,
+        'Menu' => Pingpong\Menus\MenuFacade::class,
     ],
 ];

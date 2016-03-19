@@ -39,7 +39,7 @@ class Lock {
                 $now = strtotime("now");
                 $last_activity = strtotime($this->auth->user()->last_activity);
                 $diff = ( ($now - $last_activity) / 60 );
-                $timeout = "1000";
+                $timeout = "10";
                 if ($diff > $timeout && !$request->ajax()) {
                     session(['locked' => 1]);
                     $_SESSION['_sf2_attributes.url.intended'] = $request->fullUrl();

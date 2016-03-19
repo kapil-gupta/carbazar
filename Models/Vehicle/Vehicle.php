@@ -15,8 +15,8 @@ class Vehicle extends BaseModel {
     protected $guarded = ['id'];
     protected $fillable = ['name', 'category_id', 'model_id', 'description', 'price','is_active', 'created_by', 'updated_by'];
     public $timestamps = true;
-    public function  getIsActiveAttribute($val){
-        return $val ? 'Active':'Not active';
+    public function getIsActiveAttribute($val) {
+        return $val? 'Active' : 'Not active';
     }
 
     public function model() {
@@ -45,7 +45,7 @@ class Vehicle extends BaseModel {
             unset($data['meta_title']);
             unset($data['meta_keywords']);
             unset($data['meta_description']);
-            
+            $data['is_active']=0;
             $vehicle = self::create($data);
              if ($vehicle)
                 $vehicle->seo()->create($seo);
@@ -119,6 +119,8 @@ class Vehicle extends BaseModel {
                 $returnResponse['tab'] ='images' ;
                 $returnResponse['error'] = 'Please select min 1 feature in each category';
             } else {
+                $vehicle->is_active=1;
+                $vehicle->save();
                 $returnResponse['status'] = 1;
                 $returnResponse['id'] = $vehicle->id;
             }

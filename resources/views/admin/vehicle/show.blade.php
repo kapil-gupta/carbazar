@@ -58,64 +58,80 @@ $VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
                     </ul>
                     <div class="tab-content no-space">
                         <div class="tab-pane active" id="tab_general">
-                            <div class="form-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Category:</label>
-                                            <div class="col-md-10">
-                                                <p class="form-control-static">{{$Vehicle->category->name}}</p>
-                                            </div>
+                            <div class="portlet-body">
+                                <div class="col-md-6  col-sm-12">
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Category:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->category->name}}
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Name: </label>
-                                            <div class="col-md-10">
-                                                <p class="form-control-static">{{$Vehicle->name}}</p>
-                                            </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                             Model:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->model->brand->name." ".$Vehicle->model->name}}
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                             Status:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->IsActive}}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Model:</label>
-                                            <div class="col-md-10"><p class="form-control-static">{{$Vehicle->model->brand->name." ".$Vehicle->model->name}}</p></div>
+                                <div class="col-md-6  col-sm-12">
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Name:
                                         </div>
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Price:</label>
-                                            <div class="col-md-2"><p class="form-control-static">{{$Vehicle->price}}</p></div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->name}}
                                         </div>
-                                        s
                                     </div>
-                                </div>  
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Status:</label>
-                                            <div class="col-md-10"><p class="form-control-static">{{$Vehicle->IsActive}}</p></div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Price:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->price}}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="tab_meta">
-                            <div class="form-body">
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Meta Title:</label>
-                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_title}}</p></div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Meta Keywords:</label>
-                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_keywords}}</p></div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-2 control-label">Meta Description:</label>
-                                    <div class="col-md-10"><p class="form-control-static">{{$Vehicle->meta_description}}</p></div>
+                            <div class="portlet-body">
+                                <div class="col-md-12  col-sm-12">
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Meta Title:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->seo->title}}
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Meta Keywords:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->seo->keyword}}
+                                        </div>
+                                    </div>
+                                    <div class="row static-info">
+                                        <div class="col-md-5 value">
+                                            Meta Description:
+                                        </div>
+                                        <div class="col-md-7 value">
+                                           {{$Vehicle->seo->description}}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +268,7 @@ $VehicleFeatures = $page->getBody()->getDataByKey('vehicleFeatures');
     jQuery(document).ready(function () {
         Metronic.init(); // init metronic core componets
         Layout.init(); // init layout
-         Portfolio.init();
+        Portfolio.init();
     });
 </script>
 @stop

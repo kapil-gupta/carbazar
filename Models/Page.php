@@ -23,15 +23,21 @@ class Page extends CommonAttributes implements SluggableInterface {
     protected $guarded = ['id'];
     protected $fillable = ['name', 'parent_id', 'type', 'slug', 'description', 'is_active', 'created_by', 'updated_by'];
     public $timestamps = true;
-
+    
     public function getIsActiveAttribute($val) {
-        return $val ? 'Active' : 'Not active';
+        return ($val=='active') ? 'Active' : 'Not active';
+    }
+
+    public function scopePage($query) {
+        return $query->where('type', 'page');
     }
 
     public function category() {
         return $this->belongsTo('SmartCarBazar\Models\Category');
     }
-
+    public function parent() {
+        return $this->belongsTo('SmartCarBazar\Models\Page','parent_id');
+    }
     public function photos() {
         return $this->morphMany('SmartCarBazar\Models\Photo', 'imageable');
     }

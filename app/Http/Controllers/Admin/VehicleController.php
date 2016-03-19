@@ -27,7 +27,8 @@ class VehicleController extends CorporateController {
         $records = $ModelVehicle::with('category', 'model', 'model.brand')->select('*');
         return Datatables::of($records)
                         ->addColumn('action', function ($records) {
-                            return '<a href="' . admin_route('vehicle.edit', $records->id) . '" class="btn btn-xs default btn-editable"><i class="fa fa-pencil"></i> Edit</a>';
+                            return '<a href="' . admin_route('vehicle.edit', $records->id) . '" class="btn btn-xs default btn-editable red-stripe"><i class="fa fa-pencil"></i> Edit</a>'
+                                . '<a href="' . admin_route('vehicle.show', $records->id) . '" class="btn default btn-xs green-stripe">View</a>';
                         })
                         ->editColumn('id', 'ID: {{$id}}')
                         ->setRowId('id')
@@ -116,7 +117,8 @@ class VehicleController extends CorporateController {
      */
     public function show($id) {
         $ModelVehicle = new Vehicle();
-        $vehicle = $ModelVehicle->view($id, 0);
+        $vehicle = $ModelVehicle->view($id, 0,[],[]);
+        //echo '<pre>';print_r($vehicle->toArray());exit;
         $ModelFeatureCategory = new \SmartCarBazar\Models\FeatureCategory();
         $FeatureCategory = $ModelFeatureCategory->getAll();
         $vehicleFeatures = $vehicle->features()->lists('feature_id', 'feature_id')->toArray();
@@ -150,14 +152,17 @@ class VehicleController extends CorporateController {
         $Category = new \SmartCarBazar\Models\Category();
         $ModelFeatureCategory = new \SmartCarBazar\Models\FeatureCategory();
         $FeatureCategory = $ModelFeatureCategory->getAll();
+        //\DB::enableQueryLog();
         $AllBrands = $Brands->getAll();
+        $BrandList=[];
         foreach ($AllBrands as $brand) {
             $BrandList[$brand->id] = $brand->brand->name . ' ' . $brand->name;
         }
+        //echo '<pre>';print_r($BrandList);exit;
         $AllCategories = $Category->getAll();
         $vehicle = $ModelVehicle->view($id, 0);
         $vehicleFeatures = $vehicle->features()->lists('feature_id', 'feature_id')->toArray();
-        //echo '<pre>';print_r(($vehicleFeatures->lists('feature_id')->toArray()));exit;
+        //
         /* Breadcrumbs */
         $title = "Edit Vehicle";
         $this->page->getBody()->addBreadcrumb('Vehicle', '/admin/vehicle');

@@ -85,7 +85,7 @@ class EditVehicleRequest extends Request {
             'model_id' => 'required',
             'category_id' => 'required',
             'price' => 'required',
-            'is_active' => 'required',
+            
             'meta_title' => 'required|max:255',
             'meta_keywords' => 'required|max:255',
             'meta_description' => 'required|max:255',
