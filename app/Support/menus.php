@@ -12,11 +12,11 @@ Menu::create('navbar', function($menu) {
         if (0 < count($childrens)) {
             $menu->dropdown($parent->name, function ($sub) use($childrens) {
                 foreach($childrens as $child){
-                $sub->url($child->slug, $child->name);
+                $sub->url('page/'.$child->slug, $child->name);
                 }
             });
         } else {
-            $menu->url($parent->slug, $parent->name);
+            $menu->url('page/'.$parent->slug, $parent->name);
         }
     }
    

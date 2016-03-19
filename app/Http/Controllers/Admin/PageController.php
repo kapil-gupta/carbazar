@@ -177,5 +177,16 @@ class PageController extends CorporateController {
     public function destroy($id) {
         //
     }
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getPage($slug) {
+        $ModelPage = new Page();
+        $page = $ModelPage->getPageBySlug($slug);
+        print_r($page->toArray()); 
+    }
 
 }

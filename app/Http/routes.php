@@ -46,7 +46,7 @@ Route::group(['middleware' => ['web']], function () {
 // Authentication routes...
 
 
-
+Route::get('page/{slug}', 'Admin\PageController@getPage');
 Route::group(['prefix' => $admin_routes_prefix,'middleware' => ['web','lock','auth']], function () {
 
     Route::get('vehicle-list', ['as' => 'vehicle.list', 'uses' => 'Admin\VehicleController@getList']);
